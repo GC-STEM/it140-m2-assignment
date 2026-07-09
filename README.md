@@ -72,5 +72,6 @@ it140_m2_assignment/
 
 ### Additional Resources
 
+- [VS Code for EDU]({{Add link or delete}})
 - [YouTube Video]({{Add link or delete}})
 - [Zotero Collection]({{Add link or delete}})

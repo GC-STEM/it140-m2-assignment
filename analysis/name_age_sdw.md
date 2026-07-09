@@ -1,8 +1,8 @@
 # Software Development Worksheet
 
 - **Course**: {{CS 000}} - {{Course Title}}
-- **Activity**: {{ModNum}}-{{ActNum}}: {{ActivityTitle}}
-- **Program Name**: {{Program-Name}}
+- **Activity**: 2-3: {{ActivityTitle}}
+- **Program Name**: `name_age`
 
 Use this worksheet to record the information you need before writing code. Keep your answers brief. Refer to the Software Requirements Specification (SRS) and, when provided, the Software Design Document (SDD).
 

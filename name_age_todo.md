@@ -1,7 +1,7 @@
 # Software Development Life Cycle To-Do List
 
 **Course**: {{CS 000}} - {{Course Title}}
-**Activity Title**: {{ModNum}}-{{ActNum}}: {{Full Activity Title}}
+**Activity Title**: 2-3: {{Full Activity Title}}
 **Activity Name**: {{Activity-Name}}
 
 ## 0. Overview
@@ -30,7 +30,7 @@ Perform the following tasks to design the program that meets the SRS.
 
 ### 2.2 Flowchart
 
-Create a flowchart that shows the mid-level logic of the {{Program-Name}} program based on your Software Design Document (SDD). Your flowchart should help another person understand how the program moves from inputs, through processing and decisions, to outputs. Your flowchart does not need to show every line of code. Instead, it should show the main steps, decision points, loops, and data movement needed to meet the program requirements.
+Create a flowchart that shows the mid-level logic of the `name_age` program based on your Software Design Document (SDD). Your flowchart should help another person understand how the program moves from inputs, through processing and decisions, to outputs. Your flowchart does not need to show every line of code. Instead, it should show the main steps, decision points, loops, and data movement needed to meet the program requirements.
 
 - [ ] 2.2.0. Install support for Draw.io diagrams (`.drawio` files) in your IDE, if needed.
     - **VS Code | Open VSX**: Install the **Draw.io Integration** extension (hediet.vscode-drawio).
@@ -43,7 +43,7 @@ Create a flowchart that shows the mid-level logic of the {{Program-Name}} progra
     - **Snippets**: Shows small examples of common program logic, such as decisions and loops.
     - **Example**: Shows a completed flowchart for a different program.
 
-- [ ] 2.2.3 Create the flowchart in the {{Program-Name}} tab. Add the symbols needed to show the program’s mid-level logic. Arrange the symbols in a clear order, aligned and evenly spaced. Include symbols for the major parts of your program, such as::
+- [ ] 2.2.3 Create the flowchart in the `name_age` tab. Add the symbols needed to show the program’s mid-level logic. Arrange the symbols in a clear order, aligned and evenly spaced. Include symbols for the major parts of your program, such as::
     - **Inputs and outputs**: {{TODO: Add needed input/output symbols here.}}
     - **Processes**: {{TODO: Add needed process symbols here.}}
     - **Decisions**: {{TODO: Add needed decision symbols here.}}
@@ -67,7 +67,7 @@ Create a flowchart that shows the mid-level logic of the {{Program-Name}} progra
 
 ### 2.3 Pseudocode
 
-Create pseudocode that expands the logic from your flowchart into low-level, step-by-step instructions. Your pseudocode is the final design step before writing the source code for the `{{Program-Name}}` program. Your pseudocode should not use exact Python syntax. Instead, it should describe the program logic clearly enough that you can use it as a guide when you begin coding.
+Create pseudocode that expands the logic from your flowchart into low-level, step-by-step instructions. Your pseudocode is the final design step before writing the source code for the ``name_age`` program. Your pseudocode should not use exact Python syntax. Instead, it should describe the program logic clearly enough that you can use it as a guide when you begin coding.
 
 - [ ] 2.3.1. Open the [`program_name.pseudo`](./design/program_name.pseudo) file in your IDE.
 

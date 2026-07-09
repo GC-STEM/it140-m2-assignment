@@ -1,37 +1,64 @@
 <mxfile host="65bd71144e">
-    <diagram id="BxN_fVSwImqooR-HojqY" name="Program Name">
-        <mxGraphModel dx="875" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+    <diagram id="BxN_fVSwImqooR-HojqY" name="Flowchart">
+        <mxGraphModel dx="575" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="TP0llparpRO0PuGGg3q6-1" value="&lt;h4&gt;&amp;lt;Program Name&amp;gt; Flowchart&lt;/h4&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;autosize=1;" parent="1" vertex="1">
-                    <mxGeometry x="255" y="12" width="340" height="110" as="geometry"/>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-4" value="&lt;h4&gt;Name-Age Flowchart&lt;/h4&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;autosize=1;" vertex="1" parent="1">
+                    <mxGeometry x="295" y="10" width="260" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="2JVWBYgFJigrqzPahJsY-1" value="Start &lt;br&gt;&amp;lt;program&amp;gt;" style="strokeWidth=2;shape=mxgraph.flowchart.terminator;aspect=fixed;fontSize=12;whiteSpace=wrap;spacing=2;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;container=0;" parent="1" vertex="1">
-                    <mxGeometry x="375" y="141" width="100" height="38" as="geometry"/>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-5" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="QsE186xzHa9TSNZjJZ6D-6" target="QsE186xzHa9TSNZjJZ6D-8">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;To edit this flowchart template, follow the directions below:&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1. Create your own copy of&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 18px; background-color: transparent;&quot;&gt;`template.drawio.png`&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;b style=&quot;background-color: transparent; font-size: 18px; scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot;&gt;VS Code for EDU&lt;/b&gt;&lt;span style=&quot;background-color: transparent; font-size: 18px;&quot;&gt;: Click &quot;Save a copy and edit&quot; button in lower left corner.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;background-color: transparent; font-size: 18px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;2. &lt;b&gt;Other platforms&lt;/b&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent; scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); font-size: 18px;&quot;&gt;Right-click on filename and select &quot;Download...&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2. Open your copy in a &lt;a href=&quot;https://www.drawio.com/&quot;&gt;Draw-io&lt;/a&gt; compatabile editor&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. &lt;b&gt;Web&lt;/b&gt;: Open in apps.diagrams.net&lt;font color=&quot;rgba(0, 0, 0, 0)&quot;&gt;app.diagrams.net&lt;/font&gt;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.&amp;nbsp;&lt;b&gt;PyCharm:&lt;/b&gt;&amp;nbsp;Install the&amp;nbsp;&lt;/span&gt;&lt;a style=&quot;background-color: transparent; scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); color: rgb(63, 63, 63);&quot; href=&quot;https://plugins.jetbrains.com/plugin/15635-diagrams-net-integration&quot;&gt;Diagrams.net&lt;/a&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&amp;nbsp;plugin&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Plugin:&amp;nbsp;https://plugins.jetbrains.com/plugin/15635-diagrams-net-integration&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Instructions: https://www.jetbrains.com/help/pycharm/managing-plugins.html&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;VS Code&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&amp;nbsp;Install the &lt;/span&gt;&lt;a style=&quot;background-color: transparent;&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio&quot;&gt;Draw.io&lt;/a&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt; extension&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;background-color: transparent; font-size: 18px; white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 18px;&quot;&gt;. Desktop: Run &lt;/span&gt;&lt;font style=&quot;font-size: 15px; background-color: light-dark(rgb(224, 224, 224), rgb(237, 237, 237));&quot; face=&quot;Courier New&quot;&gt;code --install-extension hediet.vscode-drawio&lt;/font&gt;&lt;span style=&quot;background-color: transparent; font-size: 18px;&quot;&gt; from CLI&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2. for EDU: See 1-1 Setup Tasks --&amp;gt; Web Setup in Handbook&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;3. Delete this textbox before adding your flowchart symbols.&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="70" y="200" width="710" height="530" as="geometry"/>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-6" value="Start" style="strokeWidth=2;shape=mxgraph.flowchart.terminator;aspect=fixed;fontSize=12;whiteSpace=wrap;spacing=2;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;container=0;" vertex="1" parent="1">
+                    <mxGeometry x="374.9999999999999" y="148" width="100" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-7" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="QsE186xzHa9TSNZjJZ6D-8" target="QsE186xzHa9TSNZjJZ6D-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-8" value="&lt;div&gt;Initialize&lt;br&gt;current year&lt;/div&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.27;fontSize=12;strokeWidth=2;aspect=fixed;labelPosition=center;align=center;spacing=2;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;container=0;" vertex="1" parent="1">
+                    <mxGeometry x="374.9999999999999" y="236" width="100" height="67" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-9" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="QsE186xzHa9TSNZjJZ6D-10" target="QsE186xzHa9TSNZjJZ6D-12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-10" value="&lt;br&gt;User name" style="strokeWidth=2;shape=manualInput;rounded=1;size=26;arcSize=11;fontSize=12;whiteSpace=wrap;spacing=2;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;aspect=fixed;container=0;" vertex="1" parent="1">
+                    <mxGeometry x="374.9999999999999" y="346" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-11" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="QsE186xzHa9TSNZjJZ6D-12" target="QsE186xzHa9TSNZjJZ6D-14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-12" value="&lt;br&gt;User age" style="strokeWidth=2;shape=manualInput;rounded=1;size=26;arcSize=11;fontSize=12;whiteSpace=wrap;spacing=2;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;aspect=fixed;container=0;" vertex="1" parent="1">
+                    <mxGeometry x="374.9999999999999" y="448" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-13" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="QsE186xzHa9TSNZjJZ6D-14" target="QsE186xzHa9TSNZjJZ6D-16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-14" value="Calculate&lt;br&gt;birth year" style="rounded=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=12;whiteSpace=wrap;spacing=2;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;aspect=fixed;container=0;" vertex="1" parent="1">
+                    <mxGeometry x="374.9999999999999" y="542" width="100" height="67" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-15" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="QsE186xzHa9TSNZjJZ6D-16" target="QsE186xzHa9TSNZjJZ6D-17">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-16" value="Welcome message and birth year" style="strokeWidth=2;shape=mxgraph.flowchart.display;aspect=fixed;fontSize=12;whiteSpace=wrap;spacing=2;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;container=0;" vertex="1" parent="1">
+                    <mxGeometry x="374.9999999999999" y="644" width="100" height="67" as="geometry"/>
+                </mxCell>
+                <mxCell id="QsE186xzHa9TSNZjJZ6D-17" value="End" style="strokeWidth=2;shape=mxgraph.flowchart.terminator;aspect=fixed;fontSize=12;whiteSpace=wrap;spacing=2;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;container=0;" vertex="1" parent="1">
+                    <mxGeometry x="374.9999999999999" y="760" width="100" height="38" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
-    <diagram name="Example" id="6uWCGEVDWqdnvIiDKMtO">
-        <mxGraphModel dx="875" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+    <diagram name="README" id="6uWCGEVDWqdnvIiDKMtO">
+        <mxGraphModel dx="575" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="WjNtcwFtisM9cXZzO78z-0"/>
                 <mxCell id="WjNtcwFtisM9cXZzO78z-1" parent="WjNtcwFtisM9cXZzO78z-0"/>
-                <mxCell id="5oT3N-xmGETmmeSmgPYw-0" value="&lt;h4&gt;&amp;lt;Program Title&amp;gt; Specific Flowchart&lt;/h4&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;autosize=1;" parent="WjNtcwFtisM9cXZzO78z-1" vertex="1">
-                    <mxGeometry x="215" y="21" width="420" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="5oT3N-xmGETmmeSmgPYw-1" value="Start &amp;lt;program_name&amp;gt;" style="strokeWidth=2;shape=mxgraph.flowchart.terminator;aspect=fixed;fontSize=12;whiteSpace=wrap;spacing=2;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;html=1;container=0;" parent="WjNtcwFtisM9cXZzO78z-1" vertex="1">
-                    <mxGeometry x="374.9999999999999" y="120" width="100" height="38" as="geometry"/>
-                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram name="Symbols" id="E0RcvYQW2tOlB-kFRd9z">
-        <mxGraphModel dx="875" dy="1761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="575" dy="1542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="vU1Vuk4aWWdwwywqWB7g-0"/>
                 <mxCell id="vU1Vuk4aWWdwwywqWB7g-1" parent="vU1Vuk4aWWdwwywqWB7g-0"/>
@@ -202,7 +229,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="Snippets" id="o_ZMmj7cAJ43grostlEJ">
-        <mxGraphModel dx="875" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="575" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="8w8jLf61mjaVRf8ABnd9-0"/>
                 <mxCell id="8w8jLf61mjaVRf8ABnd9-1" parent="8w8jLf61mjaVRf8ABnd9-0"/>
@@ -625,7 +652,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="References" id="Vz4e43rjaKrw2aeScCWf">
-        <mxGraphModel dx="875" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="575" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="D5D6mLoWnqU2CqyQlQdC-0"/>
                 <mxCell id="D5D6mLoWnqU2CqyQlQdC-1" parent="D5D6mLoWnqU2CqyQlQdC-0"/>

@@ -72,6 +72,5 @@ it140_m2_assignment/
 
 ### Additional Resources
 
-- [Kaggle Notebook]({{Add link or delete}})
 - [YouTube Video]({{Add link or delete}})
 - [Zotero Collection]({{Add link or delete}})

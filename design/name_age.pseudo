@@ -1,0 +1,22 @@
+START name_age
+
+    SET CURRENT_YEAR = system date (year only)
+
+    PUT "What is your name? "
+    GET user_name
+
+    PUT "How old are you? "
+    GET user_age
+
+    SET birth_year = CURRENT_YEAR - user_age
+
+    PUT "Hello {user_name}! You were born in {birth_year}."
+
+END name_age
+
+
+# === References ===
+# TODO: Add reference entries  in APA style for any additional sources you used.
+
+# TODO: Delete unused sections and all 'TODO' comment lines, including this one,
+# before submitting this file for grading.

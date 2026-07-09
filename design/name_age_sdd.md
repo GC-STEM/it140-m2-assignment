@@ -1,8 +1,8 @@
 # Software Design Document
 
 - **Course**: IT 140 - Introduction to Scripting
-- **Activity**: {{ModNum}}-{{ActNum}}: {{ActivityTitle}}
-- **Program Name**: {{Program-Name}}
+- **Activity**: 2-3: {{ActivityTitle}}
+- **Program Name**: `name_age`
 
 ## 0. General Description
 

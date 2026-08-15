@@ -249,9 +249,21 @@ Use this option when your files on the current computer are damaged or confusing
 
 This process preserves your current local folder as a backup and then clones a fresh local copy of your personal repository.
 
+#### CVD, Linux, macOS, or Git Bash on Windows
+
 ```bash
 cd ~/Repos
 mv it140-m2-assignment "it140-m2-assignment-local-backup-$(date +%Y%m%d-%H%M%S)"
+gh repo clone "$(gh api user --jq .login)/it140-m2-assignment"
+cd it140-m2-assignment
+git status
+```
+
+#### Windows PowerShell
+
+```powershell
+cd ~/Repos
+Rename-Item it140-m2-assignment "it140-m2-assignment-local-backup-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
 gh repo clone "$(gh api user --jq .login)/it140-m2-assignment"
 cd it140-m2-assignment
 git status
@@ -272,11 +284,25 @@ This process preserves your current work by:
 3. Creating a new `it140-m2-assignment` repository from the original course template.
 4. Cloning the new repository to your computer.
 
+#### CVD, Linux, macOS, or Git Bash for Windows
+
 ```bash
 cd ~/Repos
 backup="it140-m2-assignment-backup-$(date +%Y%m%d-%H%M%S)"
 mv it140-m2-assignment "$backup"
 gh repo rename "$backup" --repo "$(gh api user --jq .login)/it140-m2-assignment" --yes
+gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
+cd it140-m2-assignment
+git remote -v
+```
+
+#### Windows PowerShell Commands
+
+```powershell
+cd ~/Repos
+$backup = "it140-m2-assignment-backup-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
+Rename-Item it140-m2-assignment $backup
+gh repo rename $backup --repo "$(gh api user --jq .login)/it140-m2-assignment" --yes
 gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
 cd it140-m2-assignment
 git remote -v

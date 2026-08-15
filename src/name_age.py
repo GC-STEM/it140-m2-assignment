@@ -33,13 +33,14 @@ def main() -> None:
     """Run the program."""
 
     # <Step 1 of algorithm in a complete sentence>.
-    # TODO: Add your code to input data. Review zyBooks 1.3, Basic Input.
+    # TODO: Add code to get user's name. Review zyBooks 1.3, Basic input.
+    # TODO: Add code to get user's age as an integer. Review zyBooks 2.6.
 
     # <Step 2 of algorithm in a complete sentence>.
-    # TODO: Add your code to process data. Review <course resource>.
+    # TODO: Add code to process data. Review zyBooks 1.16 and 1.17.
 
     # <Step 3 of algorithm in a complete sentence>.
-    # TODO: Add your code to output results. Review zyBooks §1.3 & 2.7.
+    # TODO: Add code to output results. Review zyBooks §1.3 & 2.7.
 
 
 # === Main Guard ===

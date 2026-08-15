@@ -1,218 +1,304 @@
+<!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
+
 # Software Development Worksheet (SDW)
 
-**Activity:** {{activity_number_and_title}}
+* **Course:** IT 140 - *Introduction to Scripting*
+* **Activity:** 2-3: Module Two Assignment
+* **Program:** `name_age`
 
-Use this worksheet as working notes while you move through the Software Development Life Cycle (SDLC). Your notes do not need to be formal or polished. Their purpose is to help you understand the requirements and plan your solution before you begin constructing it.
+Use this worksheet as working notes while you move through the **Analyze** and **Design** phases of the Software Development Life Cycle (SDLC).
+
+Your notes do not need to be formal or polished. Keep your answers brief and write them in your own words. The purpose of the SDW is to help you understand the requirements and provided design before you begin constructing your program.
 
 **This worksheet is not a deliverable.** Do not submit it in D2L Brightspace for grading.
 
-> **Tip:** Keep your answers brief and write them in your own words. Refer to the provided Software Requirements Specification (SRS), Software Design Document (SDD), and test cases when you need more detail.
+## Analyze Phase
 
-## 1. Document Review
+**SDLC progress:** [0 Start Here](../README.md) → **1 Analyze** → [2 Design](../design/README.md) → [3 Construct](../src/README.md) → [4 Test](../tests/README.md) → [5 Submit](https://learn.snhu.edu/)
 
-As you work through the SDLC, review the provided files for each phase and complete the relevant sections in this worksheet.
+During the Analyze phase, focus on **what the program must do**. Use the Software Requirements Specification (SRS) as your primary source.
 
-### Analyze
+### 1. Review the Requirements
 
-* [ ] [Software Requirements Specification (SRS)](./program_name_srs.md) — describes what the program must do and includes the sample input and output (I/O) and acceptance test cases.
+Before completing the Analyze sections of this worksheet, review:
 
-### Design
+* [ ] [Software Requirements Specification (SRS)](./name_age_srs.md)
+  * `## 0. General Description`
+  * `## 1. Functional Requirements`
+  * `## 2. Nonfunctional Requirements`
+  * `## 3. Technology Constraints`
+  * `## 4. Quality of Service Constraints`
+  * `## Sample Input and Output`
+  * `## Acceptance Test Cases`
 
-* [ ] [Software Design Document (SDD)](../design/program_name_sdd.md) — describes the planned solution.
-  * [ ] [Flowchart](../design/program_name.drawio) — shows the planned program logic visually.
-  * [ ] [Pseudocode](../design/program_name.pseudo) — describes the planned program logic as step-by-step instructions.
+### 2. Program Purpose
 
-### Construct
+In one sentence, summarize the program's purpose **in your own words**.
 
-* [ ] [Starter Code](../src/program_name.py) — provides the Python file you will complete.
+Do not copy the SRS or ask AI to generate your answer. You will use your understanding of the program's purpose when you write the documentation string (docstring) in your Python program.
 
-### Test
+> **Where to look:** [SRS](./name_age_srs.md) → `## 0. General Description`
 
-* [ ] [Automated Tests](../tests/test_program_name.py) — provide tests you will use to check your completed program.
+*What is this program supposed to do for its user?*
 
-{{Add, remove, or rename files as appropriate for the activity. Keep files grouped in the repository folder that corresponds to their SDLC phase.}}
+**TODO:** Replace this line with your answer.
 
-## 2. Program Purpose
-
-In one sentence, summarize the program's purpose **in your own words**. It is important to use your own words rather than copying the SRS or asking AI to generate the answer. If you cannot clearly and concisely explain the purpose, you may not understand the requirements and, thus, will not be able to construct correct Python code. You will need this purpose summary when you write your program documentation string (docstring).
-
-TODO: What is this program or solution supposed to do for its user?
-
-## 3. Inputs, Processing, and Outputs
+### 3. Inputs, Processing, and Outputs
 
 Think about the solution as three basic parts:
 
-> **Input → Processing → Output** or "IPO"
+> **Input → Processing → Output** or **IPO**
 
-### Inputs
-
-What information does the solution receive or obtain?
+#### IPO: Inputs
 
 > **Remember:** Inputs are not limited to information a user types. They can also include data loaded from files or API calls and values the program obtains or sets internally, such as values stored in variables or constants.
 
-* TODO: Identify an input and where it comes from.
-* TODO: Identify another input, if needed.
+*What information does the program receive or obtain?*
 
-What data type or format should each input use?
+> **Where to look:** [SRS](./name_age_srs.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.1–1.4**
 
-* TODO: Identify the expected type or format for each input, if specified.
+* **TODO:** Identify each input or internally obtained value the program needs and where it comes from.
 
-### Processing
+*What data type or format does each input need?*
 
-What must happen to the input before the solution produces its output?
+> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.3**. If a data type or format is not specified, write **Not specified**.
 
-* TODO: Describe the main calculation, conversion, decision, repetition, or other processing.
-* TODO: Add additional processing as needed.
+* **TODO:** Identify the required data type or format for each input when specified.
 
-### Outputs
+#### IPO: Processing
 
-What information must the solution produce?
+*What must happen to the inputs before the program produces its output?*
 
-* TODO: Identify an output and where it goes.
-* TODO: Identify another output, if needed.
+> **Where to look:** [SRS](./name_age_srs.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.3–1.4**
 
-Does the output need to follow a particular format?
+* **TODO:** Describe the required processing in your own words.
 
-* TODO: Record any required wording, spacing, formatting, or other output requirements.
+#### IPO: Outputs
 
-## 4. Requirements in My Own Words
+*What information must the program produce?*
 
-A few important requirements from the SRS are listed. For each one, explain **in your own words** what the requirement means.
+> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.5**
 
-Do not copy the requirement. Focus on what the program must do. Again, it is important to use your own words rather than copying the SRS or asking AI to generate the answer. If you cannot clearly and concisely explain the requirement, you may not understand it and, thus, will not be able to construct correct Python code.
+* **TODO:** Identify the required output and where it is displayed.
 
-* **SRS requirement {{requirement_number}}:** {{requirement_text_or_short_label}}
-  * TODO: Explain what this requirement means in your own words.
+*Does the output need to follow a particular format?*
 
-* **SRS requirement {{requirement_number}}:** {{requirement_text_or_short_label}}
-  * TODO: Explain what this requirement means in your own words.
+> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
 
-* **SRS requirement {{requirement_number}}:** {{requirement_text_or_short_label}}
-  * TODO: Explain what this requirement means in your own words.
+* **TODO:** Record the required output format.
 
-{{Include 2–4 selected requirements that are especially important for understanding the activity.}}
+### 4. Requirements in My Own Words
 
-## 5. Plan the Solution
+A few important requirements from the SRS are listed below. For each one, briefly explain **in your own words** what the requirement means. Do not copy the requirement or ask AI to generate your answer. The goal is to make sure you understand what the program must do before you begin constructing it.
 
-Use the provided Software Design Document (SDD), flowchart, pseudocode, or other design materials to identify the major steps the solution should follow.
+> **Where to look for all four requirements:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements`
 
-For early activities, think about the steps as **get input → process information → produce output**.
+* **SRS requirement 1.2 — Get the user's age**
+  * **TODO:** Explain what requirement 1.2 means in your own words.
 
-1. TODO: What should happen first?
-2. TODO: What should happen next?
-3. TODO: What should happen next?
-4. TODO: What should happen last?
+* **SRS requirement 1.3 — Use the age in an arithmetic calculation**
+  * **TODO:** Explain what requirement 1.3 means in your own words.
 
-{{Add or remove steps as appropriate. Describe what the solution needs to do without worrying about exact programming-language syntax.}}
+* **SRS requirement 1.4 — Calculate the approximate birth year**
+  * **TODO:** Explain what requirement 1.4 means in your own words.
 
-### Program Structure
+* **SRS requirement 1.5 — Display the personalized result**
+  * **TODO:** Explain what requirement 1.5 means in your own words.
 
-{{Include this subsection only when students need to understand or plan multiple functions, classes, files, or other program components. Remove it when it is not needed.}}
+### 5. Constraints and Special Cases
 
-* TODO: Identify a provided or planned function, class, file, or other component and briefly describe its job.
-* TODO: Add other components as needed.
+Requirements can include more than what a program does. They can also specify how the program should be written, where it should run, and what conditions it must handle.
 
-## 6. Check the Plan With an Example
+#### Important Constraints
 
-Choose one provided test case and follow your planned solution by hand before constructing it.
+> **Where to look:** [SRS](./name_age_srs.md) → `## 2. Nonfunctional Requirements`, `## 3. Technology Constraints`, and `## 4. Quality of Service Constraints`
 
-**Test case:** TODO: Identify the test case you are using.
+*Identify two or three important constraints you need to remember when constructing or testing the program.*
 
-**Input:**
+* **TODO:** List the important constraints here.
 
-* TODO: Record the test input values.
+#### Special or Edge Cases
 
-**Processing:**
+An **edge case** uses an unusual or boundary value that can help reveal problems in a solution.
 
-1. TODO: Apply the first relevant step using the test values.
-2. TODO: Continue the processing as needed.
+> **Where to look:** [SRS](./name_age_srs.md) → `## Acceptance Test Cases`, especially the tests identified as edge cases
 
-**Expected output:**
+*Identify the edge cases the program will be tested with.*
 
-* TODO: Record the result your plan should produce.
+* **TODO:** List the edge cases here.
 
-Compare your result with the expected result in the provided test case.
+### 6. Analyze Checkpoint
+
+Before continuing to the Design phase, make sure:
+
+* [ ] I can explain the program's purpose in my own words.
+* [ ] I identified the program's inputs, processing, and outputs.
+* [ ] I understand the selected functional requirements.
+* [ ] I identified important constraints and edge cases.
+* [ ] I did not add requirements that are not stated in the SRS.
+
+When these checks are complete, continue to the [Design phase](../design/README.md).
+
+## Design Phase
+
+**SDLC progress:** [0 Start Here](../README.md) → [1 Analyze](../analysis/README.md) → **2 Design** → [3 Construct](../src/README.md) → [4 Test](../tests/README.md) → [5 Submit](https://learn.snhu.edu/)
+
+During the Design phase, focus on **how the program will meet the requirements**. The design has already been provided for you. Your job is to understand it well enough to use it when you construct the program.
+
+### 7. Review the Design
+
+Before completing the Design sections of this worksheet, review:
+
+* [ ] [Software Design Document (SDD)](../design/name_age_sdd.md)
+  * `## 2. Solution Overview`
+  * `## 4. Data Design`
+  * `## 5. Interface and Input/Output Design`
+  * `## 6. Program Logic and Control Flow`
+  * `### 6.1 Main Processing Steps`
+* [ ] [Flowchart](../design/name_age.drawio) → **Flowchart** page; follow the path from **Start** to **End**
+* [ ] [Pseudocode](../design/name_age.pseudo) → read the algorithm from **START name_age** through **END name_age**
+
+Remember:
+
+> **SRS = what the program must do**  
+> **SDD, flowchart, and pseudocode = how the program is planned to do it**
+
+### 8. Plan the Solution
+
+Use the provided design to summarize the program's major steps **in your own words**. Do not copy the pseudocode and do not worry about exact Python syntax yet.
+
+> **Where to look:**
+>
+> * [SDD](../design/name_age_sdd.md) → `## 6. Program Logic and Control Flow` and `### 6.1 Main Processing Steps`
+> * [Flowchart](../design/name_age.drawio) → **Flowchart** page
+> * [Pseudocode](../design/name_age.pseudo) → **START name_age** through **END name_age**
+
+1. *What information or values must the program obtain or set before it can perform the calculation?*
+   1. **TODO:** List your answer(s) here.
+
+2. *What information must the program get from the user?*
+   1. **TODO:** List your answer(s) here.
+
+3. *What processing or calculation(s) must the program perform?*
+   1. **TODO:** List your answer(s) here.
+
+4. *What result(s) must the program produce?*
+   1. **TODO:** List your answer(s) here.
+
+### 9. Check the Plan With an Example
+
+Before writing Python code, follow the planned solution by hand using one provided test case.
+
+For this activity, use **Test 1: Typical adult age**.
+
+#### Test Input
+
+> **Where to look:** [SRS](./name_age_srs.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
+
+* **TODO:** Record the current year and user input values from Test 1.
+
+#### Test Processing
+
+Use the values from Test 1 and follow the calculation described by the design.
+
+> **Where to look:**
+>
+> * [SRS](./name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.4**
+> * [SDD](../design/name_age_sdd.md) → `## 6. Program Logic and Control Flow`
+> * [Pseudocode](../design/name_age.pseudo) → the step that calculates the birth year
+
+* **TODO:** Show the calculation using the Test 1 values.
+
+#### Expected Output
+
+> **Where to look:** [SRS](./name_age_srs.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
+
+* **TODO:** Record the expected output for Test 1.
+
+Compare your hand-calculated result with the expected result:
 
 * [ ] My result matches the expected result.
-* [ ] My result does not match. I need to review the SRS, SDD, or my plan before continuing.
+* [ ] My result does not match. I need to review the SRS and design before continuing.
 
-## 7. Important Constraints and Special Cases
+### 10. Questions or Unclear Information
 
-Review the SRS, SDD, starter files, and test cases for rules or limits that affect your solution.
+Before constructing the program, make sure the requirements and design make sense together.
 
-### Constraints
+If something seems missing, unclear, or inconsistent, record it here rather than guessing.
 
-* TODO: Record any required programming concepts, tools, formats, or techniques.
-* TODO: Record anything the solution must not do or use, if specified.
-* TODO: Record other important constraints.
+> **Where to look:** Compare:
+>
+> * [SRS](./name_age_srs.md) → `## 1. Functional Requirements`
+> * [SDD](../design/name_age_sdd.md) → `## 2. Solution Overview` through `## 6. Program Logic and Control Flow`
+> * [Flowchart](../design/name_age.drawio) → **Flowchart** page
+> * [Pseudocode](../design/name_age.pseudo) → **START name_age** through **END name_age**
 
-### Special or Edge Cases
+* **TODO:** Record any question, unclear requirement, or difference you notice between the requirements and design. If everything is clear and consistent, write **None**.
 
-* TODO: Record any special, boundary, or unusual cases identified in the SRS or test cases.
-* TODO: Add additional cases as needed.
-* TODO: If no special cases are specified, enter "None stated."
+### 11. Ready to Construct
 
-### Invalid Input or Error Cases
+Your analysis and design notes will help you complete the provided Python starter file.
 
-* TODO: Record any invalid-input or error-handling behavior specifically required by the SRS.
-* TODO: If no error-handling behavior is required, enter "None stated." Do not add requirements that are not in the SRS.
+Before continuing, open [`name_age.py`](../src/name_age.py) and notice how your SDW work connects to the starter code:
 
-## 8. Questions or Unclear Requirements
+* Your **Program Purpose** notes will help with the first line of the module docstring.
+* Your **Inputs, Processing, and Outputs** notes will help with the `Input:`, `Process:`, and `Output:` sections of the module docstring.
+* Your **Plan the Solution** notes will help you understand the Step 1, Step 2, and Step 3 placeholders in `main()`.
+* Your understanding of the **SRS requirements** will help you determine whether your completed code does what is required.
 
-Record anything you do not understand or need to confirm before continuing.
-
-* TODO: Record a question or unclear requirement.
-* TODO: Add additional questions as needed.
-* TODO: If everything is clear, enter "None."
-
-## 9. Ready to Construct
+> **Where to look:** [Starter Code](../src/name_age.py) → the module docstring at the top of the file and the TODO comments inside `main()`
 
 Before continuing to the Construct phase, make sure:
 
-* [ ] I can explain in my own words what the solution must accomplish.
-* [ ] I understand the required inputs, processing, and outputs.
-* [ ] I understand the important requirements in the SRS.
-* [ ] I reviewed the provided design and understand its major steps.
-* [ ] I checked my plan using at least one provided test case.
-* [ ] My plan agrees with the SRS and SDD.
-* [ ] I identified important constraints and special cases.
-* [ ] I recorded or resolved anything that is unclear.
-* [ ] I am ready to use the provided starter template to construct the solution.
+* [ ] I can explain what the program must accomplish.
+* [ ] I understand its inputs, processing, and outputs.
+* [ ] I understand the major steps in the provided design.
+* [ ] I checked the design using a provided acceptance test case.
+* [ ] I recorded or resolved anything that was unclear.
+* [ ] I am ready to use the starter code to construct the program.
+
+When these checks are complete, continue to the [Construct phase](../src/README.md).
 
 <!-- Scaffolding Notes
 
-This SDW is designed to provide substantial guidance during early IT 140 activities. As students gain experience with programming and the SDLC, prompts may be shortened or removed while keeping the same general worksheet structure.
+This SDW provides substantial guidance because Module Two is the student's first course assignment using the simplified SDLC.
+
+As students progress through IT 140, scaffolding can be reduced while preserving the Analyze → Design → Construct workflow.
 
 Possible scaffold reduction:
 
 * Early course:
-  * Provide explicit document-review checklist.
+  * Provide exact file and section references for each task.
   * Separate Input, Processing, and Output prompts.
-  * Provide guided numbered solution-plan prompts.
-  * Provide a structured test-case trace.
-  * Provide detailed Ready to Construct checklist.
+  * Select 2–4 SRS requirements for students to explain.
+  * Provide guided solution-plan prompts.
+  * Select a test case for students to trace.
+  * Provide detailed Analyze and Ready to Construct checkpoints.
 
 * Middle course:
-  * Reduce IPO prompts.
-  * Remove most explanatory text.
-  * Require students to identify the major solution steps with less prompting.
-  * Reduce the test-case trace to input, expected processing, and expected output.
+  * Keep file and section references but reduce explanatory text.
+  * Combine IPO prompts.
+  * Reduce the number of guided solution-plan questions.
+  * Allow students to choose which provided test case to trace.
+  * Shorten phase checkpoints.
 
 * Late course:
-  * Replace detailed IPO prompts with a brief data-flow summary.
-  * Allow students to select which SRS requirements require planning notes.
+  * Point students to the appropriate source documents without identifying every section.
+  * Ask students to identify the most important requirements themselves.
+  * Replace detailed IPO prompts with a concise data-flow summary.
   * Use a largely free-form solution plan.
-  * Reduce the readiness checklist to a few key checks.
+  * Ask students to select an appropriate test case to trace.
+  * Use minimal phase checkpoints.
 
 -->
 
 <!-- Artifact Metadata
 
 * Course: IT 140 - Introduction to Scripting
-* Artifact Title: {{activity_number_and_title}} | Software Development Worksheet
-* Artifact Type: Working notes; not submitted for grading unless otherwise specified
-* Artifact Purpose: Help students understand provided requirements and designs and plan a solution before construction.
-* Artifact Description: A scaffolded SDLC worksheet for recording program purpose, inputs, processing, outputs, requirements, solution planning, test-case tracing, constraints, special cases, questions, and construction readiness.
+* Artifact Title: 2-3 Module Two Assignment | Software Development Worksheet
+* Artifact Type: Working notes; not submitted for grading
+* Artifact Purpose: Help students understand the provided requirements and design before constructing the Module Two program.
+* Artifact Description: A scaffolded SDLC worksheet that guides students through Analyze and Design by connecting each task to the specific provided source document and section needed to complete it.
 * Artifact Version: {{semantic_version_number}}
 * Artifact Date: {{artifact_date_in_YYYY-MM-DD_format}}
 * Development Status: {{development_status}}

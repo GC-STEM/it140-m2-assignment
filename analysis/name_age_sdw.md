@@ -2,7 +2,7 @@
 
 **Activity:** {{activity_number_and_title}}
 
-Use this worksheet as working notes while you move through the Analyze and Design phases of the SDLC. Your notes do not need to be formal or polished. Their purpose is to help you understand the requirements and plan your solution before you begin constructing it.
+Use this worksheet as working notes while you move through the Software Development Life Cycle (SDLC). Your notes do not need to be formal or polished. Their purpose is to help you understand the requirements and plan your solution before you begin constructing it.
 
 **This worksheet is not a deliverable.** Do not submit it in D2L Brightspace for grading.
 
@@ -16,9 +16,9 @@ Before planning your solution, review the provided activity files:
 
 * [ ] [Software Design Document (SDD)](../design/name_age_sdd.md) — describes the planned solution.
 
-* [ ] [Flowchart](../design/name_age.drawio) — shows the planned program logic visually.
+  * [ ] [Flowchart](../design/name_age.drawio) — shows the planned program logic visually.
 
-* [ ] [Pseudocode](../design/name_age.pseudo) — describes the planned program logic as step-by-step instructions.
+  * [ ] [Pseudocode](../design/name_age.pseudo) — describes the planned program logic as step-by-step instructions.
 
 * [ ] [Starter Code](../src/name_age.py) — provides the Python file you will complete during the Construct phase.
 
@@ -28,7 +28,7 @@ Before planning your solution, review the provided activity files:
 
 ## 2. Program Purpose
 
-*In one sentence, summarize the program's purpose **in your own words**. It is important to use your own words rather than copying the SRS or asking AI to generate the answer. If you cannot clearly and concisely explain the purpose, you may not understand the requirements and, thus, will not be able to construct correct Python code. You will need this purpose summary when you write your program documentation string (docstring)*
+In one sentence, summarize the program's purpose **in your own words**. It is important to use your own words rather than copying the SRS or asking AI to generate the answer. If you cannot clearly and concisely explain the purpose, you may not understand the requirements and, thus, will not be able to construct correct Python code. You will need this purpose summary when you write your program documentation string (docstring).
 
 TODO: What is this program or solution supposed to do for its user?
 

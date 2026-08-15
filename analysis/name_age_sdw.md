@@ -16,12 +16,12 @@
 
 > The worksheet uses the same pattern throughout:
 >
-> * Instructions and background information appear in block quotes like this one.
+> * Instructions and background information appear in blockquotes like this one.
 > * **Where to look** tells you exactly where to find the information you need.
 > * **Prompt** tells you what to think about or answer.
 > * Your responses go in the blank space immediately after each prompt.
 >
-> **Text outside the block quotes is your work.** Enter your responses as regular text in your own words.
+> **Text outside the blockquotes is your work.** Enter your responses as regular text in your own words.
 
 ## Analyze Phase
 
@@ -126,7 +126,7 @@
 >
 > **Prompt:** What does requirement 1.2 mean in your own words?
 >
-> Enter your response below.
+> Enter your response below in your own words.
 
 
 
@@ -136,7 +136,7 @@
 >
 > **Prompt:** What does requirement 1.3 mean in your own words?
 >
-> Enter your response below.
+> Enter your response below in your own words..
 
 
 
@@ -223,43 +223,35 @@
 >
 > **SDD, flowchart, and pseudocode = how the program is planned to do it**
 
-### 8. Plan the Solution
+### 8. Connect Requirements to the Design
 
-> Use the provided design to summarize the program's major steps **in your own words**. Do not copy the pseudocode and do not worry about exact Python syntax yet.
+> The SRS describes **what** the program must do. The design shows **how** the planned solution will meet those requirements.
 >
+> For each requirement below, find where the provided design addresses it.
+
+#### SRS Requirement 1.3
+
 > **Where to look:**
 >
-> * [SDD](../design/name_age_sdd.md) → `## 6. Program Logic and Control Flow` and `### 6.1 Main Processing Steps`
-> * [Flowchart](../design/name_age.drawio) → **Flowchart** page
-> * [Pseudocode](../design/name_age.pseudo) → **START name_age** through **END name_age**
-
-#### Step 1
-
-> **Prompt:** What information or values must the program obtain or set before it can perform the calculation?
+> * [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.3**
+> * [Pseudocode](../design/name_age.pseudo)
+> * [Flowchart](../design/name_age.drawio)
 >
-> Enter your response below. Use a separate numbered bullet for each step.
-
-1. 
-
-#### Step 2
-
-> **Prompt:** What information must the program get from the user?
+> **Prompt:** What part of the design addresses this requirement? Briefly explain the connection.
 >
-> Enter your response below. Use a separate numbered bullet for each step.
+> Enter your response below.
 
-1. 
 
-#### Step 3
 
-> **Prompt:** What processing or calculations must the program perform?
+#### SRS Requirement 1.4
+
+> **Where to look:**
 >
-> Enter your response below. Use a separate numbered bullet for each step.
-
-
-
-#### Step 4
-
-> **Prompt:** What results must the program produce?
+> * [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
+> * [Pseudocode](../design/name_age.pseudo)
+> * [Flowchart](../design/name_age.drawio)
+>
+> **Prompt:** What part of the design addresses this requirement? Briefly explain the connection.
 >
 > Enter your response below.
 
@@ -279,7 +271,9 @@
 >
 > Enter your response below.
 
-
+* Current year: 
+* User name: 
+* User age: 
 
 #### Test Processing
 
@@ -293,7 +287,7 @@
 >
 > Enter your calculation below.
 
-
+User's approximate birth year = 
 
 #### Expected Output
 
@@ -303,7 +297,7 @@
 >
 > Enter your response below.
 
-
+Expected output for Test 1:
 
 > Compare your hand-calculated result with the expected result:
 >
@@ -325,9 +319,11 @@
 >
 > **Prompt:** Did you find any question, unclear requirement, or difference between the requirements and design? If everything is clear and consistent, enter **None**.
 >
-> Enter your response below.
+> Enter your response below. Use a separate numbered bullet for each question or unclear item.
 
+1. 
 
+> {{SME TODO: Add links to resources for students to ask questions or report issues.}}
 
 ### 11. Ready to Construct
 

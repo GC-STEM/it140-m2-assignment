@@ -12,15 +12,7 @@ Do not "correct" the filename unless this behavior is no longer desired.
 # About the `.github` Folder
 
 > [!IMPORTANT]
-> **Are You in the Right GitHub Folder?**
->
-> This is **`.github/`** — with a period at the beginning.
->
-> If you are completing the IT 140 setup activity and need instructions for **creating or configuring your GitHub account**, you want the **`github/`** folder instead (no period at the beginning).
->
-> **[Go to `github/README.md`](../github/README.md)**
->
-> The `.github/` folder contains files used to configure and maintain this repository. You do **not** need to use or modify these files to complete IT 140.
+> Do NOT modify or delete the `.github/` folder or any files in it. This folder is for repository administration. It is **not** part of student procedures for this activity.
 
 ## Optional: Learn What the `.github/` Folder Is
 

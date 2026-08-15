@@ -1,236 +1,86 @@
-# Software Development Life Cycle To-Do List
+<!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
 
-**Course**: {{CS 000}} - {{Course Title}}
-**Activity Title**: 2-3: {{Full Activity Title}}
-**Activity Name**: {{Activity-Name}}
+# Analyze Phase
 
-## 0. Overview
+**SDLC progress:** [0 Start Here](../README.md) → **1 Analyze** → [2 Design](../design/README.md) → [3 Construct](../src/README.md) → [4 Test](../tests/README.md) → [5 Submit](https://learn.snhu.edu/)
 
-{{TODO: Add a brief assignment-specific overview for the to-do list here.}}
+## Purpose
 
-## 1. Analysis Phase
+During the Analyze phase, your goal is to understand what the program must do before you begin planning or writing code.
 
-Perform the following tasks to analyze the problem and understand the requirements for the program you will develop.
+You will review the program requirements, expected input and output, and test cases. You will record your understanding in the Software Development Worksheet (SDW). These notes will help you during the Design and Construct phases.
 
-- [ ] 1.1. Read the [Software Requirement Specifications](./analysis/program_name_srs.md) (SRS) to understand the program's requirements.
+## Deliverable
 
-- [ ] 1.2. Complete the **TBD** section of your [Development Worksheet](./program_name_wks.md) to understand the requirements for the program you will be developing.
+**This phase does not produce a deliverable.**
 
-- [ ] 1.3. Review the Sample Input/Output (I/O) file to understand the program's expected behavior.
+You will use the [`name_age_sdw.md`](./name_age_sdw.md) Software Development Worksheet as working notes throughout the SDLC. **Do not submit the SDW in D2L Brightspace for grading.**
 
-- [ ] 1.4. Complete the **IPO** section of your [Development Worksheet](./program_name_wks.md) to understand the program's inputs, processing, and outputs.
+Your Python program, `name_age.py`, will be the programming deliverable you create later during the Construct phase.
 
-## 2. Design Phase
+## What You Will Use
 
-### 2.1 Software Design Document (SDD)
+Use the following provided materials to complete this phase:
 
-Perform the following tasks to design the program that meets the SRS.
+* [Software Requirements Specification (SRS)](./name_age_srs.md) — defines what the `name_age` program must do, including its requirements, expected input and output, and test cases.
+* [Software Development Worksheet (SDW)](./name_age_sdw.md) — provides a place to record your understanding and working notes in your own words.
+* [Module Two Assignment Guidelines and Rubric](https://learn.snhu.edu/) — identifies the assignment requirements and how your submitted work will be evaluated.
 
-- [ ] 2.1. Read the [Software Design Document](./design/program_name_sdd.md) (SDD)
+## What You Will Do
 
-### 2.2 Flowchart
+1. Read the [Software Requirements Specification (SRS)](./name_age_srs.md) from beginning to end.
 
-Create a flowchart that shows the mid-level logic of the `name_age` program based on your Software Design Document (SDD). Your flowchart should help another person understand how the program moves from inputs, through processing and decisions, to outputs. Your flowchart does not need to show every line of code. Instead, it should show the main steps, decision points, loops, and data movement needed to meet the program requirements.
+2. Pay particular attention to:
+   * What the program must accomplish
+   * What information the program receives
+   * What information the program produces
+   * The sample input and output
+   * The acceptance test cases
 
-- [ ] 2.2.0. Install support for Draw.io diagrams (`.drawio` files) in your IDE, if needed.
-    - **VS Code | Open VSX**: Install the **Draw.io Integration** extension (hediet.vscode-drawio).
-    - **JetBrains IDEs**: Install the **Diagrams.net Integration** plugin (de.docs_as_co.intellij.plugin.diagramsnet).
+3. Open the [Software Development Worksheet (SDW)](./name_age_sdw.md) and record your understanding of the requirements in your own words. Keep your notes brief.
 
-- [ ] 2.2.1. Open the [`program_name.drawio`](./design/program_name.drawio) file in your IDE.
+4. For this phase, focus your SDW notes on:
+   * The program's purpose
+   * Required program behaviors
+   * Inputs and outputs
+   * Important constraints
+   * Questions or requirements that are unclear
 
-- [ ] 2.2.2. Review the provided flowchart resources. Study the tabs in the program_name.drawio file before creating your own flowchart.
-    - **Symbols**: Shows the flowchart symbols you may need.
-    - **Snippets**: Shows small examples of common program logic, such as decisions and loops.
-    - **Example**: Shows a completed flowchart for a different program.
+5. Compare your notes with the SRS. Correct anything that does not match the requirements before continuing.
 
-- [ ] 2.2.3 Create the flowchart in the `name_age` tab. Add the symbols needed to show the program’s mid-level logic. Arrange the symbols in a clear order, aligned and evenly spaced. Include symbols for the major parts of your program, such as::
-    - **Inputs and outputs**: {{TODO: Add needed input/output symbols here.}}
-    - **Processes**: {{TODO: Add needed process symbols here.}}
-    - **Decisions**: {{TODO: Add needed decision symbols here.}}
-    - **Loops**: {{TODO: Add needed loop symbols here.}}
-    - **Start and end points**: {{TODO: Add needed start/end symbols here.}}
+> **IDE Features Reflection reminder:** As you work, notice how **Markdown Preview** helps you read formatted README, SRS, and SDW files inside VS Code. Consider whether this feature makes technical documents easier to read or use. This experience may be useful later when you complete the separate [IDE Features Reflection](../ide_features.md).
 
-- [ ] 2.2.4. Connect the flowchart symbols. Add connector lines to show the order in which the program steps happen.
-    - Use a solid line with an arrowhead to show the flow from one symbol to the next.
-    - Label each decision branch with the condition that controls that path, such as Yes, No, True, or False.
-    - Make sure every decision has a clear path for each possible outcome.
-    - Use a dashed line without an arrowhead only when connecting an annotation to a symbol.
+## Check Your Work
 
-- [ ] 2.2.5. Check the flowchart against the SDD. Compare your flowchart to the SDD to make sure the flowchart includes the required functionality. Ask yourself:
-    - Does the flowchart show the required inputs?
-    - Does it show the main processing steps?
-    - Does it show the required decisions and paths?
-    - Does it show the expected outputs?
-    - Does each major requirement from the SDD appear somewhere in the flowchart?
+Before continuing, make sure:
 
-- [ ] 2.2.6. Trace test cases through the flowchart. Mentally trace at least one test case per path through the flowchart. Start with sample inputs, follow the arrows, and check whether the flowchart reaches the expected outputs. Revise the flowchart if a test case gets stuck, skips a required step, follows an unclear path, or produces the wrong result.
+* [ ] I read the complete SRS.
+* [ ] I can explain in my own words what the program must accomplish.
+* [ ] I identified the required inputs, processing, and outputs.
+* [ ] I reviewed the sample input and output and the acceptance test cases.
+* [ ] I recorded my analysis notes in the SDW.
+* [ ] I recorded any questions or unclear requirements before moving to Design.
 
-### 2.3 Pseudocode
+## Help and Support
 
-Create pseudocode that expands the logic from your flowchart into low-level, step-by-step instructions. Your pseudocode is the final design step before writing the source code for the ``name_age`` program. Your pseudocode should not use exact Python syntax. Instead, it should describe the program logic clearly enough that you can use it as a guide when you begin coding.
+If you have difficulty completing this phase:
 
-- [ ] 2.3.1. Open the [`program_name.pseudo`](./design/program_name.pseudo) file in your IDE.
+* Review the [SRS](./name_age_srs.md) first. It is the primary source for what the program must do.
+* See the [Module Two Assignment Wiki](https://github.com/GC-STEM/it140-m2-assignment/wiki) for supplemental explanations and examples.
+* Use [GitHub Discussions](https://github.com/GC-STEM/it140-m2-assignment/discussions) for questions about using the repository or [GitHub Issues](https://github.com/GC-STEM/it140-m2-assignment/issues) to report a technical problem with its files or tools.
+* Contact your instructor through D2L Brightspace for questions about assignment requirements, grading, or feedback.
 
-- [ ] 2.3.2. Review your flowchart and SDD. Use your flowchart and Software Design Document (SDD) as the source for your pseudocode. Before writing, identify the main parts of the program as comments in the pseudocode file. For example, you might identify:
+## Next Steps
 
-    - Inputs the program needs
-    - Values the program must store or update
-    - Processing steps the program must perform
-    - Decisions the program must make
-    - Loops the program must repeat, if any
-    - Outputs the program must display or save
+When you have completed this phase, continue to the [Design](../design/README.md) phase.
 
-- [ ] 2.3.3. Write the pseudocode in a logical order. Expand each major flowchart symbol into one or more clear pseudocode steps. Write the steps in the order the program should follow, from start to finish. Include enough detail that another person could understand what the program should do before reading the code.
-
-* [ ] 2.3.4. Show inputs, outputs, and stored values.**
-
-  Include pseudocode steps for the data your program uses.
-
-  Your pseudocode should show:
-
-  * When the program gets input from the user or another source
-  * What values need to be stored
-  * When values are updated or calculated
-  * When the program displays or returns output
-
-* [ ] **2.3.4. Show decisions clearly.**
-
-  Write each decision so the condition is easy to understand.
-
-  For each decision, show what happens when the condition is true and what happens when the condition is false.
-
-  Use clear wording such as:
-
-  ```text
-  IF condition is true THEN
-      Do these steps
-  ELSE
-      Do these other steps
-  END IF
-  ```
-
-* [ ] **2.3.5. Show loops clearly, if needed.**
-
-  If your program repeats steps, write the loop condition and the steps that repeat.
-
-  Make sure the pseudocode shows:
-
-  * When the loop starts
-  * What condition controls the loop
-  * What steps happen inside the loop
-  * How the loop eventually ends
-
-  Use clear wording such as:
-
-  ```text
-  WHILE condition is true
-      Do these steps
-      Update the value that controls the loop
-  END WHILE
-  ```
-
-* [ ] **2.3.6. Keep the pseudocode readable.**
-
-  Use plain language and consistent indentation to show structure.
-
-  Your pseudocode should be:
-
-  * Clear
-  * Specific
-  * Ordered
-  * Easy to trace
-  * More detailed than the flowchart
-  * Less strict than source code
-
-* [ ] **2.3.7. Check the pseudocode against the flowchart.**
-
-  Compare your pseudocode to your flowchart.
-
-  Make sure every major flowchart step appears in the pseudocode, including:
-
-  * Inputs
-  * Processes
-  * Decisions
-  * Loops, if any
-  * Outputs
-  * Start and end logic
-
-* [ ] **2.3.8. Trace positive test cases through the pseudocode.**
-
-  Use the positive test cases from the requirements document to check your pseudocode.
-
-  Trace at least one positive test case for each major path in the logic. For example, if a decision has a true path and a false path, trace one valid test case through each path.
-
-  For each test case:
-
-  * Start with the given input.
-  * Follow the pseudocode step by step.
-  * Check each calculation, decision, and output.
-  * Confirm that the pseudocode produces the expected result.
-
-  Revise the pseudocode if a test case gets stuck, skips a required step, follows an unclear path, or produces the wrong result.
-
-
-## 3. Construction Phase
-
-In the [`src\program_name.py`](./src/program_name.py) file, perform the following tasks to implement the program according to the SDD, flowchart, and pseudocode.
-
-- [ ] 3.1. Use block comments{{ and function definitions}} to outline code functionality based on the flowchart. Describe the purpose of each block of code in one full sentence.
-
-- [ ] 3.2. Write code for one functional block based on pseudocode
-
-- [ ] 3.3. Test and debug code using test cases for that functionality
-
-- [ ] 3.4. Repeat steps 3.2 and 3.3 until all functionalities work as desired
-
-- [ ] 3.5. Document your code with clear comments and meaningful variable and function names to make it easy to read and maintain.
-
-## 4. Testing Phase
-
-In the `tests\test_program_name.py` file, perform the following tasks to test the program to ensure it meets the requirements outlined in the SRS.
-
-### 4.1. Alpha Testing
-
-### 4.2. Beta Testing
-
-- [ ] Test your program by {{submitting to the Instant Feedback Tool | running the provided test cases | pushing to the repository}} to verify that your program meets all the functional and nonfunctional requirements.
-
-- [ ] Correct one error at a time, testing after each correction to ensure the program is working as expected
-
-- [ ] Continue until all errors are resolved and the program is working as expected
-
-### 4.3. Self-Checks
-
-- [ ] Correct any issues identified by your IDE's linter and code analysis tools
-
-- [ ] Compare your program against the [Acceptance Criteria Checklist](./tests/acceptance.md) (ACC) to verify that your program meets all nonfunctional requirements.
-
-- [ ] Self-check program against the assignment rubric to ensure all criteria are met
-
-### 4.4. Submit deliverables
-
-Submit the following files as one submission to the assignment drop box in D2L Brightspace before the due date for acceptance testing (i.e., instructor grading and feedback).
-
-- [ ] flowchart.drawio
-- [ ] program_name.pseudo
-- [ ] program_name.py
-- [ ] document_name.md
-
-## 5. Maintenance Phase (Optional)
-
-In our SDLC, the Maintenance Phase is performed after your instructor has graded your program and provided feedback. This phase is an opportunity (not a requirement) to correct any issues they identified, as well as to make improvements to the program based on that feedback. The Maintenance Phase can be broken down into three types: corrective, perfective, and adaptive.
-
-### 5.1 Corrective Maintenance
-
-- [ ] Review instructor feedback and identify any issues or bugs in the program
-- [ ] Repeat Phases 3 and 4 to correct one issue at a time to ensure each change works as expected
-- [ ] Continue until all issues are resolved and the program is working as expected
-- [ ] If permitted, resubmit the corrected program for instructor's feedback
-
-### 5.2 Perfective Maintenance
-
-- [ ] TODO
-
-### 5.3 Adaptive Maintenance
-
-- [ ] TODO
+<!-- Artifact Metadata
+* Course: IT 140 - Introduction to Scripting
+* Artifact Title: Module Two Assignment | Analyze Phase
+* Artifact Type: Required assignment guidance; no phase deliverable submitted for grading
+* Artifact Purpose: Guide students through analyzing the requirements for the Module Two name_age program.
+* Artifact Description: Students review the provided SRS, sample input and output, and acceptance test cases and record working notes in the SDW before proceeding to design.
+* Artifact Version: {{semantic version number}}
+* Artifact Date: {{artifact date in YYYY-MM-DD format}}
+* Development Status: {{development status}}
+-->

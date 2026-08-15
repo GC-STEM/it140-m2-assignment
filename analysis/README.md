@@ -1,72 +1,84 @@
 <!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
 
-# {{sdlc_phase}} Phase
+# Design Phase
 
-**SDLC progress:** {{SDLC progress bar with the current phase bolded and all other phases linked}}
+**SDLC progress:** [0 Start Here](../README.md) → [1 Analyze](../analysis/README.md) → **2 Design** → [3 Construct](../src/README.md) → [4 Test](../tests/README.md) → [5 Submit](https://learn.snhu.edu/)
 
 ## Purpose
 
-{{Briefly explain what students accomplish during this SDLC phase and how that work supports the next phase. Use language appropriate for students who are new to programming and the SDLC.}}
+During the Design phase, your goal is to understand the planned solution before writing Python code.
+
+The requirements describe **what** the program must do. The provided design shows **how** the program can accomplish those requirements. You will review the Software Design Document (SDD), flowchart, and pseudocode so you can use them as guides when you begin coding.
 
 ## Deliverable
 
-**This phase {{produces | does not produce}} a deliverable.**
+**This phase does not produce a deliverable.**
 
-{{If this phase produces a deliverable: You will complete **{{deliverable_filename_or_name}}** during this phase. You will submit this file in **D2L Brightspace** for grading as part of {{activity_or_assignment_name}}.}}
+The SDD, flowchart, and pseudocode are provided for you as design references. **Do not submit these files in D2L Brightspace for grading.**
 
-{{If this phase does not produce a deliverable: You do not submit a file from this phase in D2L Brightspace for grading. The work you complete here prepares you for {{next_phase_or_deliverable}}.}}
-
-{{If applicable, briefly identify what the deliverable contains or represents. Do not repeat detailed requirements from the Guidelines and Rubric.}}
+You may continue adding working notes to your SDW, but the SDW is also not submitted.
 
 ## What You Will Use
 
 Use the following provided materials to complete this phase:
 
-* [{{resource_or_artifact_name}}]({{relative_path}}) — {{briefly explain how the student will use this resource}}
-* [{{resource_or_artifact_name}}]({{relative_path}}) — {{briefly explain how the student will use this resource}}
-* [{{starter_template_or_deliverable_name}}]({{relative_path}}) — {{briefly explain what the student will complete or create}}
-
-{{Add or remove items as appropriate for this activity and SDLC phase.}}
+* [Software Design Document (SDD)](./name_age_sdd.md) — explains the planned solution and how it addresses the program requirements.
+* [Flowchart](./name_age.drawio) — shows the program's logic visually.
+* [Pseudocode](./name_age.pseudo) — describes the program logic as ordered steps written independently of Python syntax.
+* [Software Requirements Specification (SRS)](../analysis/name_age_srs.md) — provides the requirements that the design must satisfy.
+* [Software Development Worksheet (SDW)](../analysis/name_age_sdw.md) — provides a place for your working notes.
 
 ## What You Will Do
 
-1. {{First student action for this phase.}}
-2. {{Next student action, referring to the provided SRS, SDD, test cases, or other specification when appropriate.}}
-3. {{Next student action using the provided starter template or activity files.}}
-4. {{Final action needed to complete this phase before checking the work.}}
+1. Review the [Software Design Document (SDD)](./name_age_sdd.md). Focus on the major steps the program will perform and how those steps satisfy the requirements.
 
-{{Keep the steps short, concrete, and in the order students should complete them. Do not duplicate detailed requirements that are already documented in the provided SRS, SDD, test cases, or activity Guidelines and Rubric.}}
+2. Open the provided [flowchart](./name_age.drawio). Follow the flow from Start to End and identify where the program:
+   * Receives input
+   * Processes information
+   * Produces output
+
+3. Read the provided [pseudocode](./name_age.pseudo) from beginning to end. Notice how it expresses the same solution as the flowchart but in more detailed, step-by-step form.
+
+4. Compare the SDD, flowchart, and pseudocode. They should describe the same planned program.
+
+5. Return to your [SDW](../analysis/name_age_sdw.md) and update your working notes as needed. In particular, use the provided design to help complete or refine your processing plan.
+
+6. Make sure you can explain the planned sequence of steps before moving to the Construct phase.
+
+> **IDE Features Reflection reminder:** Notice how the **Draw.io Integration** in VS Code lets you view the supplied `.drawio` flowchart without leaving your course IDE. Consider how viewing a diagram alongside the SDD or pseudocode may help you understand a program before coding it. This experience may be useful later when you complete the separate [IDE Features Reflection](../ide_features.md).
 
 ## Check Your Work
 
 Before continuing, make sure:
 
-* [ ] {{Completion criterion for the primary work of this phase.}}
-* [ ] {{Criterion confirming that the work agrees with the provided specifications or design.}}
-* [ ] {{Criterion confirming that all required parts of the starter template or deliverable are complete.}}
-* [ ] {{Phase-specific readiness criterion indicating that the student is prepared to continue to the next SDLC phase.}}
+* [ ] I reviewed the SDD.
+* [ ] I followed the complete flowchart from Start to End.
+* [ ] I read the complete pseudocode.
+* [ ] I can identify the program's input, processing, and output in the design.
+* [ ] I understand that the SDD, flowchart, and pseudocode describe the same planned solution.
+* [ ] I updated my SDW working notes as needed.
+* [ ] I can use the supplied pseudocode as a guide when I begin writing Python code.
 
 ## Help and Support
 
 If you have difficulty completing this phase:
 
-* {{Direct students to the most relevant provided specification, example, course resource, or repository documentation to review first.}}
-* {{Direct students to the appropriate repository support resource, such as a Wiki page, Discussion, or Issue, when applicable.}}
-* {{Direct students to the appropriate course support option for questions about assignment requirements, grading, or feedback.}}
+* Compare the [SDD](./name_age_sdd.md), [flowchart](./name_age.drawio), and [pseudocode](./name_age.pseudo) one step at a time.
+* See the [Module Two Assignment Wiki](https://github.com/GC-STEM/it140-m2-assignment/wiki) for supplemental explanations of the simplified SDLC, flowcharts, pseudocode, and other design concepts.
+* Use [GitHub Discussions](https://github.com/GC-STEM/it140-m2-assignment/discussions) for questions about using the repository or [GitHub Issues](https://github.com/GC-STEM/it140-m2-assignment/issues) to report a technical problem with its files or tools.
+* Contact your instructor through D2L Brightspace for questions about assignment requirements, grading, or feedback.
 
 ## Next Steps
 
-When you have completed this phase, continue to the [{{next_sdlc_phase}}]({{relative_path}}) phase.
+When you have completed this phase, continue to the [Construct](../src/README.md) phase.
 
 <!-- Artifact Metadata
-
-* Course: {{course number and title}}
-* Artifact Title: {{activity number and title}} | {{sdlc_phase}}
-* Artifact Type: {{activity type, grading status, and submission requirements}}
-* Artifact Purpose: {{brief statement describing the purpose of the activity}}
-* Artifact Description: {{student-facing description of what the activity covers, what students will do, and any relevant tools or environments}}
+* Course: IT 140 - Introduction to Scripting
+* Artifact Title: Module Two Assignment | Design Phase
+* Artifact Type: Required assignment guidance; no phase deliverable submitted for grading
+* Artifact Purpose: Guide students through reviewing the provided design for the Module Two name_age program.
+* Artifact Description: Students review the provided SDD, flowchart, and pseudocode and connect the planned solution to the requirements before beginning construction.
 * Artifact Version: {{semantic version number}}
 * Artifact Date: {{artifact date in YYYY-MM-DD format}}
 * Development Status: {{development status}}
-
 -->

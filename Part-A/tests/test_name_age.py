@@ -1,7 +1,7 @@
 """Acceptance tests for the Module Two name_age program.
 
-Run this test file from the repository root using the VS Code integrated
-terminal. Normally, this is ~/Repos/it140-m2-assignment. If you used a
+Run this test file from the repository Part A root using the VS Code integrated
+terminal. Normally, this is ~/Repos/it140-m2-assignment/Part-A. If you used a
 different location, change the path accordingly in the commands below.
 
 Open the integrated terminal in VS Code:

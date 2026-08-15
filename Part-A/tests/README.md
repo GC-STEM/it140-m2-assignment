@@ -170,7 +170,7 @@ You do not need to change or fully understand this code.
 
 ### 5. Optional: Run the Automated Tests
 
-Run the test file from the repository root using the **VS Code integrated terminal**.
+Run the test file from the Part-A root using the **VS Code integrated terminal**.
 
 In VS Code main menu, select **Terminal > New Terminal**.
 
@@ -259,7 +259,7 @@ rather than `FAIL`, the automated test itself could not complete normally.
 
 First make sure:
 
-* You ran the command from the `it140-m2-assignment` repository.
+* You ran the command from the `it140-m2-assignment/Part-A` repository.
 * `src/name_age.py` still exists in its original location.
 * `tests/test_name_age.py` still exists in its original location.
 * You did not modify the provided test file.

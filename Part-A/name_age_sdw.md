@@ -323,7 +323,7 @@ Expected output for Test 1:
 
 1. 
 
-> {{SME TODO: Add links to resources for students to ask questions or report issues.}}
+<!-- >> {{SME TODO: Add links to resources for students to ask questions or report issues.}} -->
 
 ### 11. Ready to Construct
 

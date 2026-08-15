@@ -259,9 +259,9 @@ rather than `FAIL`, the automated test itself could not complete normally.
 
 First make sure:
 
-* You ran the command from the `it140-m2-assignment/Part-A` repository.
-* `src/name_age.py` still exists in its original location.
-* `tests/test_name_age.py` still exists in its original location.
+* You ran the command from the `it140-m2-assignment/Part-A/` repository.
+* `../src/name_age.py` still exists in its original location.
+* `../tests/test_name_age.py` still exists in its original location.
 * You did not modify the provided test file.
 
 If the problem continues, use the support options below.

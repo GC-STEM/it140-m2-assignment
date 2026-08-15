@@ -127,7 +127,7 @@ The following command block will:
 1. Go to your course `Repos` folder.
 2. Configure Git to use your GitHub CLI authentication.
 3. Bookmark the original IT 140 assignment repository so it is easier to find again.
-4. Create your personal repository from the assignment template.
+4. Create your personal assignment repository in GitHub.
 5. Clone your new repository to your CVD or local computer.
 6. Enter the cloned repository folder.
 7. Show the GitHub repository connected to your local copy.

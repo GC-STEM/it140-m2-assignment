@@ -7,13 +7,9 @@ different location, change the path accordingly in the commands below.
 Open the integrated terminal in VS Code:
     Terminal > New Terminal
 
-Codio Virtual Desktop (CVD) / macOS / Linux / Git Bash:
-    cd ~/Repos/it140-m2-assignment
+Run the following commands in the integrated terminal.:
+    cd ~/Repos/it140-m2-assignment/Part-A
     python3 tests/test_name_age.py
-
-Windows PowerShell (not the Command Prompt):
-    cd ~/Repos/it140-m2-assignment
-    py tests/test_name_age.py
 """
 
 # === Imports ===

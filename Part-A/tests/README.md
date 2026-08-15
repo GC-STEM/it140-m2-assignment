@@ -172,30 +172,13 @@ You do not need to change or fully understand this code.
 
 Run the test file from the repository root using the **VS Code integrated terminal**.
 
-In VS Code, select:
-
-```text
-Terminal > New Terminal
-```
-
-The terminal should normally open in or near your course repository.
-
-#### Codio Virtual Desktop (CVD) / macOS / Linux / Git Bash
+In VS Code main menu, select **Terminal > New Terminal**.
 
 Run:
 
 ```bash
-cd ~/Repos/it140-m2-assignment
+cd ~/Repos/it140-m2-assignment/Part-A
 python3 tests/test_name_age.py
-```
-
-#### Windows PowerShell
-
-Run:
-
-```powershell
-cd ~/Repos/it140-m2-assignment
-py tests/test_name_age.py
 ```
 
 If you cloned the repository somewhere other than `~/Repos`, change the path in the `cd` command to match your repository location.

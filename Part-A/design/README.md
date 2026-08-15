@@ -26,7 +26,7 @@ Use the following provided materials to complete this phase:
 * [Flowchart](./name_age.drawio) — shows the program's logic visually.
 * [Pseudocode](./name_age.pseudo) — describes the program logic as ordered steps written independently of Python syntax.
 * [Software Requirements Specification (SRS)](../analysis/name_age_srs.md) — provides the requirements that the design must satisfy.
-* [Software Development Worksheet (SDW)](../analysis/name_age_sdw.md) — provides a place for your working notes.
+* [Software Development Worksheet (SDW)](../name_age_sdw.md) — provides a place for your working notes.
 
 ## What You Will Do
 
@@ -41,11 +41,11 @@ Use the following provided materials to complete this phase:
 
 4. Compare the SDD, flowchart, and pseudocode. They should describe the same planned program.
 
-5. Return to your [SDW](../analysis/name_age_sdw.md) and update your working notes as needed. In particular, use the provided design to help complete or refine your processing plan.
+5. Return to your [SDW](../name_age_sdw.md) and update your working notes as needed. In particular, use the provided design to help complete or refine your processing plan.
 
 6. Make sure you can explain the planned sequence of steps before moving to the Construct phase.
 
-> **IDE Features Reflection reminder:** Notice how the **Draw.io Integration** in VS Code lets you view the supplied `.drawio` flowchart without leaving your course IDE. Consider how viewing a diagram alongside the SDD or pseudocode may help you understand a program before coding it. This experience may be useful later when you complete the separate [IDE Features Reflection](../ide_features.md).
+> **IDE Features Reflection reminder:** Notice how the **Draw.io Integration** in VS Code lets you view the supplied `.drawio` flowchart without leaving your course IDE. Consider how viewing a diagram alongside the SDD or pseudocode may help you understand a program before coding it. This experience may be useful later when you complete the separate [IDE Features Reflection](../../Part-B/ide_features.md).
 
 ## Check Your Work
 

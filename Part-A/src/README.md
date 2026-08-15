@@ -352,7 +352,7 @@ If you did not use additional sources, delete the unused `# TODO:` reference lin
 
 The **module docstring remains your own original writing**, even if AI assistance is allowed for other parts of your work.
 
-> **IDE Features Reflection reminder:** As you construct the program, notice how VS Code features such as syntax highlighting, code completion, indentation guides, and error indicators affect your work. Your observations may help when you complete the separate [IDE Features Reflection](../ide_features.md).
+> **IDE Features Reflection reminder:** As you construct the program, notice how VS Code features such as syntax highlighting, code completion, indentation guides, and error indicators affect your work. Your observations may help when you complete the separate [IDE Features Reflection](../../Part-B/ide_features.md).
 
 ## Check Your Work
 

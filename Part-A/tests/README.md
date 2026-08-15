@@ -300,7 +300,7 @@ If you use both testing methods, a useful order is:
 5. Correct any remaining problems.
 6. Retest before submitting.
 
-> **IDE Features Reflection reminder:** As you test, notice how the VS Code integrated terminal, Problems panel, syntax highlighting, and error indicators help you find and understand problems. Your observations may be useful when you complete the separate [IDE Features Reflection](../ide_features.md).
+> **IDE Features Reflection reminder:** As you test, notice how the VS Code integrated terminal, Problems panel, syntax highlighting, and error indicators help you find and understand problems. Your observations may be useful when you complete the separate [IDE Features Reflection](../../Part-B/ide_features.md).
 
 <!-- FUTURE: GitHub Actions
 

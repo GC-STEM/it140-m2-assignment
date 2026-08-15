@@ -233,7 +233,7 @@
 
 > **Where to look:**
 >
-> * [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.3**
+> * [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.3**
 > * [Pseudocode](./design/name_age.pseudo)
 > * [Flowchart](./design/name_age.drawio)
 >
@@ -247,7 +247,7 @@
 
 > **Where to look:**
 >
-> * [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
+> * [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
 > * [Pseudocode](./design/name_age.pseudo)
 > * [Flowchart](./design/name_age.drawio)
 >
@@ -265,7 +265,7 @@
 
 #### Test Input
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
 >
 > **Prompt:** Record the current year, name, and age from Test 1.
 >
@@ -279,7 +279,7 @@
 
 > **Where to look:**
 >
-> * [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
+> * [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
 > * [SDD](./design/name_age_sdd.md) → `## 6. Program Logic and Control Flow`
 > * [Pseudocode](./design/name_age.pseudo) → the step that calculates the birth year
 >
@@ -291,7 +291,7 @@ User's approximate birth year =
 
 #### Expected Output
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
 >
 > **Prompt:** Record the expected output for Test 1.
 >
@@ -312,7 +312,7 @@ Expected output for Test 1:
 >
 > **Where to look:** Compare:
 >
-> * [SRS](./name_age_srs.md) → `## 1. Functional Requirements`
+> * [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`
 > * [SDD](./design/name_age_sdd.md) → `## 2. Solution Overview` through `## 6. Program Logic and Control Flow`
 > * [Flowchart](./design/name_age.drawio) → **Flowchart** page
 > * [Pseudocode](./design/name_age.pseudo) → **START name_age** through **END name_age**

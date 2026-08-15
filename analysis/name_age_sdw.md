@@ -40,7 +40,7 @@ Think about the solution as three basic parts:
 
 ### Inputs
 
-What information does the solution receive? 
+What information does the solution receive?
 
 * TODO: Identify an input and where it comes from.
 * TODO: Identify another input, if needed.
@@ -67,15 +67,22 @@ Does the output need to follow a particular format?
 
 * TODO: Record any required wording, spacing, formatting, or other output requirements.
 
-## 4. Requirements in My Own Words
+### 4. Requirements in My Own Words
 
-Review the important requirements in the SRS. For each one, briefly explain what it means **in your own words**.
+A few important requirements from the SRS are listed. For each one, explain **in your own words** what the requirement means.
 
-* **SRS requirement {{requirement_number}}:** {{TODO: What does this requirement mean?}}
-* **SRS requirement {{requirement_number}}:** {{TODO: What does this requirement mean?}}
-* **SRS requirement {{requirement_number}}:** {{TODO: What does this requirement mean?}}
+Do not copy the requirement. Focus on what the program must do. Again, it is important to use your own words rather than copying the SRS or asking AI to generate the answer. If you cannot clearly and concisely explain the requirement, you may not understand it and, thus, will not be able to construct correct Python code.
 
-{{Add or remove requirements as appropriate. Focus on understanding the requirements rather than copying the SRS.}}
+* **SRS requirement {{requirement_number}}:** {{requirement_text_or_short_label}}
+  * TODO: Explain what this requirement means in your own words.
+
+* **SRS requirement {{requirement_number}}:** {{requirement_text_or_short_label}}
+  * TODO: Explain what this requirement means in your own words.
+
+* **SRS requirement {{requirement_number}}:** {{requirement_text_or_short_label}}
+  * TODO: Explain what this requirement means in your own words.
+
+{{Include 2–4 selected requirements that are especially important for understanding the activity.}}
 
 ## 5. Plan the Solution
 

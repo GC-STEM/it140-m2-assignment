@@ -25,7 +25,7 @@
 
 ## Analyze Phase
 
-**SDLC progress:** [0 Start Here](../README.md) → **1 Analyze** → [2 Design](../design/README.md) → [3 Construct](../src/README.md) → [4 Test](../tests/README.md) → [5 Submit](https://learn.snhu.edu/)
+**SDLC progress:** [0 Start Here](./README.md) → **1 Analyze** → [2 Design](./design/README.md) → [3 Construct](./src/README.md) → [4 Test](./tests/README.md) → [5 Submit](https://learn.snhu.edu/)
 
 > During the Analyze phase, focus on **what the program must do**. Use the Software Requirements Specification (SRS) as your primary source.
 
@@ -33,7 +33,7 @@
 
 > Before completing the Analyze sections of this worksheet, review:
 >
-> * [ ] [Software Requirements Specification (SRS)](./name_age_srs.md)
+> * [ ] [Software Requirements Specification (SRS)](./analysis/name_age_srs.md)
 >   * `## 0. General Description`
 >   * `## 1. Functional Requirements`
 >   * `## 2. Nonfunctional Requirements`
@@ -48,7 +48,7 @@
 >
 > Do not copy the SRS or ask AI to generate your answer. You will use your understanding of the program's purpose when you write the documentation string (docstring) in your Python program.
 >
-> **Where to look:** [SRS](./name_age_srs.md) → `## 0. General Description`
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 0. General Description`
 >
 > **Prompt:** What is this program supposed to do for its user?
 >
@@ -66,7 +66,7 @@
 
 > Inputs are not limited to information a user types. They also include values the program obtains from system information or values it sets internally.
 >
-> **Where to look:** [SRS](./name_age_srs.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.1–1.4**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.1–1.4**
 >
 > **Prompt:** What information does the program receive or obtain? Identify each input or internally obtained value the program needs and where it comes from.
 >
@@ -74,7 +74,7 @@
 
 1. 
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.3**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.3**
 >
 > **Prompt:** For each input you listed above, what data type (e.g., string, integer, float)does each input need? If the SRS does not specify one, write **Not specified**.
 >
@@ -86,7 +86,7 @@
 
 > Processing describes what the program must do with its inputs to produce the desired output.
 >
-> **Where to look:** [SRS](./name_age_srs.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.3–1.4**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.3–1.4**
 >
 > **Prompt:** What must happen to the inputs before the program produces its output?
 >
@@ -98,7 +98,7 @@
 
 > Outputs are the information or results the program produces.
 >
-> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.5**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.5**
 >
 > **Prompt:** What information must the program produce, and where is it displayed?
 >
@@ -106,7 +106,7 @@
 
 1. 
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
 >
 > **Prompt:** Does the output need to follow a particular format? If so, describe the required format.
 >
@@ -122,7 +122,7 @@
 
 #### SRS Requirement 1.2 — Get the User's Age
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.2**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.2**
 >
 > **Prompt:** What does requirement 1.2 mean in your own words?
 >
@@ -132,7 +132,7 @@
 
 #### SRS Requirement 1.3 — Use the Age in an Arithmetic Calculation
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.3**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.3**
 >
 > **Prompt:** What does requirement 1.3 mean in your own words?
 >
@@ -142,7 +142,7 @@
 
 #### SRS Requirement 1.4 — Calculate the Approximate Birth Year
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
 >
 > **Prompt:** What does requirement 1.4 mean in your own words?
 >
@@ -152,7 +152,7 @@
 
 #### SRS Requirement 1.5 — Display the Personalized Result
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.5**
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.5**
 >
 > **Prompt:** What does requirement 1.5 mean in your own words?
 >
@@ -166,7 +166,7 @@
 
 #### Important Constraints
 
-> **Where to look:** [SRS](./name_age_srs.md) → `## 2. Nonfunctional Requirements`, `## 3. Technology Constraints`, and `## 4. Quality of Service Constraints`
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 2. Nonfunctional Requirements`, `## 3. Technology Constraints`, and `## 4. Quality of Service Constraints`
 >
 > **Prompt:** Identify two or three important constraints you need to remember when constructing or testing the program.
 >
@@ -178,7 +178,7 @@
 
 > An **edge case** uses an unusual or boundary value that can help reveal problems in a solution.
 >
-> **Where to look:** [SRS](./name_age_srs.md) → `## Acceptance Test Cases`, especially the tests identified as edge cases
+> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## Acceptance Test Cases`, especially the tests identified as edge cases
 >
 > **Prompt:** What edge cases will be used to test the program?
 >
@@ -196,11 +196,11 @@
 > * [ ] I identified important constraints and edge cases.
 > * [ ] I did not add requirements that are not stated in the SRS.
 >
-> When these checks are complete, continue to the [Design phase](../design/README.md).
+> When these checks are complete, continue to the [Design phase](./design/README.md).
 
 ## Design Phase
 
-**SDLC progress:** [0 Start Here](../README.md) → [1 Analyze](../analysis/README.md) → **2 Design** → [3 Construct](../src/README.md) → [4 Test](../tests/README.md) → [5 Submit](https://learn.snhu.edu/)
+**SDLC progress:** [0 Start Here](./README.md) → [1 Analyze](./analysis/README.md) → **2 Design** → [3 Construct](./src/README.md) → [4 Test](./tests/README.md) → [5 Submit](https://learn.snhu.edu/)
 
 > During the Design phase, focus on **how the program will meet the requirements**. The design has already been provided for you. Your job is to understand it well enough to use it when you construct the program.
 
@@ -208,14 +208,14 @@
 
 > Before completing the Design sections of this worksheet, review:
 >
-> * [ ] [Software Design Document (SDD)](../design/name_age_sdd.md)
+> * [ ] [Software Design Document (SDD)](./design/name_age_sdd.md)
 >   * `## 2. Solution Overview`
 >   * `## 4. Data Design`
 >   * `## 5. Interface and Input/Output Design`
 >   * `## 6. Program Logic and Control Flow`
 >   * `### 6.1 Main Processing Steps`
-> * [ ] [Flowchart](../design/name_age.drawio) → **Flowchart** page; follow the path from **Start** to **End**
-> * [ ] [Pseudocode](../design/name_age.pseudo) → read the algorithm from **START name_age** through **END name_age**
+> * [ ] [Flowchart](./design/name_age.drawio) → **Flowchart** page; follow the path from **Start** to **End**
+> * [ ] [Pseudocode](./design/name_age.pseudo) → read the algorithm from **START name_age** through **END name_age**
 >
 > Remember:
 >
@@ -234,8 +234,8 @@
 > **Where to look:**
 >
 > * [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.3**
-> * [Pseudocode](../design/name_age.pseudo)
-> * [Flowchart](../design/name_age.drawio)
+> * [Pseudocode](./design/name_age.pseudo)
+> * [Flowchart](./design/name_age.drawio)
 >
 > **Prompt:** What part of the design addresses this requirement? Briefly explain the connection.
 >
@@ -248,8 +248,8 @@
 > **Where to look:**
 >
 > * [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
-> * [Pseudocode](../design/name_age.pseudo)
-> * [Flowchart](../design/name_age.drawio)
+> * [Pseudocode](./design/name_age.pseudo)
+> * [Flowchart](./design/name_age.drawio)
 >
 > **Prompt:** What part of the design addresses this requirement? Briefly explain the connection.
 >
@@ -280,8 +280,8 @@
 > **Where to look:**
 >
 > * [SRS](./name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
-> * [SDD](../design/name_age_sdd.md) → `## 6. Program Logic and Control Flow`
-> * [Pseudocode](../design/name_age.pseudo) → the step that calculates the birth year
+> * [SDD](./design/name_age_sdd.md) → `## 6. Program Logic and Control Flow`
+> * [Pseudocode](./design/name_age.pseudo) → the step that calculates the birth year
 >
 > **Prompt:** Show the birth-year calculation using the Test 1 values.
 >
@@ -313,9 +313,9 @@ Expected output for Test 1:
 > **Where to look:** Compare:
 >
 > * [SRS](./name_age_srs.md) → `## 1. Functional Requirements`
-> * [SDD](../design/name_age_sdd.md) → `## 2. Solution Overview` through `## 6. Program Logic and Control Flow`
-> * [Flowchart](../design/name_age.drawio) → **Flowchart** page
-> * [Pseudocode](../design/name_age.pseudo) → **START name_age** through **END name_age**
+> * [SDD](./design/name_age_sdd.md) → `## 2. Solution Overview` through `## 6. Program Logic and Control Flow`
+> * [Flowchart](./design/name_age.drawio) → **Flowchart** page
+> * [Pseudocode](./design/name_age.pseudo) → **START name_age** through **END name_age**
 >
 > **Prompt:** Did you find any question, unclear requirement, or difference between the requirements and design? If everything is clear and consistent, enter **None**.
 >
@@ -329,14 +329,14 @@ Expected output for Test 1:
 
 > Your analysis and design notes will help you complete the provided Python starter file.
 >
-> Before continuing, open [`name_age.py`](../src/name_age.py) and notice how your SDW work connects to the starter code:
+> Before continuing, open [`name_age.py`](./src/name_age.py) and notice how your SDW work connects to the starter code:
 >
 > * Your **Program Purpose** notes will help with the first line of the module docstring.
 > * Your **Inputs, Processing, and Outputs** notes will help with the `Input:`, `Process:`, and `Output:` sections of the module docstring.
 > * Your **Plan the Solution** notes will help you understand the Step 1, Step 2, and Step 3 placeholders in `main()`.
 > * Your understanding of the **SRS requirements** will help you determine whether your completed code does what is required.
 >
-> **Where to look:** [Starter Code](../src/name_age.py) → the module docstring at the top of the file and the TODO comments inside `main()`
+> **Where to look:** [Starter Code](./src/name_age.py) → the module docstring at the top of the file and the TODO comments inside `main()`
 >
 > Before continuing to the Construct phase, make sure:
 >
@@ -347,7 +347,7 @@ Expected output for Test 1:
 > * [ ] I recorded or resolved anything that was unclear.
 > * [ ] I am ready to use the starter code to construct the program.
 >
-> When these checks are complete, continue to the [Construct phase](../src/README.md).
+> When these checks are complete, continue to the [Construct phase](./src/README.md).
 
 <!-- Scaffolding Notes
 

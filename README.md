@@ -90,7 +90,7 @@ In VS Code, select:
 You will use the integrated terminal in VS Code to create and clone your personal assignment repository.
 
 >[!IMPORTANT]
->Windows users must use a **PowerShell** or **Git Bash** terminal in VS Code to run the commands in this file. If you are using a Command Prompt (cmd.exe) terminal, they will not work correctly.
+>Windows users must use a **PowerShell** or **Git Bash** terminal in VS Code to run the commands in this file. A Command Prompt (cmd.exe) terminal will not work.
 
 ### 2. Confirm Your GitHub Account
 

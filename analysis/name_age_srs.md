@@ -90,10 +90,10 @@ The acceptance tests use the current calendar year so that the expected result c
 
 | Test | Requirement(s) | Current Year | User Input | Expected Result | Pass Criteria |
 | ---- | -------------- | -----------: | ---------- | --------------- | ------------- |
-| 1. Typical adult age | 1.1–1.5 | 2026 | Name: `Jordan`<br>Age: `25` | `Hello Jordan! You were born in 2001.` | The program accepts both inputs, calculates `2001`, and displays the expected personalized result. |
-| 2. Different adult name and age | 1.1–1.5 | 2026 | Name: `Casey`<br>Age: `42` | `Hello Casey! You were born in 1984.` | The program uses the entered values rather than values specific to Test 1 and displays the correct result. |
-| 3. Zero age edge case | 1.1–1.5 | 2026 | Name: `Morgan`<br>Age: `0` | `Hello Morgan! You were born in 2026.` | The program correctly performs the required calculation when the age is zero. |
-| 4. Negative age edge case | 1.1–1.5 | 2026 | Name: `Riley`<br>Age: `-5` | `Hello Riley! You were born in 2031.` | The program applies the required calculation to a negative integer without adding input-validation behavior that is not required by the assignment. |
-| 5. Age over 100 edge case | 1.1–1.5 | 2026 | Name: `Taylor`<br>Age: `105` | `Hello Taylor! You were born in 1921.` | The program correctly performs the required calculation for an age greater than 100. |
+| 1. Typical adult age | 1.1–1.5 | 2026 | Name: `Jordan`; Age: `25` | `Hello Jordan! You were born in 2001.` | The program accepts both inputs, calculates `2001`, and displays the expected personalized result. |
+| 2. Different adult name and age | 1.1–1.5 | 2026 | Name: `Casey`; Age: `42` | `Hello Casey! You were born in 1984.` | The program uses the entered values rather than values specific to Test 1 and displays the correct result. |
+| 3. Zero age edge case | 1.1–1.5 | 2026 | Name: `Morgan`; Age: `0` | `Hello Morgan! You were born in 2026.` | The program correctly performs the required calculation when the age is zero. |
+| 4. Negative age edge case | 1.1–1.5 | 2026 | Name: `Riley`; Age: `-5` | `Hello Riley! You were born in 2031.` | The program applies the required calculation to a negative integer without adding input-validation behavior that is not required by the assignment. |
+| 5. Age over 100 edge case | 1.1–1.5 | 2026 | Name: `Taylor`; Age: `105` | `Hello Taylor! You were born in 1921.` | The program correctly performs the required calculation for an age greater than 100. |
 
 Invalid-input test cases are not included because the assignment does not require the program to validate or recover from invalid user input.

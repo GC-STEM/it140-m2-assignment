@@ -1,23 +1,20 @@
-"""<Summarize the program's purpose in one line (<73 characters)>.
+"""TODO: Replace with a one-line summary of the program's purpose (<73 chars).
 
 Input:
-    <Describe data the program needs, including its type and source>.
+    TODO: Replace with a major input, including its type and source.
+    TODO: Replace with another major input, or delete this TODO line.
+    TODO: Replace with another major input, or delete this TODO line.
 
 Process:
-    <Describe how the program transforms input into output. Include
-    calculations, decisions, or other processing steps>.
+    TODO: Replace with a major processing step.
 
 Output:
-    <Describe what the program produces & how it is shown or saved>.
+    TODO: Replace with a major output, including its type and destination.
 
 Typical usage example:
-    <Show one sample set of normal input and expected output>.
-
-TODO: Replace <placeholder text> with your own text. This module docstring
-      must be 100% in your own words (i.e., original).
-       - Do NOT copy text or values from other sources.
-       - Do NOT use AI tools to generate this docstring.
-       - Delete this TODO section before submitting file to the D2L.
+    TODO: Replace with the input prompt and original name-input example.
+    TODO: Replace with the input prompt and original age-input example.
+    TODO: Replace with the resulting output from those inputs.
 """
 
 # === Imports ===
@@ -32,15 +29,15 @@ CURRENT_YEAR = date.today().year  # Get current year from system as integer
 def main() -> None:
     """Run the program."""
 
-    # <Step 1 of algorithm in a complete sentence>.
-    # TODO: Add code to get user's name. Review zyBooks 1.3, Basic input.
-    # TODO: Add code to get user's age as an integer. Review zyBooks 2.6.
+    # Get user input.
+    # TODO: Replace with code to get user's name as a string. See zyBooks 1.3.
+    # TODO: Replace with code to get user's age as an integer. See zyBooks 2.6.
 
-    # <Step 2 of algorithm in a complete sentence>.
-    # TODO: Add code to process data. Review zyBooks 1.16 and 1.17.
+    # Calculate user's approximate birth year.
+    # TODO: Replace with code to process data. See zyBooks 1.16 & 1.17.
 
-    # <Step 3 of algorithm in a complete sentence>.
-    # TODO: Add code to output results. Review zyBooks §1.3 & 2.7.
+    # Output personalized message with user's name and birth year.
+    # TODO: Replace with code to output formatted results. zyBooks 1.3 & 2.7.
 
 
 # === Main Guard ===
@@ -49,8 +46,5 @@ if __name__ == "__main__":
 
 
 # === References ===
-# TODO: Add reference entries for any additional sources you used in APA style,
-# including those in your IDE (e.g., code completion, genAI).
-
-# TODO: Delete all TODO and NOTE comment lines, including this one,
-# before submitting this file to the D2L Brightspace assignment drop box.
+# TODO: Replace with an APA-style reference for a source you used, or delete.
+# TODO: Replace with another APA-style reference, or delete this TODO line.

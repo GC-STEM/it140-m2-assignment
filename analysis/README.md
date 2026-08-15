@@ -19,10 +19,10 @@
 <!-- Artifact Metadata
 
 * Course: {{course number and title}}
-* Activity Title: {{activity number and title}} | {{sdlc_phase}}
-* Activity Type: {{activity type, grading status, and submission requirements}}
-* Activity Purpose: {{brief statement describing the purpose of the activity}}
-* Activity Description: {{student-facing description of what the activity covers, what students will do, and any relevant tools or environments}}
+* Artifact Title: {{activity number and title}} | {{sdlc_phase}}
+* Artifact Type: {{activity type, grading status, and submission requirements}}
+* Artifact Purpose: {{brief statement describing the purpose of the activity}}
+* Artifact Description: {{student-facing description of what the activity covers, what students will do, and any relevant tools or environments}}
 * Artifact Version: {{semantic version number}}
 * Artifact Date: {{artifact date in YYYY-MM-DD format}}
 * Development Status: {{development status}}

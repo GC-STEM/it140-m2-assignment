@@ -10,19 +10,25 @@ Use this worksheet as working notes while you move through the Software Developm
 
 ## 1. Document Review
 
-Before planning your solution, review the provided activity files:
+As you work through the SDLC, review the provided files for each phase and complete the relevant sections in this worksheet.
 
-* [ ] [Software Requirements Specification (SRS)](./name_age_srs.md) — describes what the program must do and includes the sample input and output (I/O) and acceptance test cases.
+### Analyze
 
-* [ ] [Software Design Document (SDD)](../design/name_age_sdd.md) — describes the planned solution.
+* [ ] [Software Requirements Specification (SRS)](./program_name_srs.md) — describes what the program must do and includes the sample input and output (I/O) and acceptance test cases.
 
-  * [ ] [Flowchart](../design/name_age.drawio) — shows the planned program logic visually.
+### Design
 
-  * [ ] [Pseudocode](../design/name_age.pseudo) — describes the planned program logic as step-by-step instructions.
+* [ ] [Software Design Document (SDD)](../design/program_name_sdd.md) — describes the planned solution.
+  * [ ] [Flowchart](../design/program_name.drawio) — shows the planned program logic visually.
+  * [ ] [Pseudocode](../design/program_name.pseudo) — describes the planned program logic as step-by-step instructions.
 
-* [ ] [Starter Code](../src/name_age.py) — provides the Python file you will complete during the Construct phase.
+### Construct
 
-* [ ] [Automated Tests](../tests/test_name_age.py) — provide tests you will use during the Test phase to check your completed program.
+* [ ] [Starter Code](../src/program_name.py) — provides the Python file you will complete.
+
+### Test
+
+* [ ] [Automated Tests](../tests/test_program_name.py) — provide tests you will use to check your completed program.
 
 {{Add, remove, or rename files as appropriate for the activity. Keep files grouped in the repository folder that corresponds to their SDLC phase.}}
 

@@ -3,10 +3,10 @@ START name_age
     SET CURRENT_YEAR = system date (year only)
 
     PUT "What is your name? "
-    GET user_name
+    GET user_name as a string
 
     PUT "How old are you? "
-    GET user_age
+    GET user_age as an integer
 
     SET birth_year = CURRENT_YEAR - user_age
 
@@ -16,7 +16,4 @@ END name_age
 
 
 # === References ===
-# TODO: Add reference entries  in APA style for any additional sources you used.
-
-# TODO: Delete unused sections and all 'TODO' comment lines, including this one,
-# before submitting this file for grading.
+# GitHub. (2026). GitHub Copilot inline suggestions [Generative artificial intelligence code-completion tool]. GitHub.

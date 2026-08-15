@@ -25,7 +25,7 @@ from datetime import date
 
 
 # === Constants ===
-CURRENT_YEAR: int = date.today().year  # Get current year from system
+CURRENT_YEAR = date.today().year  # Get current year from system as integer
 
 
 # === Main Function ===

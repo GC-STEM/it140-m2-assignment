@@ -40,7 +40,9 @@ Think about the solution as three basic parts:
 
 ### Inputs
 
-What information does the solution receive?
+What information does the solution receive or obtain?
+
+> **Remember:** Inputs are not limited to information a user types. They can also include data loaded from files or API calls and values the program obtains or sets internally, such as values stored in variables or constants.
 
 * TODO: Identify an input and where it comes from.
 * TODO: Identify another input, if needed.
@@ -67,7 +69,7 @@ Does the output need to follow a particular format?
 
 * TODO: Record any required wording, spacing, formatting, or other output requirements.
 
-### 4. Requirements in My Own Words
+## 4. Requirements in My Own Words
 
 A few important requirements from the SRS are listed. For each one, explain **in your own words** what the requirement means.
 

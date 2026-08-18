@@ -187,7 +187,7 @@ Follow the step-by-step instructions to complete `ide_features.md` using observa
 
 Save your files normally while you work in VS Code.
 
-Periodically commit and push your assignment work so your personal GitHub repository contains a current backup.
+Periodically commit and push your assignment work so your personal GitHub repository contains a current backup. You can do this using the Source Control tools in the VS Code user interface, or from the command line as described below.
 
 From the repository root in the VS Code integrated terminal, run:
 

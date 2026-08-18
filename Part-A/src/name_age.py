@@ -10,13 +10,11 @@ Process:
 
 Output:
     TODO: Replace with a major output, including its type and destination.
-
 Typical usage example:
     TODO: Replace with the input prompt and original name-input example.
     TODO: Replace with the input prompt and original age-input example.
     TODO: Replace with the resulting output from those inputs.
 """
-
 # === Imports ===
 from datetime import date
 
@@ -35,7 +33,6 @@ def main() -> None:
 
     # Calculate user's approximate birth year.
     # TODO: Replace with code to process data. See zyBooks 1.16 & 1.17.
-
     # Output personalized message with user's name and birth year.
     # TODO: Replace with code to output formatted results. zyBooks 1.3 & 2.7.
 

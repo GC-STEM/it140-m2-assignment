@@ -7,11 +7,10 @@ different location, change the path accordingly in the commands below.
 Open the integrated terminal in VS Code:
     Terminal > New Terminal
 
-Run the following commands in the integrated terminal.:
+Run:
     cd ~/Repos/it140-m2-assignment/Part-A
     python3 tests/test_name_age.py
 """
-
 # === Imports ===
 from datetime import date
 from pathlib import Path
@@ -38,7 +37,6 @@ class NameAgeAcceptanceTests(unittest.TestCase):
         )
 
         result = run_program(name, age)
-
         self.assertEqual(
             result.returncode,
             0,
@@ -83,6 +81,7 @@ def run_program(
         text=True,
         capture_output=True,
         check=False,
+        timeout=5,
     )
 
 

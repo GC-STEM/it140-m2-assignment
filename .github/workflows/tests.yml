@@ -1,0 +1,101 @@
+name: Assignment Checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Check assignment repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Determine repository mode
+        id: mode
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REPOSITORY" == "GC-STEM/it140-m2-assignment" ]]; then
+            echo "mode=starter" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=student" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install Ruff
+        run: |
+          python -m pip install --disable-pip-version-check "ruff==0.16.3"
+
+      - name: Check repository structure and artifacts
+        run: |
+          python .github/ci/check_repository.py \
+            --mode "${{ steps.mode.outputs.mode }}"
+
+      - name: Compile Python files
+        run: |
+          python -m py_compile \
+            Part-A/src/name_age.py \
+            Part-A/tests/test_name_age.py \
+            .github/ci/check_repository.py \
+            .github/ci/check_starter.py
+
+      - name: Run Ruff
+        run: |
+          python -m ruff check \
+            Part-A/src/name_age.py \
+            Part-A/tests/test_name_age.py \
+            .github/ci/check_repository.py \
+            .github/ci/check_starter.py \
+            --output-format=github
+
+      - name: Validate course starter
+        if: ${{ steps.mode.outputs.mode == 'starter' }}
+        run: python .github/ci/check_starter.py
+
+      - name: Run completed-program acceptance tests
+        if: ${{ steps.mode.outputs.mode == 'student' }}
+        run: |
+          python -m unittest discover \
+            -s Part-A/tests \
+            -p "test*.py" \
+            -v
+
+      - name: Write check summary
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          echo "## IT 140 Module Two repository checks" \
+            >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Repository mode: **${{ steps.mode.outputs.mode }}**" \
+            >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [[ "${{ steps.mode.outputs.mode }}" == "starter" ]]; then
+            echo "The course repository validates the starter files and" \
+              "provided assignment artifacts." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "A personal repository validates the provided files," \
+              "completed deliverables, and Part A acceptance tests." \
+              >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "These checks support development. D2L Brightspace remains" \
+            "the assignment submission and grading system." \
+            >> "$GITHUB_STEP_SUMMARY"

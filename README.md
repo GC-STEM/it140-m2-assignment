@@ -211,7 +211,28 @@ If Git reports that there is nothing to commit, your local files do not contain 
 > [!NOTE]
 > GitHub is used to develop and back up your work. **Assignment submission, grading, and instructor feedback remain in D2L Brightspace.**
 
-<!-- FUTURE: Add GitHub Actions / CI guidance here after automated checks are implemented. -->
+### 4. Review the Automated Repository Checks
+
+Each time you push changes to GitHub, the **Assignment Checks** workflow runs automatically in your personal repository.
+
+While you are still working, a red **X** can simply mean that one or more assignment files are not finished yet. As you complete and push your work, the checks will verify that:
+
+* The provided repository files are still present and unchanged.
+* The required non-code assignment artifacts are present and readable.
+* `Part-A/src/name_age.py` contains valid Python and passes the course Ruff checks.
+* The Part A starter TODO prompts have been replaced.
+* The Part B reflection no longer contains its starter placeholder text.
+* The completed Part A program passes the five provided acceptance tests.
+
+To review a check:
+
+1. Open your `it140-m2-assignment` repository on GitHub.
+2. Select **Actions**.
+3. Open the most recent **Assignment Checks** run.
+4. Open **Check assignment repository** to see which check passed or needs attention.
+
+> [!NOTE]
+> A green check means your repository passed these automated checks. It does **not** assign a grade, guarantee a particular grade, replace Sense feedback, or submit your assignment. Follow the official Module Two Assignment Guidelines and Rubric in D2L Brightspace for submission and grading requirements.
 
 ## Return to an Existing Assignment
 

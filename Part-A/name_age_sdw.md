@@ -323,7 +323,7 @@ Expected output for Test 1:
 
 1. 
 
-<!-- >> {{SME TODO: Add links to resources for students to ask questions or report issues.}} -->
+> If you cannot resolve a repository or course-IDE question, use the [Module Two Assignment GitHub Discussions](https://github.com/GC-STEM/it140-m2-assignment/discussions). Use [GitHub Issues](https://github.com/GC-STEM/it140-m2-assignment/issues) to report a technical problem with the provided repository files or tools. Contact your instructor through D2L Brightspace for questions about assignment requirements, grading, or feedback.
 
 ### 11. Ready to Construct
 

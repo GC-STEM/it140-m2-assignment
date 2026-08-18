@@ -132,7 +132,7 @@ The following command block will:
 6. Enter the cloned repository folder.
 7. Show the GitHub repository connected to your local copy.
 
-Copy the entire command block for your platform and paste it into the VS Code integrated terminal.
+Copy the entire command block and paste it into the VS Code integrated terminal.
 
 ```bash
 cd ~/Repos

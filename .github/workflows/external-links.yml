@@ -1,0 +1,34 @@
+name: External Links
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 11 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  external-links:
+    name: External links
+    if: >-
+      github.repository == 'GC-STEM/it140-m2-assignment' ||
+      github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Check Markdown links
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: >-
+            --root-dir "${{ github.workspace }}"
+            --include-fragments=anchor-only
+            --max-retries 2
+            --timeout 20
+            --no-progress
+            "./**/*.md"
+          fail: true

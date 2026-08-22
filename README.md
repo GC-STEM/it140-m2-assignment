@@ -123,6 +123,8 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
    ![Optional Codio Virtual Desktop page in D2L Brightspace](.github/assets/11_it140_ocvd_page.png)
 
+   > [!TIP] If you have updated your course IDE today, you can skip to [2. Open the VS Code Integrated Terminal](#2-open-the-vs-code-integrated-terminal).
+
 2. If you are on the Codio Virtual Desktop (CVD), expand the window to full screen.
 
    ![Codio Virtual Desktop (CVD) in full screen](.github/assets/12_it140_cvd_full_screen.png)

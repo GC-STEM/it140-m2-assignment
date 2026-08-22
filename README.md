@@ -134,21 +134,23 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
 ### 2. Open the VS Code Integrated Terminal
 
-1. Double-click the **VS Code** icon on the desktop to open Visual Studio Code. Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get to the **Welcome** pane in the center part of VS Code and **Repos** in the **Explorer** pane on the left, similar to the following image.
+1. Double-click the **VS Code** icon on the desktop to open Visual Studio Code.
+
+   ![Open Visual Studio Code](.github/assets/21_it140_m2_open_vscode.png)
+
+   Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get to the **Welcome** pane in the center part of VS Code and **Repos** in the **Explorer** pane on the left, similar to the following image.
 
    * If you see **Release Notes** or **Getting Started**, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
    * If you do not see the Welcome page, select **Help > Welcome** from the menu bar. **Help** may be hidden under the **...** menu on the right side of the menu bar.
    * If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
    * If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to, or an abbreviation for, your home folder.
 
-   ![Open Visual Studio Code](.github/assets/21_it140_m2_open_vscode.png)
-
-2. Open the integrated terminal in VS Code.
+3. Open the integrated terminal in VS Code.
    * **Keyboard** (Preferred): Press **Ctrl+\`** (backtick) on Windows or Linux, or **Cmd+\`** on macOS.
    * **Mouse**: Right-click in the Explorer pane and select **Open in Integrated Terminal**.
    * **Menu Bar**: Select **Terminal > New Terminal** from the menu bar. Note that **Terminal** may be hidden under the **...** menu on the right side of the menu bar.
 
-   ![Open VS Code's Integrated Terminal](.github/assets/22_it140_m2_vscode_terminal.png)
+   ![Open VS Code's Integrated Terminal](.github/assets/23_it140_m2_vscode_terminal.png)
 
    > [!NOTE] Notice how the integrated terminal opens to the current folder shown in the **Explorer** pane. If your terminal did not open to `~/Repos`, do not worry. We will change to the correct folder in the next step.
 

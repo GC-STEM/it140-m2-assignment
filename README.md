@@ -4,17 +4,17 @@
 
 * **Course:** IT 140 - *Introduction to Scripting*
 * **Activity:** 2-3 Module Two Assignment
-* **Activity Type:** Required, graded, with submissions
-* **Part A:** Name and Age Program
-* **Part B:** IDE Features Reflection
+* **Activity Type:** Required, graded, with two submissions
+  * **Part A:** Name and Age Program (`name_age.py`)
+  * **Part B:** IDE Features Reflection (`ide_features.md`)
 
 **Assignment progress:** **0 Start Here** → [1 Part A](./Part-A/README.md) → [2 Part B](./Part-B/README.md) → [3 Submit](#submit-your-assignment)
 
 ## Start With the Assignment Guidelines and Rubric
 
-Before using this repository, open the **Module Two Assignment Guidelines and Rubric** in [D2L Brightspace](https://learn.snhu.edu/).
+Before using this repository, open the **Module Two Assignment Guidelines and Rubric** in [D2L Brightspace](https://learn.snhu.edu/). To access it, select **Course Menu** on the NavBar, then **Learning Modules**, and then the **Assignment Information** learning module.
 
-Review the complete assignment, including:
+Review the complete assignment guidelines and rubric, including:
 
 * Overview
 * Prompt

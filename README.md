@@ -36,9 +36,9 @@ This repository contains the files you will use to complete both parts of the Mo
 > [!NOTE]
 > The **Codio Virtual Desktop (CVD) is the reference environment for IT 140**. If you completed the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) and use the CVD for this course, Git, GitHub CLI, VS Code, and the expected course repository configuration should already be available. We recommend all students use the CVD for coursework to minimize environment differences and troubleshooting issues.
 >
-> You may also complete this assignment on a supported local computer configured through the Module One Setup Tasks. Local environments can vary, so some commands or troubleshooting steps may differ.
+> You may also complete this assignment on a supported local computer configured through the [Module One Setup Tasks | Local](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/local). Local environments can vary, so some commands or troubleshooting steps may differ.
 
-You will create your **own personal GitHub repository** from this course repository template and clone your repository to the Codio Virtual Desktop (CVD) or your supported local computer.
+In your first coding assignment, you will create your **own personal GitHub repository** from this course repository template and clone your repository to the Codio Virtual Desktop (CVD) and/or your supported local computer.
 
 * Complete your assignment work
 * Save changes with Git
@@ -84,30 +84,96 @@ If you need to start over, see [Reset Your Assignment Repository](#reset-your-as
 
 ### 0. Complete the Module One Setup Tasks
 
-If you have not completed the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) on the Codio Virtual Desktop (CVD) or your local computer, do so now. Return here after completing those tasks.
+If you have not completed all the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) on the Codio Virtual Desktop (CVD), do so now. Return here after completing those tasks.
 
-### 1. Open the VS Code Integrated Terminal
+### 1. Launch and Update Your Course IDE
 
-In VS Code, select:
+1. Launch the Codio Virtual Desktop (CVD) or your local computer.
+   * If you bookmarked the Codio Virtual Desktop (CVD) in your browser, open it now.
+   * Otherwise, go to the **Start Here** learning module in [D2L Brightspace](https://learn.snhu.edu/) and click the **Optional Codio Virtual Desktop** web page and then the **Codio Learning Environment**.
 
-> **Terminal > New Terminal**
+   ![Optional Codio Virtual Desktop page in D2L Brightspace](.github/assets/11_it140_ocvd_page.png)
 
-You will use the integrated terminal in VS Code to create and clone your personal assignment repository.
+2. Expand the CVD window to full screen, if desired.
+
+   ![Codio Virtual Desktop (CVD) in full screen](.github/assets/12_it140_cvd_full_screen.png)
+
+3. If you have not updated your system today, open a terminal window and run the following command for your platform. This will update your course IDE. Be patient while the script runs. It may take a few minutes to complete.
+
+   * Codio Virtual Desktop (CVD) or other Linux terminal:
+
+      ```bash
+      update_it140.sh
+
+      ```
+
+   * MacOS:
+
+      ```bash
+      update_it140.zsh
+
+      ```
+
+   * Windows PowerShell:
+
+      ```powershell
+      update_it140.ps1
+
+      ```
+
+   ![Codio Virtual Desktop (CVD) update](.github/assets/13_it140_cvd_update.png)
+
+4. Review the output to confirm that the update completed successfully.
+   * Result: PASS
+   * Failures: 0
+   * Restart required: Yes or No
+   * If you see any errors, do not continue. Use the [Help and Support](#help-and-support) resources to resolve the issue before continuing.
+
+5. Type `exit` to close the terminal window when the update is complete. Restart your environment if required.
+   * On the CVD, click **RESTART VM**. Do NOT click **RESET VM**.
+
+### 2. Open the VS Code Integrated Terminal
+
+1. Double-click the **VS Code** icon on the desktop to open Visual Studio Code. Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get to the **Welcome** pane in the center part of VS Code and **Repos** in the **Explorer** pane on the left, similar to the following image.
+
+   * If you see **Release Notes** or **Getting Started**, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
+   * If you do not see the Welcome page, select **Help > Welcome** from the menu bar. **Help** may be hidden under the **...** menu on the right side of the menu bar.
+   * If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
+   * If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to, or an abbreviation for, your home folder.
+
+   ![Open Visual Studio Code](.github/assets/21_it140_m2_open_vscode.png)
+
+2. Open the integrated terminal in VS Code.
+   * **Keyboard** (Preferred): Press **Ctrl+\`** (backtick) on Windows or Linux, or **Cmd+\`** on macOS.
+   * **Mouse**: Right-click in the Explorer pane and select **Open in Integrated Terminal**.
+   * **Menu Bar**: Select **Terminal > New Terminal** from the menu bar. Note that **Terminal** may be hidden under the **...** menu on the right side of the menu bar.
+
+   ![Open VS Code's Integrated Terminal](.github/assets/22_it140_m2_vscode_terminal.png)
+
+   > [!NOTE] Notice how the integrated terminal opens to the current folder shown in the **Explorer** pane. If your terminal did not open to `~/Repos`, do not worry. We will change to the correct folder in the next step.
 
 > [!IMPORTANT]
-> Windows users must use a **PowerShell** or **Git Bash** terminal in VS Code to run the commands in this file. A Command (cmd.exe) terminal will not work.
+> Windows users must use a **Git Bash** or a **PowerShell** terminal in VS Code to run the commands in this repository. A Command (cmd.exe) terminal will not work.
+>
+> ![Git Bash in VS Code](.github/assets/22w_it140_m2_vscode_terminal_bash.png)
+> ![PowerShell in VS Code](.github/assets/22w_it140_m2_vscode_terminal_ps.png)
 
-### 2. Confirm Your GitHub Account
+### 3. Confirm Your GitHub Account
 
-1. Type the following command in the VS Code integrated terminal:
+1. Type or copy and paste the following command in the VS Code integrated terminal. Press **Enter** to run the command if it did not run automatically. This command checks which GitHub account is currently active in your GitHub CLI.:
 
-   `gh auth status`
+   ```bash
+   gh auth status
 
-2. Review the results and identify the **active account**.
+   ```
 
-   * **If your IT 140 GitHub account is listed but is not active**, continue to Step 2.3.
-   * **If your IT 140 GitHub account is not listed**, continue to Step 2.4.
-   * **If the correct IT 140 GitHub account is active**, continue to Step 2.6.
+   ![GitHub Auth Status](.github/assets/31_gh_auth_status.png)
+
+2. Review the "Logged in to github.com account:" and "Active account:" lines in the output.
+
+   * If your GitHub username is listed but active account is **false**, continue to Step 2.3.
+   * If your GitHub username is not listed, continue to Step 2.4.
+   * If the correct GitHub username is active and active account is **true**, continue to Step 2.6.
 
 3. If your IT 140 GitHub account is listed but is not active, type the following command, replacing `your-github-username` with your GitHub username:
 
@@ -119,7 +185,7 @@ You will use the integrated terminal in VS Code to create and clone your persona
 
    `gh auth login --web`
 
-   Follow the GitHub CLI prompts and sign in with the GitHub account you use for IT 140.
+   Follow the GitHub CLI prompts and sign in with the GitHub account you use on this platform.
 
 5. When sign-in is complete, return to Step 2.1 and check your account again.
 
@@ -129,7 +195,7 @@ You will use the integrated terminal in VS Code to create and clone your persona
 
 The following command block will:
 
-1. Go to your course `Repos` folder.
+1. Go to your course `~/Repos` folder.
 2. Configure Git to use your GitHub CLI authentication.
 3. Bookmark the original IT 140 assignment repository so it is easier to find again.
 4. Create your personal assignment repository in GitHub.
@@ -146,6 +212,7 @@ gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment
 gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
 cd it140-m2-assignment
 git remote -v
+
 ```
 
 Review the final output and confirm that the repository belongs to **your GitHub account**.

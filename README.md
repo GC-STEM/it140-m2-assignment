@@ -168,6 +168,7 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
    - Result: PASS
    - Failures: 0
    - Restart required: Yes or No
+   - Exit code: 0
    - If you see any errors, do not continue. Use the [Help and Support](#help-and-support) resources to resolve the issue before continuing.
 
 6. Type `exit` to close the terminal window when the update is complete. Restart your environment if required.

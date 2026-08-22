@@ -84,7 +84,7 @@ If you need to start over, see [Reset Your Assignment Repository](#reset-your-as
 
 ### 0. Complete the Module One Setup Tasks
 
-If you have not already completed the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) on the Codio Virtual Desktop (CVD) or your local computer, do so now. Return here after completing those tasks.
+If you have not completed the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) on the Codio Virtual Desktop (CVD) or your local computer, do so now. Return here after completing those tasks.
 
 ### 1. Open the VS Code Integrated Terminal
 

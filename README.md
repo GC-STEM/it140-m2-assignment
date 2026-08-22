@@ -138,12 +138,21 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
    ![Open Visual Studio Code](.github/assets/21_it140_m2_open_vscode.png)
 
-   Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get to the **Welcome** pane in the center part of VS Code and **Repos** in the **Explorer** pane on the left, similar to the following image.
+2. Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get to the **Welcome** pane in the center part of VS Code and **Repos** in the **Explorer** pane on the left, similar to the following image.
 
-   * If you see **Release Notes** or **Getting Started**, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
-   * If you do not see the Welcome page, select **Help > Welcome** from the menu bar. **Help** may be hidden under the **...** menu on the right side of the menu bar.
-   * If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
-   * If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to, or an abbreviation for, your home folder.
+   1. Show the **Welcome** page in the center of VS Code, if not visible already.
+
+      * If you see **Release Notes** or **Getting Started**, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
+
+      * If you do not see the Welcome page, select **Help > Welcome** from the menu bar. **Help** may be hidden under the **...** menu on the right side of the menu bar.
+
+   2. Show the **Explorer** pane on the left side of VS Code with the `~/Repos` folder open, if not visible already.
+
+     * If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
+
+     * If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to, or an abbreviation for, your home folder.
+
+   ![VS Code Welcome Page](.github/assets/22_vscode_welcome_repos.png)
 
 3. Open the integrated terminal in VS Code.
    * **Keyboard** (Preferred): Press **Ctrl+\`** (backtick) on Windows or Linux, or **Cmd+\`** on macOS.

@@ -203,13 +203,13 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
    ![Open VS Code's Integrated Terminal](.github/assets/23_it140_m2_vscode_terminal.png)
 
-   > [!NOTE] Notice how the integrated terminal opens to the current folder shown in the **Explorer** pane. If your terminal did not open to `~/Repos`, do not worry. We will change to the correct folder in the next step.
+   > *Note.* Notice how the integrated terminal opens to the current folder shown in the **Explorer** pane. If your terminal did not open to `~/Repos`, do not worry. We will change to the correct folder in the next step.
 
 > [!IMPORTANT]
 > Windows users must use a **Git Bash** or a **PowerShell** terminal in VS Code to run the commands in this repository. A Command (cmd.exe) terminal will not work.
 >
-> ![Git Bash in VS Code](.github/assets/22w_it140_m2_vscode_terminal_bash.png)
-> ![PowerShell in VS Code](.github/assets/22w_it140_m2_vscode_terminal_ps.png)
+> ![Git Bash in VS Code](.github/assets/23w_it140_m2_vscode_terminal_bash.png)
+> ![PowerShell in VS Code](.github/assets/23w_it140_m2_vscode_terminal_ps.png)
 
 ### 3. Confirm Your GitHub Account
 

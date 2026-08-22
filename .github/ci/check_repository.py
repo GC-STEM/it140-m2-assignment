@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import struct
 import subprocess
 import sys
 import tomllib
@@ -30,6 +31,7 @@ REQUIRED_FILES = (
     ".github/ISSUE_TEMPLATE/request-an-improvement.yml",
     ".github/ci/check_repository.py",
     ".github/ci/check_starter.py",
+    ".github/social-preview.png",
     ".github/workflows/tests.yml",
     ".vscode/settings.json",
     "Part-A/README.md",
@@ -336,6 +338,40 @@ def check_markdown_links(checks: Checks, mode: str) -> None:
         checks.note("Local links in provided Markdown files resolve.")
 
 
+def check_social_preview(checks: Checks) -> None:
+    """Check the repository social-preview PNG signature, size, and ratio."""
+    path = REPO_ROOT / ".github/social-preview.png"
+    data = path.read_bytes()
+
+    if len(data) > 1_048_576:
+        checks.error(".github/social-preview.png must remain under 1 MiB.")
+        return
+
+    if len(data) < 24 or data[:8] != b"\x89PNG\r\n\x1a\n":
+        checks.error(".github/social-preview.png is not a valid PNG file.")
+        return
+
+    width, height = struct.unpack(">II", data[16:24])
+    if width < 640 or height < 320:
+        checks.error(
+            "Social preview dimensions are unexpectedly small: "
+            f"{width}x{height}."
+        )
+        return
+
+    ratio = width / height
+    if not 1.9 <= ratio <= 2.1:
+        checks.error(
+            "Social preview should remain approximately 2:1; "
+            f"found {width}x{height}."
+        )
+        return
+
+    checks.note(
+        f"Social preview is valid ({width}x{height}, {len(data)} bytes)."
+    )
+
+
 def check_reflection_structure(checks: Checks, mode: str) -> None:
     """Validate the Part B reflection template or student completion."""
     text = read_text("Part-B/ide_features.md")
@@ -477,6 +513,7 @@ def main() -> None:
     check_drawio(checks)
     check_pseudocode(checks)
     check_markdown_links(checks, args.mode)
+    check_social_preview(checks)
     check_reflection_structure(checks, args.mode)
 
     if args.mode == "student":

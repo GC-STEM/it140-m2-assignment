@@ -2,13 +2,42 @@
 
 # IT 140 Module Two Assignment
 
-* **Course:** IT 140 - *Introduction to Scripting*
-* **Activity:** 2-3 Module Two Assignment
-* **Activity Type:** Required, graded, with two submissions
-  * **Part A:** Name and Age Program (`name_age.py`)
-  * **Part B:** IDE Features Reflection (`ide_features.md`)
+- **Course:** IT 140 - *Introduction to Scripting*
+- **Activity:** 2-3 Module Two Assignment
+- **Activity Type:** Required, graded, with two submissions
+  - **Part A:** Name and Age Program (`name_age.py`)
+  - **Part B:** IDE Features Reflection (`ide_features.md`)
 
 **Assignment progress:** **0 Start Here** → [1 Part A](./Part-A/README.md) → [2 Part B](./Part-B/README.md) → [3 Submit](#submit-your-assignment)
+
+## Table of Contents
+
+- [IT 140 Module Two Assignment](#it-140-module-two-assignment)
+  - [Table of Contents](#table-of-contents)
+  - [Start With the Assignment Guidelines and Rubric](#start-with-the-assignment-guidelines-and-rubric)
+  - [About This Repository](#about-this-repository)
+  - [1. Set Up Your Personal Assignment Repository](#1-set-up-your-personal-assignment-repository)
+    - [0. Complete the Module One Setup Tasks](#0-complete-the-module-one-setup-tasks)
+    - [1. Launch and Update Your Course IDE](#1-launch-and-update-your-course-ide)
+    - [2. Open the VS Code Integrated Terminal](#2-open-the-vs-code-integrated-terminal)
+    - [3. Confirm Your GitHub Account](#3-confirm-your-github-account)
+    - [3. Create and Clone Your Personal Repository](#3-create-and-clone-your-personal-repository)
+    - [4. Open Your Assignment Repository in VS Code](#4-open-your-assignment-repository-in-vs-code)
+  - [Complete the Assignment](#complete-the-assignment)
+    - [1. Complete Part A](#1-complete-part-a)
+    - [2. Complete Part B](#2-complete-part-b)
+    - [3. Save Your Work to GitHub](#3-save-your-work-to-github)
+    - [4. Review the Automated Repository Checks](#4-review-the-automated-repository-checks)
+  - [Return to an Existing Assignment](#return-to-an-existing-assignment)
+  - [Reset Your Assignment Repository](#reset-your-assignment-repository)
+    - [Restore Your Local Copy From GitHub](#restore-your-local-copy-from-github)
+      - [CVD, Linux, macOS, or Git Bash on Windows](#cvd-linux-macos-or-git-bash-on-windows)
+      - [Windows PowerShell](#windows-powershell)
+    - [Start Over From the Original Course Template](#start-over-from-the-original-course-template)
+      - [CVD, Linux, macOS, or Git Bash for Windows](#cvd-linux-macos-or-git-bash-for-windows)
+      - [Windows PowerShell Commands](#windows-powershell-commands)
+  - [Help and Support](#help-and-support)
+  - [Submit Your Assignment](#submit-your-assignment)
 
 ## Start With the Assignment Guidelines and Rubric
 
@@ -16,12 +45,12 @@ Before using this repository, open the **Module Two Assignment Guidelines and Ru
 
 Review the complete assignment guidelines and rubric, including:
 
-* Overview
-* Prompt
-  * Part A
-  * Part B
-* What to Submit
-* Assignment Rubric
+- Overview
+- Prompt
+  - Part A
+  - Part B
+- What to Submit
+- Assignment Rubric
 
 The **Module Two Assignment Guidelines and Rubric** is the official source for assignment requirements, grading criteria, and submission requirements.
 
@@ -40,11 +69,11 @@ This repository contains the files you will use to complete both parts of the Mo
 
 In your first coding assignment, you will create your **own personal GitHub repository** from this course repository template and clone your repository to the Codio Virtual Desktop (CVD) and/or your supported local computer.
 
-* Complete your assignment work
-* Save changes with Git
-* Push your work to GitHub for backup
-* Continue working from your own copy of the assignment
-* Use automated repository checks when they are available
+- Complete your assignment work
+- Save changes with Git
+- Push your work to GitHub for backup
+- Continue working from your own copy of the assignment
+- Use automated repository checks when they are available
 
 The main assignment folders are:
 
@@ -68,13 +97,13 @@ it140-m2-assignment/
 >
 > For this assignment, your work should be limited to:
 >
-> * [`Part-A/name_age_sdw.md`](./Part-A/name_age_sdw.md) — Software Development Worksheet working notes
-> * [`Part-A/src/name_age.py`](./Part-A/src/name_age.py) — Part A program
-> * [`Part-B/ide_features.md`](./Part-B/ide_features.md) — Part B IDE Features Reflection
+> - [`Part-A/name_age_sdw.md`](./Part-A/name_age_sdw.md) — Software Development Worksheet working notes
+> - [`Part-A/src/name_age.py`](./Part-A/src/name_age.py) — Part A program
+> - [`Part-B/ide_features.md`](./Part-B/ide_features.md) — Part B IDE Features Reflection
 >
 > Leave the READMEs, SRS, SDD, flowchart, pseudocode, tests, and other provided files unchanged.
 
-## Set Up Your Personal Assignment Repository
+## 1. Set Up Your Personal Assignment Repository
 
 Complete these steps **only once** before beginning the assignment.
 
@@ -89,32 +118,42 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 ### 1. Launch and Update Your Course IDE
 
 1. Launch the Codio Virtual Desktop (CVD) or your local computer.
-   * If you bookmarked the Codio Virtual Desktop (CVD) in your browser, open it now.
-   * Otherwise, go to the **Start Here** learning module in [D2L Brightspace](https://learn.snhu.edu/) and click the **Optional Codio Virtual Desktop** web page and then the **Codio Learning Environment**.
+   - If you bookmarked the Codio Virtual Desktop (CVD) in your browser, open it now.
+   - Otherwise, go to the **Start Here** learning module in [D2L Brightspace](https://learn.snhu.edu/) and click the **Optional Codio Virtual Desktop** web page and then the **Codio Learning Environment**.
 
    ![Optional Codio Virtual Desktop page in D2L Brightspace](.github/assets/11_it140_ocvd_page.png)
 
-2. Expand the CVD window to full screen, if desired.
+2. If on the Codio Virtual Desktop (CVD), expand the window to full screen.
 
    ![Codio Virtual Desktop (CVD) in full screen](.github/assets/12_it140_cvd_full_screen.png)
 
+3. Organize your desktop so you can view the instructions in this README file and a terminal window at the same time.
+
+   1. Point a web browser to: `https://github.com/GC-STEM/it140-m2-assignment`, if not already open.
+
+   2. Resize the web browser window to take up one side of the screen, as shown.
+
+   3. Open and resize a terminal window on the other side of the screen, as shown.
+
+   ![Organize your desktop to view the browser and terminal side by side](.github/assets/14_it140_cvd_browser_position.png)
+
 3. If you have not updated your system today, open a terminal window and run the following command for your platform. This will update your course IDE. Be patient while the script runs. It may take a few minutes to complete.
 
-   * Codio Virtual Desktop (CVD) or other Linux terminal:
+   - Codio Virtual Desktop (CVD) or other Linux terminal:
 
       ```bash
       update_it140.sh
 
       ```
 
-   * MacOS:
+   - MacOS:
 
       ```bash
       update_it140.zsh
 
       ```
 
-   * Windows PowerShell:
+   - Windows PowerShell:
 
       ```powershell
       update_it140.ps1
@@ -124,13 +163,13 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
    ![Codio Virtual Desktop (CVD) update](.github/assets/13_it140_cvd_update.png)
 
 4. Review the output to confirm that the update completed successfully.
-   * Result: PASS
-   * Failures: 0
-   * Restart required: Yes or No
-   * If you see any errors, do not continue. Use the [Help and Support](#help-and-support) resources to resolve the issue before continuing.
+   - Result: PASS
+   - Failures: 0
+   - Restart required: Yes or No
+   - If you see any errors, do not continue. Use the [Help and Support](#help-and-support) resources to resolve the issue before continuing.
 
 5. Type `exit` to close the terminal window when the update is complete. Restart your environment if required.
-   * On the CVD, click **RESTART VM**. Do NOT click **RESET VM**.
+   - On the CVD, click **RESTART VM**. Do NOT click **RESET VM**.
 
 ### 2. Open the VS Code Integrated Terminal
 
@@ -142,22 +181,22 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
    1. Show the **Welcome** page in the center of VS Code, if not visible already.
 
-      * If you see **Release Notes** or **Getting Started**, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
+      - If you see **Release Notes** or **Getting Started**, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
 
-      * If you do not see the Welcome page, select **Help > Welcome** from the menu bar. **Help** may be hidden under the **...** menu on the right side of the menu bar.
+      - If you do not see the Welcome page, select **Help > Welcome** from the menu bar. **Help** may be hidden under the **...** menu on the right side of the menu bar.
 
    2. Show the **Explorer** pane on the left side of VS Code with the `~/Repos` folder open, if not visible already.
 
-     * If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
+     - If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
 
-     * If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to, or an abbreviation for, your home folder.
+     - If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to, or an abbreviation for, your home folder.
 
    ![VS Code Welcome Page](.github/assets/22_vscode_welcome_repos.png)
 
 3. Open the integrated terminal in VS Code.
-   * **Keyboard** (Preferred): Press **Ctrl+\`** (backtick) on Windows or Linux, or **Cmd+\`** on macOS.
-   * **Mouse**: Right-click in the Explorer pane and select **Open in Integrated Terminal**.
-   * **Menu Bar**: Select **Terminal > New Terminal** from the menu bar. Note that **Terminal** may be hidden under the **...** menu on the right side of the menu bar.
+   - **Keyboard** (Preferred): Press **Ctrl+\`** (backtick) on Windows or Linux, or **Cmd+\`** on macOS.
+   - **Mouse**: Right-click in the Explorer pane and select **Open in Integrated Terminal**.
+   - **Menu Bar**: Select **Terminal > New Terminal** from the menu bar. Note that **Terminal** may be hidden under the **...** menu on the right side of the menu bar.
 
    ![Open VS Code's Integrated Terminal](.github/assets/23_it140_m2_vscode_terminal.png)
 
@@ -182,9 +221,9 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
 2. Review the "Logged in to github.com account:" and "Active account:" lines in the output.
 
-   * If your GitHub username is listed but active account is **false**, continue to Step 2.3.
-   * If your GitHub username is not listed, continue to Step 2.4.
-   * If the correct GitHub username is active and active account is **true**, continue to Step 2.6.
+   - If your GitHub username is listed but active account is **false**, continue to Step 2.3.
+   - If your GitHub username is not listed, continue to Step 2.4.
+   - If the correct GitHub username is active and active account is **true**, continue to Step 2.6.
 
 3. If your IT 140 GitHub account is listed but is not active, type the following command, replacing `your-github-username` with your GitHub username:
 
@@ -284,10 +323,10 @@ git push
 
 These commands:
 
-* Show which files have changed.
-* Stage only the student working and deliverable files for this assignment.
-* Create a Git commit containing those changes.
-* Push the commit to your personal GitHub repository.
+- Show which files have changed.
+- Stage only the student working and deliverable files for this assignment.
+- Create a Git commit containing those changes.
+- Push the commit to your personal GitHub repository.
 
 If Git reports that there is nothing to commit, your local files do not contain any new changes that need to be saved to GitHub.
 
@@ -300,12 +339,12 @@ Each time you push changes to GitHub, the **Assignment Checks** workflow runs au
 
 While you are still working, a red **X** can simply mean that one or more assignment files are not finished yet. As you complete and push your work, the checks will verify that:
 
-* The provided repository files are still present and unchanged.
-* The required non-code assignment artifacts are present and readable.
-* `Part-A/src/name_age.py` contains valid Python and passes the course Ruff checks.
-* The Part A starter TODO prompts have been replaced.
-* The Part B reflection no longer contains its starter placeholder text.
-* The completed Part A program passes the five provided acceptance tests.
+- The provided repository files are still present and unchanged.
+- The required non-code assignment artifacts are present and readable.
+- `Part-A/src/name_age.py` contains valid Python and passes the course Ruff checks.
+- The Part A starter TODO prompts have been replaced.
+- The Part B reflection no longer contains its starter placeholder text.
+- The completed Part A program passes the five provided acceptance tests.
 
 To review a check:
 
@@ -425,12 +464,12 @@ The README files contain the instructions you need to complete each part of the 
 
 The repository Wiki provides supplemental information about topics such as:
 
-* Using the Module Two Assignment repository
-* The simplified software development life cycle
-* Working with Markdown files
-* Using VS Code features
-* Git and GitHub workflows
-* Testing and troubleshooting
+- Using the Module Two Assignment repository
+- The simplified software development life cycle
+- Working with Markdown files
+- Using VS Code features
+- Git and GitHub workflows
+- Testing and troubleshooting
 
 <!-- FUTURE: Replace with direct Wiki page links when the Module Two Assignment Wiki is published. -->
 
@@ -448,12 +487,12 @@ Read the Guidelines and Rubric again before submitting your work.
 
 Confirm that:
 
-* You completed all required Part A work.
-* You completed all required Part B work.
-* Your work meets the grading rubric criteria.
-* You are submitting the correct files and file formats.
-* Your final files are saved.
-* Your latest work is backed up in your personal GitHub repository.
+- You completed all required Part A work.
+- You completed all required Part B work.
+- Your work meets the grading rubric criteria.
+- You are submitting the correct files and file formats.
+- Your final files are saved.
+- Your latest work is backed up in your personal GitHub repository.
 
 Follow the **What to Submit** instructions in the Module Two Assignment Guidelines and Rubric to submit your assignment in D2L Brightspace.
 
@@ -463,13 +502,13 @@ Do not submit working files, provided design documents, test files, README files
 
 <!-- Artifact Metadata
 
-* Course: IT 140 - Introduction to Scripting
-* Artifact Title: 2-3 Module Two Assignment | Start Here
-* Artifact Type: Required assignment guidance and repository workflow
-* Artifact Purpose: Guide students from the official D2L assignment requirements through personal GitHub repository setup, Parts A and B, backup, recovery, and final D2L submission.
-* Artifact Description: Students review the official Guidelines and Rubric, create a personal repository from the course template, complete Parts A and B in VS Code, save work to GitHub, and return to D2L Brightspace to submit the required assignment files.
-* Artifact Version: {{semantic version number}}
-* Artifact Date: {{artifact date in YYYY-MM-DD format}}
-* Development Status: {{development status}}
+- Course: IT 140 - Introduction to Scripting
+- Artifact Title: 2-3 Module Two Assignment | Start Here
+- Artifact Type: Required assignment guidance and repository workflow
+- Artifact Purpose: Guide students from the official D2L assignment requirements through personal GitHub repository setup, Parts A and B, backup, recovery, and final D2L submission.
+- Artifact Description: Students review the official Guidelines and Rubric, create a personal repository from the course template, complete Parts A and B in VS Code, save work to GitHub, and return to D2L Brightspace to submit the required assignment files.
+- Artifact Version: {{semantic version number}}
+- Artifact Date: {{artifact date in YYYY-MM-DD format}}
+- Development Status: {{development status}}
 
 -->

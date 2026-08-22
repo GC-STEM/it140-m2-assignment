@@ -32,14 +32,18 @@ SOURCE_TODO_MARKERS = (
 )
 
 REFLECTION_MARKERS = (
-    "Your introduction text here.",
-    "## Feature 1 – Name of Feature1",
-    "Your feature 1 text here.",
-    "## Feature 2 – Name of Feature2",
-    "Your feature 2 text here.",
-    "## Feature 3 – Name of Feature3",
-    "Your feature 3 text here.",
-    "Your conclusion text here.",
+    "TODO: Replace with your introduction text here.",
+    "TODO: Replace with name of your Feature1",
+    "TODO: Replace with your feature 1 text here.",
+    "TODO: Replace with name of your Feature2",
+    "TODO: Replace with your feature 2 text here.",
+    "TODO: Replace with name of your Feature3",
+    "TODO: Replace with your feature 3 text here.",
+    "TODO: Replace with your conclusion text here.",
+    (
+        "TODO: Replace with your source citations here in APA style, if any. "
+        "Delete section heading and this text if not used."
+    ),
 )
 
 

@@ -213,7 +213,7 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
 ### 3. Confirm Your GitHub Account
 
-1. Type or copy and paste the following command in the VS Code integrated terminal. Press **Enter** to run the command if it did not run automatically. This command checks which GitHub account is currently active in your GitHub CLI.:
+1. Type or click the copy button below and paste the following command in the VS Code integrated terminal. Press **Enter** to run the command if it did not run automatically. This command checks which GitHub account is currently active in your GitHub CLI.:
 
    ```bash
    gh auth status

@@ -123,21 +123,21 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
    ![Optional Codio Virtual Desktop page in D2L Brightspace](.github/assets/11_it140_ocvd_page.png)
 
-2. If on the Codio Virtual Desktop (CVD), expand the window to full screen.
+2. If you are on the Codio Virtual Desktop (CVD), expand the window to full screen.
 
    ![Codio Virtual Desktop (CVD) in full screen](.github/assets/12_it140_cvd_full_screen.png)
 
 3. Organize your desktop so you can view the instructions in this README file and a terminal window at the same time.
 
-   1. Point a web browser to: `https://github.com/GC-STEM/it140-m2-assignment`, if not already open.
+   1. Point a web browser to: `https://github.com/GC-STEM/it140-m2-assignment`, if not there already.
 
-   2. Resize the web browser window to take up one side of the screen, as shown.
+   2. Resize the web browser window to take up one side of the screen, as shown. Scroll down to find the place where you left off in this README file.
 
    3. Open and resize a terminal window on the other side of the screen, as shown.
 
-   ![Organize your desktop to view the browser and terminal side by side](.github/assets/14_it140_cvd_browser_position.png)
+   ![Organize your desktop to view the browser and terminal side by side](.github/assets/13_it140_cvd_terminal_browser.png)
 
-3. If you have not updated your system today, open a terminal window and run the following command for your platform. This will update your course IDE. Be patient while the script runs. It may take a few minutes to complete.
+4. If you have not updated your system today, open a terminal window and run the following command for your platform. This will update your course IDE. Be patient while the script runs. It may take a few minutes to complete.
 
    - Codio Virtual Desktop (CVD) or other Linux terminal:
 
@@ -160,15 +160,15 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
       ```
 
-   ![Codio Virtual Desktop (CVD) update](.github/assets/13_it140_cvd_update.png)
+   ![Codio Virtual Desktop (CVD) update](.github/assets/14_it140_cvd_update.png)
 
-4. Review the output to confirm that the update completed successfully.
+5. Review the output to confirm that the update completed successfully.
    - Result: PASS
    - Failures: 0
    - Restart required: Yes or No
    - If you see any errors, do not continue. Use the [Help and Support](#help-and-support) resources to resolve the issue before continuing.
 
-5. Type `exit` to close the terminal window when the update is complete. Restart your environment if required.
+6. Type `exit` to close the terminal window when the update is complete. Restart your environment if required.
    - On the CVD, click **RESTART VM**. Do NOT click **RESET VM**.
 
 ### 2. Open the VS Code Integrated Terminal

@@ -10,6 +10,8 @@
 >
 > Your notes do not need to be formal or polished. Keep your answers brief and write them in your own words. The purpose of the SDW is to help you understand the requirements and provided design before you begin constructing your program.
 >
+> Look for **TODO** comments in the SDW. Replace them with your own answers. Do not leave any **TODO** comments in your final SDW.
+>
 > **This worksheet is not a deliverable.** Do not submit it in D2L Brightspace for grading.
 
 ## How to Use This Worksheet
@@ -54,7 +56,7 @@
 >
 > Enter your response below.
 
-
+Replace this text with your one-sentence summary of the program's purpose.
 
 ### 3. Inputs, Processing, and Outputs
 
@@ -72,7 +74,7 @@
 >
 > Enter your response below. Use a separate numbered bullet for each input.
 
-1. 
+1. TODO: Replace with your first input and its source (e.g., user input, system value, internal value).
 
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.3**
 >
@@ -80,7 +82,7 @@
 >
 > Enter your response below. Use a separate numbered bullet for each input.
 
-1. 
+1. TODO: Replace with your first input and its data type (e.g., string, integer, float, Not specified).
 
 #### IPO: Processing
 
@@ -92,7 +94,7 @@
 >
 > Enter a brief description in your own words below. Use a separate numbered bullet for each process.
 
-1. 
+1. TODO: Replace with your first processing step in your own words.
 
 #### IPO: Outputs
 
@@ -104,7 +106,7 @@
 >
 > Enter your response below. Use a separate numbered bullet for each output.
 
-1. 
+1. TODO: Replace with your first output and where it is displayed (e.g., console, file, GUI).
 
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
 >
@@ -112,7 +114,7 @@
 >
 > Enter your response below. Use a separate numbered bullet for each output format.
 
-1. 
+1. TODO: Replace with your first output format.
 
 ### 4. Requirements in My Own Words
 
@@ -128,7 +130,7 @@
 >
 > Enter your response below in your own words.
 
-
+Replace this text with your explanation of requirement 1.2 in your own words.
 
 #### SRS Requirement 1.3 — Use the Age in an Arithmetic Calculation
 
@@ -136,9 +138,9 @@
 >
 > **Prompt:** What does requirement 1.3 mean in your own words?
 >
-> Enter your response below in your own words..
+> Enter your response below in your own words.
 
-
+Replace this text with your explanation of requirement 1.3 in your own words.
 
 #### SRS Requirement 1.4 — Calculate the Approximate Birth Year
 
@@ -148,7 +150,7 @@
 >
 > Enter your response below.
 
-
+Replace this text with your explanation of requirement 1.4 in your own words.
 
 #### SRS Requirement 1.5 — Display the Personalized Result
 
@@ -158,7 +160,7 @@
 >
 > Enter your response below.
 
-
+Replace this text with your explanation of requirement 1.5 in your own words.
 
 ### 5. Constraints and Special Cases
 
@@ -172,7 +174,7 @@
 >
 > Enter your response below. Use a separate numbered bullet for each constraint.
 
-1. 
+1. TODO: Replace with your first important constraint.
 
 #### Special or Edge Cases
 
@@ -184,7 +186,7 @@
 >
 > Enter your response below. Use a separate numbered bullet for each edge case.
 
-1. 
+1. TODO: Replace with your first edge case.
 
 ### 6. Analyze Checkpoint
 
@@ -241,7 +243,7 @@
 >
 > Enter your response below.
 
-
+Replace this text with your explanation of how the design addresses requirement 1.3.
 
 #### SRS Requirement 1.4
 
@@ -255,7 +257,7 @@
 >
 > Enter your response below.
 
-
+Replace this text with your explanation of how the design addresses requirement 1.4.
 
 ### 9. Check the Plan With an Example
 
@@ -271,9 +273,9 @@
 >
 > Enter your response below.
 
-* Current year: 
-* User name: 
-* User age: 
+* Current year: TODO: Replace with the current year from Test 1.
+* User name: TODO: Replace with the user name from Test 1.
+* User age: TODO: Replace with the user age from Test 1.
 
 #### Test Processing
 
@@ -287,7 +289,7 @@
 >
 > Enter your calculation below.
 
-User's approximate birth year = 
+User's approximate birth year = TODO: Replace with the calculation using the Test 1 values (e.g., current year - user age).
 
 #### Expected Output
 
@@ -321,7 +323,7 @@ Expected output for Test 1:
 >
 > Enter your response below. Use a separate numbered bullet for each question or unclear item.
 
-1. 
+1. TODO: Replace with your first question or unclear item, or enter **None** if everything is clear.
 
 > If you cannot resolve a repository or course-IDE question, use the [Module Two Assignment GitHub Discussions](https://github.com/GC-STEM/it140-m2-assignment/discussions). Use [GitHub Issues](https://github.com/GC-STEM/it140-m2-assignment/issues) to report a technical problem with the provided repository files or tools. Contact your instructor through D2L Brightspace for questions about assignment requirements, grading, or feedback.
 

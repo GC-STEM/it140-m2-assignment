@@ -180,13 +180,13 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
    ![Open Visual Studio Code](.github/assets/21_it140_m2_open_vscode.png)
 
-2. Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get to the **Welcome** pane in the center part of VS Code and **Repos** in the **Explorer** pane on the left, similar to the following image.
+2. Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get to the **Welcome** pane on the left two-thirds of the VS Code window and **Explorer** with **Repos** on the left third, similar to the following image.
 
-   1. Show the **Welcome** page in the center of VS Code, if not visible already.
+   1. Show the **Welcome** pane on the left two-thirds of VS Code, if not visible already.
 
-      - If you see **Release Notes** or **Getting Started**, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
+      - If you see **Release Notes**, **Getting Started**, or other tab on top, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
 
-      - If you do not see the Welcome page, select **Help > Welcome** from the menu bar. **Help** may be hidden under the **...** menu on the right side of the menu bar.
+      - If you do not see the Welcome page, select **Help > Welcome** from the menu bar. Depending on the size of your window, you may need to click the hamburger icon in the upper left to show the menu. Or, the **Help** menu may be hidden under the **...** menu on the right side of the menu bar.
 
    2. Show the **Explorer** pane on the left side of VS Code with the `~/Repos` folder open, if not visible already.
 

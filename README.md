@@ -2,7 +2,7 @@
 
 # IT 140 Module Two Assignment
 
-**Assignment progress:** **1 Setup** → [2 Part A](./Part-A/README.md) → [3 Part B](./Part-B/README.md) → [4 Submit](#4-submit-your-assignment)
+**Assignment progress:** **[1. Setup](./README.md#1-setup-the-assignment)** → [2. Part A](./Part-A/README.md) → [3. Part B](./Part-B/README.md) → [4. Submit](./README.md#4-submit-your-assignment)
 
 - **Course:** IT 140 - *Introduction to Scripting*
 - **Activity:** 2-3 Module Two Assignment

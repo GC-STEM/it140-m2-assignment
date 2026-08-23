@@ -211,11 +211,11 @@ Professional Python source files still use a predictable organization and blank 
 
 ### 6. Recognize the Main Function
 
-Most of the code you write for this activity goes inside:
+All the code you write for this activity goes inside:
 
 ```python
 def main() -> None:
-    """Run the program."""
+    """Run the name-age program."""
 ```
 
 The first line defines a function named `main()`. The second line is a docstring that describes what the function does. The `-> None` indicates that this function does not return a value. Do not change the `main()` definition or its docstring.

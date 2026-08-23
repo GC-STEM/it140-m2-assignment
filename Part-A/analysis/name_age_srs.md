@@ -10,9 +10,9 @@
 
 The `name_age` program is a simple Python program that asks the user for their name and age. The program calculates the user's approximate birth year and displays a personalized message containing the user's name and calculated birth year.
 
-For this simplified introductory program, the birth year is calculated by subtracting the user's age from the current calendar year.
+For this simplified introductory program, the birth year is calculated by subtracting the user's age from the current calendar year. The program does not ask for the user's exact birthdate or if they have had their birthdate this year.
 
-This SRS describes the requirements for the `name_age.py` programming deliverable.
+This SRS describes the requirements and constraints for the `name_age.py` programming deliverable. Requirements include both functional (what the program must do) and nonfunctional (how the program must be structured or behave). Constraints focus on technology and quality expectations.
 
 ## 1. Functional Requirements
 
@@ -28,13 +28,13 @@ The program shall:
 
 * [Output] **1.5** Display a personalized result using the user's name and calculated birth year in this format:
 
-  `Hello {name}! You were born in {birth_year}.`
+  `Hello {name}! You were born in {year}.`
 
 ## 2. Nonfunctional Requirements
 
 The program shall:
 
-* [Code Quality] **2.1** Follow the programming best practices introduced in zyBooks, including appropriate variable names, whitespace, and comments.
+* [Code Quality] **2.1** Follow the programming best practices introduced in zyBooks 1.5: Style guidelines, including appropriate variable names, whitespace, and comments.
 
 * [Code Quality] **2.2** Use appropriate Python statements without unnecessary code, steps, or procedures.
 
@@ -62,7 +62,7 @@ No input-validation, security, or performance requirements are specified for thi
 
 ## Sample Input and Output
 
-The birth year depends on the current calendar year when the program runs. The example below assumes that the current year is **2026**.
+The birth year depends on the current calendar year when the program runs. The example below assumes that the current year is **2026**. Do **NOT** hardcode the current year in your program. 
 
 User-entered values appear after each program prompt.
 

@@ -26,7 +26,7 @@ CURRENT_YEAR = date.today().year  # Get current year from system as integer
 
 # === Main Function ===
 def main() -> None:
-    """Run the program."""
+    """Run the name-age program."""
 
     # Get user input.
     # TODO: Replace with code to get user's name as a string. See zyBooks 1.3.

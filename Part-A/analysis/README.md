@@ -12,11 +12,11 @@ You will review the program requirements, expected input and output, and accepta
 
 ## Deliverable
 
-**This phase does not produce a deliverable.**
+**This phase starts on one ungraded deliverable.**
 
-You will use the [`name_age_sdw.md`](../name_age_sdw.md) Software Development Worksheet as working notes throughout the Analyze and Design phases. **Do not submit the SDW in D2L Brightspace for grading.**
+You will use the [`name_age_sdw.md`](../name_age_sdw.md) Software Development Worksheet as working notes throughout the Analyze and Design phases. Submit the SDW in D2L Brightspace to "show your work" on your program .
 
-Your Python program, `name_age.py`, will be the Part A programming deliverable you complete later during the Construct phase.
+Your Python program, `name_age.py`, will be the Part A graded deliverable you complete later during the Construct phase.
 
 ## What You Will Use
 

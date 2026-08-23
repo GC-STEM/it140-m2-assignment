@@ -56,8 +56,7 @@
 >
 > Enter your response below.
 
-Replace this text with your one-sentence summary of the program's purpose.
-
+TODO: Replace this text with your one-sentence summary of the program's purpose
 ### 3. Inputs, Processing, and Outputs
 
 > Think about the solution as three basic parts:
@@ -140,7 +139,7 @@ Replace this text with your explanation of requirement 1.2 in your own words.
 >
 > Enter your response below in your own words.
 
-Replace this text with your explanation of requirement 1.3 in your own words.
+TODO: Replace this text with your explanation of requirement 1.3 in your own words.
 
 #### SRS Requirement 1.4 — Calculate the Approximate Birth Year
 
@@ -160,7 +159,7 @@ Replace this text with your explanation of requirement 1.4 in your own words.
 >
 > Enter your response below.
 
-Replace this text with your explanation of requirement 1.5 in your own words.
+TODO: Replace this text with your explanation of requirement 1.5 in your own words.
 
 ### 5. Constraints and Special Cases
 
@@ -243,7 +242,7 @@ Replace this text with your explanation of requirement 1.5 in your own words.
 >
 > Enter your response below.
 
-Replace this text with your explanation of how the design addresses requirement 1.3.
+TODO: Replace this text with your explanation of how the design addresses requirement 1.3.
 
 #### SRS Requirement 1.4
 
@@ -257,7 +256,7 @@ Replace this text with your explanation of how the design addresses requirement 
 >
 > Enter your response below.
 
-Replace this text with your explanation of how the design addresses requirement 1.4.
+TODO: Replace this text with your explanation of how the design addresses requirement 1.4.
 
 ### 9. Check the Plan With an Example
 

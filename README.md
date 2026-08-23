@@ -16,9 +16,10 @@
   - [Table of Contents](#table-of-contents)
   - [0. Meet the Prerequisites](#0-meet-the-prerequisites)
   - [1. Setup the Assignment](#1-setup-the-assignment)
-  - [2. Complete the Assignment](#2-complete-the-assignment)
-  - [3. Submit Your Assignment](#3-submit-your-assignment)
-  - [4. Get Help and Support](#4-get-help-and-support)
+  - [2. Complete Part A](#2-complete-part-a)
+  - [3. Complete Part B](#3-complete-part-b)
+  - [4. Submit Your Assignment](#4-submit-your-assignment)
+  - [5. Get Help and Support](#5-get-help-and-support)
 
 ## 0. Meet the Prerequisites
 
@@ -56,7 +57,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
 7. Review the output of the last command. You should see two lines that look like this:
 
-## 2. Complete the Assignment
+## 2. Complete Part A
 
 1. In a terminal window, copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
 
@@ -64,35 +65,39 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     code ~/Repos/it140-m2-assignment
     ```
 
-2. Right-click the `README.md` file in the **Explorer** pane of VS Code and choose **Open to the side**. This will open a clean, formatted view of this same README file in VS Code.
+2. In the **Explorer** pane of VS Code
+   1. Click **> it140-m2-assignment** to expand the folder.
+   2. Click **> Part-A** to expand the folder.
 
-3. Click on the **> Part-A** folder in the **Explorer** pane of VS Code to expand it so you see its contents.
+3. Right-click on the `Part-A/README.md` file and select **Open to the Side**.
 
-4. Click [here](./Part-A/README.md) to open the `Part-A/README.md`.
+4. You will now follow instructions in the `Part-A/README.md` file. When ready, maximize the VS Code window.
 
-    1. Click anywhere in the **Welcome** tab of VS Code to make it active.
-    2. In the **Explorer** pane of VS Code, expand the `Part-A` folder.
-    3. 
-    4. Follow the step-by-step instructions to complete the `name_age.py` program.
-    5. When done, 
+## 3. Complete Part B
 
-## 3. Submit Your Assignment
+1. In a terminal window, copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
 
-After completing Part A and Part B, return to the *Module Two Assignment Guidelines and Rubric* in [D2L Brightspace](https://learn.snhu.edu/).
+    ```bash
+    code ~/Repos/it140-m2-assignment
+    ```
 
-Confirm that:
+2. In the **Explorer** pane of VS Code
+   1. Click **> it140-m2-assignment** to expand the folder.
+   2. Click **> Part-B** to expand the folder.
 
-- You completed all required Part A work.
-- You completed all required Part B work.
-- Your work meets the grading rubric criteria.
-- You are submitting the correct files and file formats.
-- Your final files are saved.
-- Your latest work is backed up in your personal GitHub repository.
+3. Right-click on the `Part-B/README.md` file and select **Open to the Side**.
 
-Follow the **What to Submit** instructions in the *Module Two Assignment Guidelines and Rubric* to submit your assignment in D2L Brightspace.
+4. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window if not already maximized.
 
-Do not submit working files, provided design documents, test files, README files, or your GitHub repository unless the Module Two Assignment Guidelines and Rubric specifically instruct you to do so.
+## 4. Submit Your Assignment
 
-**GitHub does not submit your assignment for grading.**
+In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the **Course Menu** and select **Assignments**. Click on the **2-3 Assignment: Software Development Introduction** link. Follow the instructions to submit your assignment. You will submit the following files as one submission:
 
-## 4. Get Help and Support
+- Graded files:
+  - [`name_page.py`](./Part-A/src/name_page.py)
+  - [`ide_features.md`](./Part-B/ide_features.md)
+
+- Ungraded files:
+  - [`name_age_sdw.md`](./Part-A/name_age_sdw.md)
+
+## 5. Get Help and Support

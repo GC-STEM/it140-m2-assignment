@@ -49,13 +49,11 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 5. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
    - If `Failures` is greater than `0`, review the [**Get Help and Support**](#5-get-help-and-support) section.
    - If `Restart required: No`, type `exit` and press **Enter** to close the terminal window.
-   - If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar. 
+   - If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar and wait for the CVD to restart.
 
-  ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
+   ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
-1. 
-
-2. Copy the following command block and paste it into a new terminal window. Press **Enter** to run.
+6. Open a new terminal window and copy the following command block and paste it into the new terminal window. Press **Enter** to run.
 
     ```bash
     cd ~/Repos 
@@ -66,7 +64,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     git remote -v
     ```
 
-3. Review the output of the last command. You should see two lines that look like this:
+7. Review the output of the last command. You should see two lines that look like this:
 
 ## 2. Complete Part A
 

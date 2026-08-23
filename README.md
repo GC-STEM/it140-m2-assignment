@@ -98,7 +98,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Open Part-A README to the Side in VS Code](./.github/assets/25_vscode_explorer_open_side.png)
 
-6. You will now follow instructions in the `Part-A/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window.
+6. You will now follow instructions in the `Part-A/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window. Look for the green box in the previous screenshot.
 
 ## 3. Complete Part B
 
@@ -124,7 +124,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Open Part-B README to the Side in VS Code](./.github/assets/35_vscode_explorer_open_side.png)
 
-6. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window right above it.
+6. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window right above it. Look for the green box in the previous screenshot.
 
 ## 4. Submit Your Assignment
 

@@ -41,13 +41,14 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Terminal and browser window in split screen](./.github/assets/13_split_screen_terminal_browser.png)
 
-4. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. Be patient. It may take a few miunutes to complete. If using a local computer, use the appropriate script extension for your operating system:
+4. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. Be patient. It may take a few minutes to complete. If using a local computer, use the appropriate script extension for your operating system:
    - Windows: `update_it140.ps1`
    - macOS  : `update_it140.zsh`
    - Linux  : `update_it140.sh`
 
-5. Review the output of the update script. Look for:
-   1. If you see any errors, please contact your instructor for assistance.
+5. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message. If `Failures` is greater than `0`, review the [**Get Help and Support**](#5-get-help-and-support) section for assistance.
+
+  ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
 6. Copy the following command block and paste it into a new terminal window. Press **Enter** to run.
 

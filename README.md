@@ -53,7 +53,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
-6. Open a new terminal window and copy the following command block and paste it into the new terminal window. Press **Enter** to run.
+6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button.Press **Enter** to run the commands.
 
     ```bash
     cd ~/Repos 
@@ -64,7 +64,9 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     git remote -v
     ```
 
-7. Review the output of the last command. You should see two lines that look like this:
+7. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
+
+  ![Git remote output](./.github/assets/17_gh_repo_setup.png)
 
 ## 2. Complete Part A
 

@@ -31,7 +31,7 @@
 
 We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system.
 
-1. Launch the CVD now and carry out the remaining instructions from within the CVD.
+1. Launch the CVD now and carry out the remaining instructions from within the CVD. For a refresher on how to do this, review the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd)
 
 2. Open a browser and point it to the [Module Two Assignment Repository](https://github.com/GC-STEM/it140-m2-assignment).
 

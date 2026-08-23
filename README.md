@@ -281,7 +281,14 @@ The following command block will:
 Now open the repository you just cloned. In VS Code:
 
 1. Select **File > Open Folder**.
-2. Open `~/Repos/it140-m2-assignment`.
+   - Remember that **File** may be hidden under the hamburger icon.
+
+2. Open `~/Repos/it140-m2-assignment`. It is within the `Repos` folder.
+   - Remember that `~` is a shortcut to your home folder.
+   - Click the **Select** button to open the folder.
+
+   ![Open Folder in VS Code](.github/assets/52_vscode_open_folder.png)
+
 3. Confirm that `it140-m2-assignment` is the top-level folder shown in the Explorer.
 
 You are now working in your personal copy of the Module Two Assignment.

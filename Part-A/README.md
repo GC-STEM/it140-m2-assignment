@@ -27,16 +27,15 @@ The Software Requirements Specification (SRS), Software Design Document (SDD), f
 
 Start with the [Software Development Worksheet (SDW)](./name_age_sdw.md). The SDW will guide you through the **Analyze** and **Design** phases and tell you exactly which provided documents and sections to review.
 
-Then complete Part A in this order:
+Then complete Part A in this order. Click on the SDLC phase below to see the instructions for that phase.:
 
-1. **Analyze** — Complete the Analyze sections of the [SDW](./name_age_sdw.md) following the [Analyze Phase instructions](./analysis/README.md)
+1. [Analyze](./analysis/README.md) — Complete the Analyze sections of the SDW first.
 
-2. **Design** — Continue in the same SDW to understand how the provided design meets the requirements. Follow the
-   [Design Phase instructions](./design/README.md)
+2. [Design](./design/README.md) — Continue in the same SDW to understand how the provided design meets the requirements. 
 
-3. **Construct** — Complete only the `TODO:` lines in the provided [`name_age.py`](./src/name_age.py) starter file. Follow the [Construct Phase instructions](./src/README.md).
+3. [Construct](./src/README.md) — Complete the `TODO:` lines in the provided `name_age.py` starter file.
 
-4. **Test** — Check your completed program and correct any problems before submission. Follow the [Test Phase instructions](./tests/README.md).
+4. [Test](./tests/README.md) — Check your completed program and correct any problems before submission. 
 
 ## Help and Support
 

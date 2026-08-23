@@ -12,33 +12,31 @@ In Part A, you will complete the `name_age` Python program using a simplified So
 
 The requirements, design, starter code, and tests are provided. Your job is to understand the provided materials, complete the starter program, and check that your program works as required.
 
-## Deliverable
+## Deliverables
 
-**Part A produces one deliverable:** [`name_age.py`](./src/name_age.py)
+Part A produces two deliverables:
 
-You will complete this Python file during the Construct phase. **Do not submit it yet.** You will submit the completed Part A and Part B deliverables together in D2L Brightspace after finishing both parts of the assignment.
+   1. Graded: [`name_age.py`](./src/name_age.py)
+   2. Ungraded: [Software Development Worksheet (SDW)](./name_age_sdw.md)
 
-The Software Development Worksheet (SDW), SRS, SDD, flowchart, pseudocode, and test files are working or reference materials. **Do not submit them for grading.**
+You will work on the SDW in the Analysis and Design phases and complete the Python (`.py`) file during the Construct phase of the Software Development Life Cycle (SDLC).
+
+The Software Requirements Specification (SRS), Software Design Document (SDD), flowchart, pseudocode, and test files are reference materials. **Do not submit them for grading and feedback.**
 
 ## Start Part A
 
-Start with the [Software Development Worksheet (SDW)](./name_age_sdw.md).
-
-The SDW will guide you through the **Analyze** and **Design** phases and tell you exactly which provided documents and sections to review.
+Start with the [Software Development Worksheet (SDW)](./name_age_sdw.md). The SDW will guide you through the **Analyze** and **Design** phases and tell you exactly which provided documents and sections to review.
 
 Then complete Part A in this order:
 
-1. **Analyze** — Complete the Analyze sections of the [SDW](./name_age_sdw.md) using the provided requirements.
-   [Analyze Phase instructions](./analysis/README.md)
+1. **Analyze** — Complete the Analyze sections of the [SDW](./name_age_sdw.md) following the [Analyze Phase instructions](./analysis/README.md)
 
-2. **Design** — Continue in the same SDW to understand how the provided design meets the requirements.
+2. **Design** — Continue in the same SDW to understand how the provided design meets the requirements. Follow the
    [Design Phase instructions](./design/README.md)
 
-3. **Construct** — Complete only the `TODO:` lines in the provided [`name_age.py`](./src/name_age.py) starter file.
-   [Construct Phase instructions](./src/README.md)
+3. **Construct** — Complete only the `TODO:` lines in the provided [`name_age.py`](./src/name_age.py) starter file. Follow the [Construct Phase instructions](./src/README.md).
 
-4. **Test** — Check your completed program and correct any problems before moving on.
-   [Test Phase instructions](./tests/README.md)
+4. **Test** — Check your completed program and correct any problems before submission. Follow the [Test Phase instructions](./tests/README.md).
 
 ## Help and Support
 

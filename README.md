@@ -96,23 +96,33 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Open Part-A README to the Side in VS Code](./.github/assets/25_vscode_explorer_open_side.png)
 
-6. You will now follow instructions in the `Part-A/README.md` file. When ready, maximize the VS Code window.
+6. You will now follow instructions in the `Part-A/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window.
 
 ## 3. Complete Part B
 
-1. In a terminal window, copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
+1. Launch the CVD and carry out the remaining instructions from within the CVD.
+
+2. Open a terminal window. Copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
 
     ```bash
     code ~/Repos/it140-m2-assignment
     ```
 
-2. In the **Explorer** pane of VS Code
-   1. Click **> it140-m2-assignment** to expand the folder.
-   2. Click **> Part-B** to expand the folder.
+3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window.
 
-3. Right-click on the `Part-B/README.md` file and select **Open to the Side**.
+   ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
-4. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window if not already maximized.
+4. In the **Explorer** pane of VS Code"
+   1. Click **> it140-m2-assignment** to expand the folder, if needed.
+   2. Click **> Part-B** to expand the folder, if needed.
+
+   ![Expand Part-B folder in VS Code](./.github/assets/34_vscode_explorer_expand.png)
+
+5. Right-click on the `Part-B/README.md` file and select **Open to the Side**.
+
+   ![Open Part-B README to the Side in VS Code](./.github/assets/35_vscode_explorer_open_side.png)
+
+6. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window.
 
 ## 4. Submit Your Assignment
 

@@ -289,7 +289,11 @@ Now open the repository you just cloned. In VS Code:
 
    ![Open Folder in VS Code](.github/assets/52_vscode_open_folder.png)
 
-3. Confirm that `it140-m2-assignment` is the top-level folder shown in the Explorer.
+3. Confirm that `it140-m2-assignment` is the top-level folder shown in the Explorer. Look for the name of the repository in the:
+   - VS Code title bar
+   - The top level of the Explorer pane.
+
+   ![VS Code Explorer Pane with it140-m2-assignment open](.github/assets/53_it140_vscode_m2_folder.png)
 
 You are now working in your personal copy of the Module Two Assignment.
 

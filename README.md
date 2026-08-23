@@ -82,13 +82,17 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     code ~/Repos/it140-m2-assignment
     ```
 
-3. In the **Explorer** pane of VS Code
-   1. Click **> it140-m2-assignment** to expand the folder.
-   2. Click **> Part-A** to expand the folder.
+3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window.
 
-4. Right-click on the `Part-A/README.md` file and select **Open to the Side**.
+   ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
-5. You will now follow instructions in the `Part-A/README.md` file. When ready, maximize the VS Code window.
+4. In the **Explorer** pane of VS Code
+   1. Click **> it140-m2-assignment** to expand the folder, if needed.
+   2. Click **> Part-A** to expand the folder, if needed.
+
+5. Right-click on the `Part-A/README.md` file and select **Open to the Side**.
+
+6. You will now follow instructions in the `Part-A/README.md` file. When ready, maximize the VS Code window.
 
 ## 3. Complete Part B
 

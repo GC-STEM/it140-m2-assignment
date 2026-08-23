@@ -1,8 +1,8 @@
 <!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
 
-# IT 140 Module Two Assignment | Start Here
+# IT 140 Module Two Assignment
 
-**Assignment progress:** **0 Start Here** → [1 Part A](./Part-A/README.md) → [2 Part B](./Part-B/README.md) → [3 Submit](#4-submit-your-assignment)
+**Assignment progress:** **1 Setup** → [2 Part A](./Part-A/README.md) → [3 Part B](./Part-B/README.md) → [4 Submit](#4-submit-your-assignment)
 
 - **Course:** IT 140 - *Introduction to Scripting*
 - **Activity:** 2-3 Module Two Assignment
@@ -12,7 +12,7 @@
 
 ## Table of Contents
 
-- [IT 140 Module Two Assignment | Start Here](#it-140-module-two-assignment--start-here)
+- [IT 140 Module Two Assignment](#it-140-module-two-assignment)
   - [Table of Contents](#table-of-contents)
   - [0. Meet the Prerequisites](#0-meet-the-prerequisites)
   - [1. Setup the Assignment](#1-setup-the-assignment)

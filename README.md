@@ -41,7 +41,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Terminal and browser window in split screen](./.github/assets/13_split_screen_terminal_browser.png)
 
-4. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. If using a local computer, use the appropriate script extension for your operating system:
+4. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. Be patient. It may take a few miunutes to complete. If using a local computer, use the appropriate script extension for your operating system:
    - Windows: `update_it140.ps1`
    - macOS  : `update_it140.zsh`
    - Linux  : `update_it140.sh`

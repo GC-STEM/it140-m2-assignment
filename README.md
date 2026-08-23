@@ -173,9 +173,9 @@ If you have not completed the [Module One Setup Tasks](https://github.com/GC-STE
 
    2. Show the **Explorer** pane on the left side of VS Code with the `~/Repos` folder open, if not visible already.
 
-     - If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
+      - If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
 
-     - If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to your home folder.
+      - If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to your home folder.
 
    ![VS Code Welcome Page](.github/assets/22_vscode_welcome_repos.png)
 
@@ -192,7 +192,7 @@ If you have not completed the [Module One Setup Tasks](https://github.com/GC-STE
    > *Note.* Notice how the integrated terminal opens to the current folder shown in the **Explorer** pane. If your terminal did not open to `~/Repos`, do not worry. We will change to the correct folder in the next step.
 
 > [!IMPORTANT]
-> Windows users must use a **Git Bash** terminal in VS Code to run the commands in this repository. PowerShell (PS) and Command (cmd.exe) terminals may not work reliably or at all. 
+> Windows users must use a **Git Bash** terminal in VS Code to run the commands in this repository. PowerShell (PS) and Command (cmd.exe) terminals may not work reliably or at all. A Git Bash terminal should look similar to the following image. If you do not see **Git Bash** in the terminal dropdown menu, use the [Help and Support](#help-and-support) resources to resolve the issue before continuing.
 >
 > ![Git Bash in VS Code](.github/assets/23w_it140_m2_vscode_terminal_bash.png)
 
@@ -267,6 +267,10 @@ The following command block will:
    ```
 
 2. In the VS Code terminal pane, right-click at the end of the command prompt and select **Paste** from the popup menu. Press **Enter** to run the commands.
+
+   ![VS Code Terminal Paste](.github/assets/42a_vscode_terminal_paste.png)
+
+   ![VS Code Terminal Run](.github/assets/42b_vscode_terminal_run.png)
 
 3. Review the final output and confirm that the repository belongs to **your GitHub account**.
 

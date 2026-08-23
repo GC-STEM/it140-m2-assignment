@@ -39,10 +39,11 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
 4. Arrange your screen so that you can see both this browser and the terminal window at the same time.
 
-5. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. If using a local computer, type the appropriate update script name for your operating system:
-   - Windows: `update_it140.ps1`
-   - macOS  : `update_it140.zsh`
-   - Linux  : `update_it140.sh`
+5. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version.
+   If using a local computer, type the appropriate update script extension for your operating system:
+      - Windows: `update_it140.ps1`
+      - macOS  : `update_it140.zsh`
+      - Linux  : `update_it140.sh`
 
 6. Copy the following command block and paste it into a new terminal window. Press **Enter** to run.
 

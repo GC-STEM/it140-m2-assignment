@@ -84,7 +84,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     code ~/Repos/it140-m2-assignment
     ```
 
-3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window.
+3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window right above it.
 
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
@@ -124,7 +124,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Open Part-B README to the Side in VS Code](./.github/assets/35_vscode_explorer_open_side.png)
 
-6. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window.
+6. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window right above it.
 
 ## 4. Submit Your Assignment
 

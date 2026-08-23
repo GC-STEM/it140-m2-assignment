@@ -86,11 +86,15 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
-4. In the **Explorer** pane of VS Code
+4. In the **Explorer** pane of VS Code"
    1. Click **> it140-m2-assignment** to expand the folder, if needed.
    2. Click **> Part-A** to expand the folder, if needed.
 
+   ![Expand Part-A folder in VS Code](./.github/assets/24_vscode_explorer_expand.png)
+
 5. Right-click on the `Part-A/README.md` file and select **Open to the Side**.
+
+   ![Open Part-A README to the Side in VS Code](./.github/assets/25_vscode_explorer_open_side.png)
 
 6. You will now follow instructions in the `Part-A/README.md` file. When ready, maximize the VS Code window.
 

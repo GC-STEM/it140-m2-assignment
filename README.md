@@ -2,13 +2,13 @@
 
 # IT 140 Module Two Assignment | Start Here
 
+**Assignment progress:** **0 Start Here** → [1 Part A](./Part-A/README.md) → [2 Part B](./Part-B/README.md) → [3 Submit](#4-submit-your-assignment)
+
 - **Course:** IT 140 - *Introduction to Scripting*
 - **Activity:** 2-3 Module Two Assignment
 - **Activity Type:** Required, graded, with two submissions
   - **Part A:** Name and Age Program (`name_age.py`)
   - **Part B:** IDE Features Reflection (`ide_features.md`)
-
-**Assignment progress:** **0 Start Here** → [1 Part A](./Part-A/README.md) → [2 Part B](./Part-B/README.md) → [3 Submit](#4-submit-your-assignment)
 
 ## Table of Contents
 

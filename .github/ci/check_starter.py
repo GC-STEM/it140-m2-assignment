@@ -12,6 +12,8 @@ SOURCE_PATH = REPO_ROOT / "Part-A/src/name_age.py"
 TEST_PATH = REPO_ROOT / "Part-A/tests/test_name_age.py"
 REFLECTION_PATH = REPO_ROOT / "Part-B/ide_features.md"
 
+EXPECTED_MAIN_DOCSTRING = "Run the name-age program."
+
 EXPECTED_TEST_CASES = {
     "test_1_typical_adult_age": ("Jordan", 25),
     "test_2_different_adult_name_and_age": ("Casey", 42),
@@ -25,10 +27,20 @@ SOURCE_TODO_MARKERS = (
     "TODO: Replace with a major input",
     "TODO: Replace with a major processing step",
     "TODO: Replace with a major output",
+    "TODO: Replace with the input prompt and original name-input example.",
+    "TODO: Replace with the input prompt and original age-input example.",
+    "TODO: Replace with the resulting output from those inputs.",
     "TODO: Replace with code to get user's name",
     "TODO: Replace with code to get user's age",
     "TODO: Replace with code to process data",
     "TODO: Replace with code to output formatted results",
+)
+
+MODULE_DOCSTRING_MARKERS = (
+    "Input:",
+    "Process:",
+    "Output:",
+    "Typical usage example:",
 )
 
 REFLECTION_MARKERS = (
@@ -60,7 +72,9 @@ class StarterChecks:
     def finish(self) -> None:
         """Print results and exit nonzero when starter checks fail."""
         if not self.errors:
-            print("PASS: Course starter structure is intentionally incomplete.")
+            print(
+                "PASS: Course starter structure is intentionally incomplete."
+            )
             print("PASS: Acceptance test definitions are intact.")
             print("PASS: Part B reflection starter text is intact.")
             return
@@ -92,6 +106,17 @@ def check_source(checks: StarterChecks) -> None:
     for marker in SOURCE_TODO_MARKERS:
         if marker not in text:
             checks.error(f"Starter source is missing marker: {marker!r}")
+
+    module_docstring = ast.get_docstring(tree, clean=False)
+    if module_docstring is None:
+        checks.error("Starter source must keep its module docstring.")
+    else:
+        for marker in MODULE_DOCSTRING_MARKERS:
+            if marker not in module_docstring:
+                checks.error(
+                    "Starter module docstring is missing section: "
+                    f"{marker!r}"
+                )
 
     imported_date = any(
         isinstance(node, ast.ImportFrom)
@@ -128,11 +153,19 @@ def check_source(checks: StarterChecks) -> None:
     if len(main_functions) != 1:
         checks.error("Starter must contain exactly one main() function.")
     else:
-        body = main_functions[0].body
+        main_function = main_functions[0]
+        body = main_function.body
         if len(body) != 1 or not is_docstring_statement(body[0]):
             checks.error(
                 "Course starter main() must remain intentionally incomplete; "
                 "only its docstring should be executable before students work."
+            )
+
+        main_docstring = ast.get_docstring(main_function, clean=False)
+        if main_docstring != EXPECTED_MAIN_DOCSTRING:
+            checks.error(
+                "Starter main() docstring changed unexpectedly; expected "
+                f"{EXPECTED_MAIN_DOCSTRING!r}."
             )
 
     guards = [
@@ -175,7 +208,9 @@ def check_tests(checks: StarterChecks) -> None:
         None,
     )
     if test_class is None:
-        checks.error("Acceptance test class NameAgeAcceptanceTests is missing.")
+        checks.error(
+            "Acceptance test class NameAgeAcceptanceTests is missing."
+        )
         return
 
     test_functions = {

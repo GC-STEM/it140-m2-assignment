@@ -1,4 +1,4 @@
-"""Validate the Module Two repository structure and non-code artifacts."""
+"""Validate the Module Two repository structure and assignment artifacts."""
 
 from __future__ import annotations
 
@@ -67,20 +67,37 @@ STARTER_MARKDOWN = (
     "Part-B/ide_features.md",
 )
 
+# These markers intentionally focus on stable document structure rather than
+# prose so routine wording edits do not require CI maintenance.
 REQUIRED_TEXT_MARKERS = {
     "README.md": (
         "# IT 140 Module Two Assignment",
-        "## Complete the Assignment",
-        "## Help and Support",
+        "## 0. Meet the Prerequisites",
+        "## 1. Setup the Assignment",
+        "## 2. Complete Part A",
+        "## 3. Complete Part B",
+        "## 4. Submit Your Assignment",
+        "## Get Help and Support",
     ),
     "Part-A/README.md": (
         "# Part A | Name and Age Program",
+        "## Deliverables",
+        "## Start Part A",
+        "## Help and Support",
+    ),
+    "Part-A/analysis/README.md": (
+        "# Analyze Phase",
+        "## Purpose",
         "## Deliverable",
+        "## Check Your Work",
         "## Help and Support",
     ),
     "Part-A/analysis/name_age_srs.md": (
         "# Software Requirements Specification",
         "## 1. Functional Requirements",
+        "## 2. Nonfunctional Requirements",
+        "## 3. Technology Constraints",
+        "## 4. Quality of Service Constraints",
         "## Acceptance Test Cases",
     ),
     "Part-A/design/name_age_sdd.md": (
@@ -91,9 +108,21 @@ REQUIRED_TEXT_MARKERS = {
     ),
     "Part-A/name_age_sdw.md": (
         "# Software Development Worksheet (SDW)",
+        "## How to Use This Worksheet",
         "## Analyze Phase",
         "## Design Phase",
         "### 11. Ready to Construct",
+    ),
+    "Part-A/src/README.md": (
+        "# Construct Phase",
+        "### Edit Only TODO Lines",
+        "## Deliverable",
+        "### 6. Recognize the Main Function",
+    ),
+    "Part-A/tests/README.md": (
+        "# Test Phase",
+        "## Purpose",
+        "## Deliverable",
     ),
     "Part-B/README.md": (
         "# Part B | IDE Features Reflection",
@@ -115,6 +144,25 @@ REFLECTION_PLACEHOLDERS = (
         "TODO: Replace with your source citations here in APA style, if any. "
         "Delete section heading and this text if not used."
     ),
+)
+
+PROTECTED_SOURCE_MARKERS = (
+    "from datetime import date",
+    (
+        "CURRENT_YEAR = date.today().year  "
+        "# Get current year from system as integer"
+    ),
+    "def main() -> None:",
+    '    """Run the name-age program."""',
+    'if __name__ == "__main__":',
+    "    main()",
+)
+
+SOURCE_DOCUMENTATION_MARKERS = (
+    "Input:",
+    "Process:",
+    "Output:",
+    "Typical usage example:",
 )
 
 MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
@@ -157,15 +205,18 @@ def read_text(relative_path: str) -> str:
 
 def check_required_files(checks: Checks) -> None:
     """Verify required repository files exist and are not empty."""
+    missing_or_empty = 0
     for relative_path in REQUIRED_FILES:
         path = REPO_ROOT / relative_path
         if not path.is_file():
             checks.error(f"Required file is missing: {relative_path}")
+            missing_or_empty += 1
             continue
         if path.stat().st_size == 0:
             checks.error(f"Required file is empty: {relative_path}")
+            missing_or_empty += 1
 
-    if not checks.errors:
+    if missing_or_empty == 0:
         checks.note("Required repository files are present and nonempty.")
 
 
@@ -300,7 +351,7 @@ def local_link_target(raw_target: str) -> str | None:
     return path
 
 
-def check_markdown_links(checks: Checks, mode: str) -> None:
+def check_markdown_links(checks: Checks) -> None:
     """Verify local links in supplied repository Markdown files."""
     markdown_files = list(PROVIDED_MARKDOWN)
     markdown_files.extend(STARTER_MARKDOWN)
@@ -384,10 +435,7 @@ def check_reflection_structure(checks: Checks, mode: str) -> None:
     )
 
     for heading in required:
-        if not any(
-            line.startswith(heading)
-            for line in text.splitlines()
-        ):
+        if not any(line.startswith(heading) for line in text.splitlines()):
             checks.error(
                 f"Part-B/ide_features.md is missing section: {heading}"
             )
@@ -475,8 +523,9 @@ def check_student_change_scope(checks: Checks) -> None:
 
 
 def check_student_source(checks: Checks) -> None:
-    """Check that the Part A source no longer contains starter prompts."""
+    """Check completion while preserving the provided source scaffold."""
     text = read_text("Part-A/src/name_age.py")
+
     marker = "TODO: Replace"
     if marker in text:
         checks.error(
@@ -485,6 +534,28 @@ def check_student_source(checks: Checks) -> None:
         )
     else:
         checks.note("The Part A starter TODO prompts have been replaced.")
+
+    missing_scaffold = [
+        item for item in PROTECTED_SOURCE_MARKERS if item not in text
+    ]
+    for item in missing_scaffold:
+        checks.error(
+            "Part-A/src/name_age.py changed provided program structure; "
+            f"missing: {item!r}"
+        )
+    if not missing_scaffold:
+        checks.note("The provided Part A Python scaffold remains intact.")
+
+    missing_documentation = [
+        item for item in SOURCE_DOCUMENTATION_MARKERS if item not in text
+    ]
+    for item in missing_documentation:
+        checks.error(
+            "Part-A/src/name_age.py is missing a required module-docstring "
+            f"section: {item!r}"
+        )
+    if not missing_documentation:
+        checks.note("The Part A module-docstring sections remain intact.")
 
 
 def parse_args() -> argparse.Namespace:
@@ -512,7 +583,7 @@ def main() -> None:
     check_required_text_markers(checks)
     check_drawio(checks)
     check_pseudocode(checks)
-    check_markdown_links(checks, args.mode)
+    check_markdown_links(checks)
     check_social_preview(checks)
     check_reflection_structure(checks, args.mode)
 

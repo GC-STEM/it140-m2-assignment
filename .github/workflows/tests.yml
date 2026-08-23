@@ -43,7 +43,7 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check "ruff==0.16.3"
 
-      - name: Check repository structure and artifacts
+      - name: Check repository structure, documents, and artifacts
         run: |
           python .github/ci/check_repository.py \
             --mode "${{ steps.mode.outputs.mode }}"
@@ -65,7 +65,7 @@ jobs:
             .github/ci/check_starter.py \
             --output-format=github
 
-      - name: Validate course starter
+      - name: Validate current course starter
         if: ${{ steps.mode.outputs.mode == 'starter' }}
         run: python .github/ci/check_starter.py
 
@@ -88,8 +88,8 @@ jobs:
             >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           if [[ "${{ steps.mode.outputs.mode }}" == "starter" ]]; then
-            echo "The course repository validates the starter files and" \
-              "provided assignment artifacts." >> "$GITHUB_STEP_SUMMARY"
+            echo "The course repository validates the current starter files" \
+              "and provided assignment artifacts." >> "$GITHUB_STEP_SUMMARY"
           else
             echo "A personal repository validates the provided files," \
               "completed deliverables, and Part A acceptance tests." \

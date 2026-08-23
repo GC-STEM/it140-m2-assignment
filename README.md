@@ -2,8 +2,6 @@
 
 # IT 140 Module Two Assignment
 
-**Assignment progress:** **[1. Setup](./README.md#1-setup-the-assignment)** → [2. Part A](./Part-A/README.md) → [3. Part B](./Part-B/README.md) → [4. Submit](./README.md#4-submit-your-assignment)
-
 - **Course:** IT 140 - *Introduction to Scripting*
 - **Activity:** 2-3 Module Two Assignment
 - **Activity Type:** Required, graded, with two submissions
@@ -12,6 +10,8 @@
 
 ## Table of Contents
 
+Complete the following tasks in order to complete the Module Two assignment. Each task is described in detail below.
+
 - [IT 140 Module Two Assignment](#it-140-module-two-assignment)
   - [Table of Contents](#table-of-contents)
   - [0. Meet the Prerequisites](#0-meet-the-prerequisites)
@@ -19,7 +19,7 @@
   - [2. Complete Part A](#2-complete-part-a)
   - [3. Complete Part B](#3-complete-part-b)
   - [4. Submit Your Assignment](#4-submit-your-assignment)
-  - [5. Get Help and Support](#5-get-help-and-support)
+  - [Get Help and Support](#get-help-and-support)
 
 ## 0. Meet the Prerequisites
 
@@ -47,7 +47,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
    - Linux  : `update_it140.sh`
 
 5. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
-   - If `Failures` is greater than `0`, review the [**Get Help and Support**](#5-get-help-and-support) section.
+   - If `Failures` is greater than `0`, review the [**Get Help and Support**](#get-help-and-support) section.
    - If `Restart required: No`, type `exit` and press **Enter** to close the terminal window.
    - If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar and wait for the CVD to restart.
 
@@ -64,7 +64,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     git remote -v
     ```
 
-    *Note*. The above commands only work the first time you run them successfully. If you want to update your repository later or start over, see the [**Get Help and Support**](#5-get-help-and-support) section.
+    *Note*. The above commands only work the first time you run them successfully. If you want to update your repository later or start over, see the [**Get Help and Support**](#get-help-and-support) section.
 
 7. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
 
@@ -137,7 +137,7 @@ In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the *
 - Ungraded files:
   - [`name_age_sdw.md`](./Part-A/name_age_sdw.md)
 
-## 5. Get Help and Support
+## Get Help and Support
 
 <!-->
 **🚨 DANGER**. Run these commands only when you are setting up the Module Two assignment repository for the first time or when you intentionally want to start over from a fresh copy. These commands will **delete and replace** any existing `it140-m2-assignment` repository in both your GitHub account and your local `~/Repos` folder. Any work or changes saved only in those copies will be **permanently lost**. If you have already started the assignment and want to keep your work, do NOT run these commands.

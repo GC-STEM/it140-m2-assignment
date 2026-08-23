@@ -37,19 +37,19 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
 2. Click the browser icon on the taskbar to open a browser. Then, point the browser to the `https://github.com/GC-STEM/it140-m2-assignment`. Arrange the browser window on one side of your screen.
 
-  ![Browser window in split screen pointing to the Module Two Assignment Repository](./.github/assets/12_split_screen_browser.png)
+3. Click the terminal icon on the taskbar to open a terminal window. Arrange it on the other side of your screen from the browser window.
 
-1. Open a terminal window and arrange it on the other side of your screen.
+   ![Terminal and browser window in split screen](./.github/assets/13_split_screen_terminal_browser.png)
 
-2. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. If using a local computer, use the appropriate script extension for your operating system:
+4. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. If using a local computer, use the appropriate script extension for your operating system:
    - Windows: `update_it140.ps1`
    - macOS  : `update_it140.zsh`
    - Linux  : `update_it140.sh`
 
-3. Review the output of the update script. Look for:
+5. Review the output of the update script. Look for:
    1. If you see any errors, please contact your instructor for assistance.
 
-4. Copy the following command block and paste it into a new terminal window. Press **Enter** to run.
+6. Copy the following command block and paste it into a new terminal window. Press **Enter** to run.
 
     ```bash
     cd ~/Repos 
@@ -60,7 +60,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     git remote -v
     ```
 
-5. Review the output of the last command. You should see two lines that look like this:
+7. Review the output of the last command. You should see two lines that look like this:
 
 ## 2. Complete Part A
 

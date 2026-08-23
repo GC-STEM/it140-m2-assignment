@@ -29,23 +29,27 @@
 
 ## 1. Setup the Assignment
 
-We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system.
+We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at Step 2 below.
 
-1. Launch the CVD now and carry out the remaining instructions from within the CVD. For a refresher on how to do this, review the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd)
+1. Launch the CVD now and carry out the remaining instructions from within the CVD.
+   - If you bookmarked the CVD, open that link now.
+   - If not, follow the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd) instructions.
 
-2. Open a browser and point it to the [Module Two Assignment Repository](https://github.com/GC-STEM/it140-m2-assignment).
+2. Click the browser icon on the taskbar to open a browser. Then, point the browser to the `https://github.com/GC-STEM/it140-m2-assignment`. Arrange the browser window on one side of your screen.
 
-3. Open a terminal window.
+  ![Browser window in split screen pointing to the Module Two Assignment Repository](./.github/assets/12_split_screen_browser.png)
 
-4. Arrange your screen so that you can see both this browser and the terminal window at the same time.
+1. Open a terminal window and arrange it on the other side of your screen.
 
-5. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version.
-   If using a local computer, type the appropriate update script extension for your operating system:
-      - Windows: `update_it140.ps1`
-      - macOS  : `update_it140.zsh`
-      - Linux  : `update_it140.sh`
+2. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. If using a local computer, use the appropriate script extension for your operating system:
+   - Windows: `update_it140.ps1`
+   - macOS  : `update_it140.zsh`
+   - Linux  : `update_it140.sh`
 
-6. Copy the following command block and paste it into a new terminal window. Press **Enter** to run.
+3. Review the output of the update script. Look for:
+   1. If you see any errors, please contact your instructor for assistance.
+
+4. Copy the following command block and paste it into a new terminal window. Press **Enter** to run.
 
     ```bash
     cd ~/Repos 
@@ -56,7 +60,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     git remote -v
     ```
 
-7. Review the output of the last command. You should see two lines that look like this:
+5. Review the output of the last command. You should see two lines that look like this:
 
 ## 2. Complete Part A
 

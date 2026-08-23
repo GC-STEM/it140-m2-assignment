@@ -268,11 +268,13 @@ The following command block will:
 
 2. In the VS Code terminal pane, right-click at the end of the command prompt and select **Paste** from the popup menu. Press **Enter** to run the commands.
 
-   ![VS Code Terminal Paste](.github/assets/42a_vscode_terminal_paste.png)
+   ![VS Code Terminal Paste](.github/assets/42_vscode_terminal_paste.png)
 
    ![VS Code Terminal Run](.github/assets/42b_vscode_terminal_run.png)
 
 3. Review the final output and confirm that the repository belongs to **your GitHub account**.
+
+   ![VS Code Terminal Review](.github/assets/43_vscode_terminal_paste_review.png)
 
    - If a command reports an error, do not repeat the entire command block. Review the error message and use the [Help and Support](#help-and-support) resources before continuing.
 

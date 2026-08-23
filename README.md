@@ -14,15 +14,15 @@
 
 - [IT 140 Module Two Assignment](#it-140-module-two-assignment)
   - [Table of Contents](#table-of-contents)
-  - [Start With the Assignment Guidelines and Rubric](#start-with-the-assignment-guidelines-and-rubric)
   - [About This Repository](#about-this-repository)
-  - [1. Set Up Your Personal Assignment Repository](#1-set-up-your-personal-assignment-repository)
+  - [Set Up Your Personal Assignment Repository](#set-up-your-personal-assignment-repository)
     - [0. Complete the Module One Setup Tasks](#0-complete-the-module-one-setup-tasks)
     - [1. Launch and Update Your Course IDE](#1-launch-and-update-your-course-ide)
     - [2. Open the VS Code Integrated Terminal](#2-open-the-vs-code-integrated-terminal)
     - [3. Confirm Your GitHub Account](#3-confirm-your-github-account)
-    - [3. Create and Clone Your Personal Repository](#3-create-and-clone-your-personal-repository)
-    - [4. Open Your Assignment Repository in VS Code](#4-open-your-assignment-repository-in-vs-code)
+    - [4. Create and Clone Your Personal Repository](#4-create-and-clone-your-personal-repository)
+    - [5. Open Your Assignment Repository in VS Code](#5-open-your-assignment-repository-in-vs-code)
+  - [Start With the Assignment Guidelines and Rubric](#start-with-the-assignment-guidelines-and-rubric)
   - [Complete the Assignment](#complete-the-assignment)
     - [1. Complete Part A](#1-complete-part-a)
     - [2. Complete Part B](#2-complete-part-b)
@@ -36,38 +36,19 @@
     - [Start Over From the Original Course Template](#start-over-from-the-original-course-template)
       - [CVD, Linux, macOS, or Git Bash for Windows](#cvd-linux-macos-or-git-bash-for-windows)
       - [Windows PowerShell Commands](#windows-powershell-commands)
-  - [Help and Support](#help-and-support)
   - [Submit Your Assignment](#submit-your-assignment)
-
-## Start With the Assignment Guidelines and Rubric
-
-Before using this repository, open the **Module Two Assignment Guidelines and Rubric** in [D2L Brightspace](https://learn.snhu.edu/). To access it, select **Course Menu** on the NavBar, then **Learning Modules**, and then the **Assignment Information** learning module.
-
-Review the complete assignment guidelines and rubric, including:
-
-- Overview
-- Prompt
-  - Part A
-  - Part B
-- What to Submit
-- Assignment Rubric
-
-The **Module Two Assignment Guidelines and Rubric** is the official source for assignment requirements, grading criteria, and submission requirements.
-
-This repository provides the starter files, working files, and step-by-step guidance you will use to complete those requirements.
-
-After reviewing the Guidelines and Rubric, return here to set up your personal assignment repository.
+  - [Help and Support](#help-and-support)
 
 ## About This Repository
 
 This repository contains the files you will use to complete both parts of the Module Two Assignment.
 
 > [!NOTE]
-> The **Codio Virtual Desktop (CVD) is the reference environment for IT 140**. If you completed the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) and use the CVD for this course, Git, GitHub CLI, VS Code, and the expected course repository configuration should already be available. We recommend all students use the CVD for coursework to minimize environment differences and troubleshooting issues.
+> The **CVD is the reference environment for IT 140**. If you completed the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) and use the CVD for this course, Git, GitHub CLI, VS Code, and the expected course repository configuration should already be available. We recommend all students use the CVD for coursework to minimize environment differences and troubleshooting issues.
 >
 > You may also complete this assignment on a supported local computer configured through the [Module One Setup Tasks | Local](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/local). Local environments can vary, so some commands or troubleshooting steps may differ.
 
-In your first coding assignment, you will create your **own personal GitHub repository** from this course repository template and clone your repository to the Codio Virtual Desktop (CVD) and/or your supported local computer.
+In your first coding assignment, you will create your **own personal GitHub repository** from this course repository template and clone your repository to the CVD and/or your supported local computer.
 
 - Complete your assignment work
 - Save changes with Git
@@ -103,7 +84,7 @@ it140-m2-assignment/
 >
 > Leave the READMEs, SRS, SDD, flowchart, pseudocode, tests, and other provided files unchanged.
 
-## 1. Set Up Your Personal Assignment Repository
+## Set Up Your Personal Assignment Repository
 
 Complete these steps **only once** before beginning the assignment.
 
@@ -113,21 +94,21 @@ If you need to start over, see [Reset Your Assignment Repository](#reset-your-as
 
 ### 0. Complete the Module One Setup Tasks
 
-If you have not completed all the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) on the Codio Virtual Desktop (CVD), do so now. Return here after completing those tasks.
+If you have not completed the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks) on the platform you are using (CVD or your local computer), do so now. The following instructions will not work otherwise. Return here after completing those tasks.
 
 ### 1. Launch and Update Your Course IDE
 
-1. Launch the Codio Virtual Desktop (CVD) or your local computer.
-   - If you bookmarked the Codio Virtual Desktop (CVD) in your browser, open it now.
-   - Otherwise, go to the **Start Here** learning module in [D2L Brightspace](https://learn.snhu.edu/) and click the **Optional Codio Virtual Desktop** web page and then the **Codio Learning Environment**.
+1. Launch the CVD or your local computer.
+
+   - If you bookmarked the CVD in your browser, open it now and go to the next step.
+
+   - Otherwise, go to the **Start Here** learning module in [D2L Brightspace](https://learn.snhu.edu/) and click the **Optional Codio Virtual Desktop** web page and then the **Codio Learning Environment**. If you need a refresher on how to access the CVD, review the [codio/README.md](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md) from the Module One Setup Tasks repository.
 
    ![Optional Codio Virtual Desktop page in D2L Brightspace](.github/assets/11_it140_ocvd_page.png)
 
-   > [!TIP] If you have updated your course IDE today, you can skip to [2. Open the VS Code Integrated Terminal](#2-open-the-vs-code-integrated-terminal).
+2. If you are on the CVD, expand the window to full screen.
 
-2. If you are on the Codio Virtual Desktop (CVD), expand the window to full screen.
-
-   ![Codio Virtual Desktop (CVD) in full screen](.github/assets/12_it140_cvd_full_screen.png)
+   ![CVD in full screen mode](.github/assets/12_it140_cvd_full_screen.png)
 
 3. Organize your desktop so you can view the instructions in this README file and a terminal window at the same time.
 
@@ -135,13 +116,15 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
    2. Resize the web browser window to take up one side of the screen, as shown. Scroll down to find the place where you left off in this README file.
 
+      > *Tip*. If you already updated your course IDE today, you can skip to [2. Open the VS Code Integrated Terminal](#2-open-the-vs-code-integrated-terminal).
+
    3. Open and resize a terminal window on the other side of the screen, as shown.
 
    ![Organize your desktop to view the browser and terminal side by side](.github/assets/13_it140_cvd_terminal_browser.png)
 
-4. If you have not updated your system today, open a terminal window and run the following command for your platform. This will update your course IDE. Be patient while the script runs. It may take a few minutes to complete.
+4. Open a terminal window and run the following command for your platform. This will update your course IDE. Be patient while the script runs. It may take a few minutes to complete.
 
-   - Codio Virtual Desktop (CVD) or other Linux terminal:
+   - CVD or other Linux terminal:
 
       ```bash
       update_it140.sh
@@ -162,16 +145,16 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
       ```
 
-   ![Codio Virtual Desktop (CVD) update](.github/assets/14_it140_cvd_update.png)
+   ![CVD update](.github/assets/14_it140_cvd_update.png)
 
-5. Review the output to confirm that the update completed successfully.
-   - Result: PASS
-   - Failures: 0
-   - Restart required: Yes or No
-   - Exit code: 0
+5. Review the output to confirm that the update completed successfully. Look for the following lines at the end of the output:
+   - Result: **PASS**
+   - Failures: **0**
+   - Restart required: **Yes** or **No**
+   - Exit code: **0**
    - If you see any errors, do not continue. Use the [Help and Support](#help-and-support) resources to resolve the issue before continuing.
 
-6. Type `exit` to close the terminal window when the update is complete. Restart your environment if required.
+6. Type `exit` and press **Enter** to close the terminal window when the update is complete. Restart your machine, if a restart is required.
    - On the CVD, click **RESTART VM**. Do NOT click **RESET VM**.
 
 ### 2. Open the VS Code Integrated Terminal
@@ -180,11 +163,11 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
    ![Open Visual Studio Code](.github/assets/21_it140_m2_open_vscode.png)
 
-2. Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get to the **Welcome** pane on the left two-thirds of the VS Code window and **Explorer** with **Repos** on the left third, similar to the following image.
+2. Your VS Code window may look different depending on how you left it the last time you used it or if it installed an update. Your goal is to get the **Welcome** pane on the left two-thirds of the VS Code window and the **Explorer** pane with **Repos** folder open on the left third, similar to the following image.
 
-   1. Show the **Welcome** pane on the left two-thirds of VS Code, if not visible already.
+   1. Show the **Welcome** pane on the right two-thirds of VS Code, if not visible already.
 
-      - If you see **Release Notes**, **Getting Started**, or other tab on top, select **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
+      - If you see **Release Notes**, **Getting Started**, or other tab on top, click **Close** (`X`) in the upper right corner of that pane to return to the **Welcome** page.
 
       - If you do not see the Welcome page, select **Help > Welcome** from the menu bar. Depending on the size of your window, you may need to click the hamburger icon in the upper left to show the menu. Or, the **Help** menu may be hidden under the **...** menu on the right side of the menu bar.
 
@@ -192,13 +175,16 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
      - If you do not see the Explorer pane, select **View > Explorer** from the menu bar or select the **Explorer** icon in the Activity Bar on the left side of VS Code.
 
-     - If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to, or an abbreviation for, your home folder.
+     - If you do not see **Repos** in the Explorer pane, select **Open Folder** and open your `~/Repos` folder. Remember that `~` is a shortcut to your home folder.
 
    ![VS Code Welcome Page](.github/assets/22_vscode_welcome_repos.png)
 
 3. Open the integrated terminal in VS Code.
-   - **Keyboard** (Preferred): Press **Ctrl+\`** (backtick) on Windows or Linux, or **Cmd+\`** on macOS.
-   - **Mouse**: Right-click in the Explorer pane and select **Open in Integrated Terminal**.
+
+   - **Keyboard** (Preferred): Press **Ctrl+\`** (backtick) on Windows or Linux, or **Cmd+\`** on macOS. The backtick key is usually located above the **Tab** key and left of the **1** key on your keyboard.
+
+   - **Mouse**: Right-click in the **Explorer** pane and select **Open in Integrated Terminal**.
+
    - **Menu Bar**: Select **Terminal > New Terminal** from the menu bar. Note that **Terminal** may be hidden under the **...** menu on the right side of the menu bar.
 
    ![Open VS Code's Integrated Terminal](.github/assets/23_it140_m2_vscode_terminal.png)
@@ -206,14 +192,13 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
    > *Note.* Notice how the integrated terminal opens to the current folder shown in the **Explorer** pane. If your terminal did not open to `~/Repos`, do not worry. We will change to the correct folder in the next step.
 
 > [!IMPORTANT]
-> Windows users must use a **Git Bash** or a **PowerShell** terminal in VS Code to run the commands in this repository. A Command (cmd.exe) terminal will not work.
+> Windows users must use a **Git Bash** terminal in VS Code to run the commands in this repository. PowerShell (PS) and Command (cmd.exe) terminals may not work reliably or at all. 
 >
 > ![Git Bash in VS Code](.github/assets/23w_it140_m2_vscode_terminal_bash.png)
-> ![PowerShell in VS Code](.github/assets/23w_it140_m2_vscode_terminal_ps.png)
 
 ### 3. Confirm Your GitHub Account
 
-1. Type or click the copy button below and paste the following command in the VS Code integrated terminal. Press **Enter** to run the command if it did not run automatically. This command checks which GitHub account is currently active in your GitHub CLI.:
+1. Type the following command in the VS Code integrated terminal and then press **Enter** to run the command. This command checks which GitHub account is currently active in your GitHub Command Line Interface (CLI).
 
    ```bash
    gh auth status
@@ -242,47 +227,79 @@ If you have not completed all the [Module One Setup Tasks](https://github.com/GC
 
 5. When sign-in is complete, return to Step 2.1 and check your account again.
 
-6. Continue to Step 3.0 - Create and Clone Your Personal Repository.
+6. Continue to next step.
 
-### 3. Create and Clone Your Personal Repository
+### 4. Create and Clone Your Personal Repository
 
 The following command block will:
 
-1. Go to your course `~/Repos` folder.
-2. Configure Git to use your GitHub CLI authentication.
-3. Bookmark the original IT 140 assignment repository so it is easier to find again.
-4. Create your personal assignment repository in GitHub.
-5. Clone your new repository to your CVD or local computer.
-6. Enter the cloned repository folder.
-7. Show the GitHub repository connected to your local copy.
+- Go to your course `~/Repos` folder.
+- Configure Git to use your GitHub CLI authentication.
+- Bookmark the original IT 140 assignment repository so it is easier to find again.
+- Create your personal assignment repository in GitHub, if needed.
+- Clone your new repository to your CVD or local computer, if needed.
+- Enter the cloned repository folder.
+- Show the GitHub repository connected to your local copy.
 
-Copy the entire command block and paste it into the VS Code integrated terminal.
+1. Using your pointing device (mouse, trackpad, etc.), click the **Copy** button in the top-right corner of the code block below. Only use the Copy button in code blocks like this to make sure you copy the code correctly.
 
-```bash
-cd ~/Repos
-gh auth setup-git
-gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment
-gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
-cd it140-m2-assignment
-git remote -v
+   ```bash
+   cd ~/Repos
+   gh auth setup-git
+   gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment
+   username="$(gh api user --jq .login)"
+   repo="$username/it140-m2-assignment"
+   if [ -d "it140-m2-assignment/.git" ]; then
+      echo "Local repository already exists. Using it."
+   elif gh repo view "$repo" >/dev/null 2>&1; then
+      echo "GitHub repository already exists. Cloning it."
+      gh repo clone "$repo" it140-m2-assignment
+   elif [ -e "it140-m2-assignment" ]; then
+      echo "A local it140-m2-assignment folder already exists but is not a Git repository."
+   else
+      echo "Creating a new private repository from the course template."
+      gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
+   fi
+   if [ -d "it140-m2-assignment/.git" ]; then
+      cd it140-m2-assignment
+      git remote -v
+   fi
+   ```
 
-```
+2. In the VS Code terminal pane, right-click at the end of the command prompt and select **Paste** from the popup menu. Press **Enter** to run the commands.
 
-Review the final output and confirm that the repository belongs to **your GitHub account**.
+3. Review the final output and confirm that the repository belongs to **your GitHub account**.
 
-If a command reports an error, do not repeat the entire command block. Review the error message and use the [Help and Support](#help-and-support) resources before continuing.
+   - If a command reports an error, do not repeat the entire command block. Review the error message and use the [Help and Support](#help-and-support) resources before continuing.
 
-### 4. Open Your Assignment Repository in VS Code
+### 5. Open Your Assignment Repository in VS Code
 
-Now open the repository you just cloned.
-
-In VS Code:
+Now open the repository you just cloned. In VS Code:
 
 1. Select **File > Open Folder**.
 2. Open `~/Repos/it140-m2-assignment`.
 3. Confirm that `it140-m2-assignment` is the top-level folder shown in the Explorer.
 
 You are now working in your personal copy of the Module Two Assignment.
+
+## Start With the Assignment Guidelines and Rubric
+
+Before using this repository, open the **Module Two Assignment Guidelines and Rubric** in [D2L Brightspace](https://learn.snhu.edu/). To access it, select **Course Menu** on the NavBar, then **Learning Modules**, and then the **Assignment Information** learning module.
+
+Review the complete assignment guidelines and rubric, including:
+
+- Overview
+- Prompt
+  - Part A
+  - Part B
+- What to Submit
+- Assignment Rubric
+
+The **Module Two Assignment Guidelines and Rubric** is the official source for assignment requirements, grading criteria, and submission requirements.
+
+This repository provides the starter files, working files, and step-by-step guidance you will use to complete those requirements.
+
+After reviewing the Guidelines and Rubric, return here to set up your personal assignment repository.
 
 ## Complete the Assignment
 
@@ -461,27 +478,6 @@ Open the new `~/Repos/it140-m2-assignment` folder in VS Code and begin again wit
 > [!IMPORTANT]
 > Starting over creates a new copy of the original assignment files. Work that exists only in your previous repository is **not automatically copied into the new assignment repository**.
 
-## Help and Support
-
-The README files contain the instructions you need to complete each part of the assignment.
-
-The repository Wiki provides supplemental information about topics such as:
-
-- Using the Module Two Assignment repository
-- The simplified software development life cycle
-- Working with Markdown files
-- Using VS Code features
-- Git and GitHub workflows
-- Testing and troubleshooting
-
-<!-- FUTURE: Replace with direct Wiki page links when the Module Two Assignment Wiki is published. -->
-
-Use [GitHub Issues](https://github.com/GC-STEM/it140-m2-assignment/issues) to report a technical problem with the **provided course repository, starter files, or course tools**.
-
-Use [GitHub Discussions](https://github.com/GC-STEM/it140-m2-assignment/discussions) for repository-related questions and discussions when appropriate.
-
-For questions about assignment requirements, grading, deadlines, accommodations, or instructor feedback, contact your instructor through **D2L Brightspace**.
-
 ## Submit Your Assignment
 
 After completing Part A and Part B, return to the **Module Two Assignment Guidelines and Rubric** in [D2L Brightspace](https://learn.snhu.edu/).
@@ -502,6 +498,27 @@ Follow the **What to Submit** instructions in the Module Two Assignment Guidelin
 Do not submit working files, provided design documents, test files, README files, or your GitHub repository unless the Module Two Assignment Guidelines and Rubric specifically instruct you to do so.
 
 **GitHub does not submit your assignment for grading.**
+
+## Help and Support
+
+The README files contain the instructions you need to complete each part of the assignment.
+
+The repository Wiki provides supplemental information about topics such as:
+
+- Using the Module Two Assignment repository
+- The simplified software development life cycle
+- Working with Markdown files
+- Using VS Code features
+- Git and GitHub workflows
+- Testing and troubleshooting
+
+<!-- FUTURE: Replace with direct Wiki page links when the Module Two Assignment Wiki is published. -->
+
+Use [GitHub Issues](https://github.com/GC-STEM/it140-m2-assignment/issues) to report a technical problem with the **provided course repository, starter files, or course tools**.
+
+Use [GitHub Discussions](https://github.com/GC-STEM/it140-m2-assignment/discussions) for repository-related questions and discussions when appropriate.
+
+For questions about assignment requirements, grading, deadlines, accommodations, or instructor feedback, contact your instructor through **D2L Brightspace**.
 
 <!-- Artifact Metadata
 

@@ -26,7 +26,6 @@ You may make corrections to [`name_age.py`](../src/name_age.py) while testing. Y
 
 Do not submit:
 
-* The SDW
 * `test_name_age.py`
 * Test output
 * Sense feedback

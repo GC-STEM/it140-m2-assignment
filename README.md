@@ -270,8 +270,6 @@ The following command block will:
 
    ![VS Code Terminal Paste](.github/assets/42_vscode_terminal_paste.png)
 
-   ![VS Code Terminal Run](.github/assets/42b_vscode_terminal_run.png)
-
 3. Review the final output and confirm that the repository belongs to **your GitHub account**.
 
    ![VS Code Terminal Review](.github/assets/43_vscode_terminal_paste_review.png)

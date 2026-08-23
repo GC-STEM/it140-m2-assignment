@@ -87,8 +87,8 @@ We strongly recommend that you complete this first assignment using the Codio Vi
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
 4. In the **Explorer** pane of VS Code"
-   1. Click **> it140-m2-assignment** to expand the folder, if needed.
-   2. Click **> Part-A** to expand the folder, if needed.
+   - Click **> it140-m2-assignment** to expand the folder, if needed.
+   - Click **> Part-A** to expand the folder, if needed.
 
    ![Expand Part-A folder in VS Code](./.github/assets/24_vscode_explorer_expand.png)
 
@@ -100,7 +100,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
 ## 3. Complete Part B
 
-1. Launch the CVD and carry out the remaining instructions from within the CVD.
+1. If not already running, launch the CVD and carry out the remaining instructions from within the CVD.
 
 2. Open a terminal window. Copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
 
@@ -113,8 +113,8 @@ We strongly recommend that you complete this first assignment using the Codio Vi
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
 4. In the **Explorer** pane of VS Code"
-   1. Click **> it140-m2-assignment** to expand the folder, if needed.
-   2. Click **> Part-B** to expand the folder, if needed.
+   - Click **> it140-m2-assignment** to expand the folder, if needed.
+   - Click **> Part-B** to expand the folder, if needed.
 
    ![Expand Part-B folder in VS Code](./.github/assets/34_vscode_explorer_expand.png)
 

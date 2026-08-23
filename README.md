@@ -22,11 +22,11 @@
     - [3. Confirm Your GitHub Account](#3-confirm-your-github-account)
     - [4. Create and Clone Your Personal Repository](#4-create-and-clone-your-personal-repository)
     - [5. Open Your Assignment Repository in VS Code](#5-open-your-assignment-repository-in-vs-code)
-  - [Start With the Assignment Guidelines and Rubric](#start-with-the-assignment-guidelines-and-rubric)
   - [Complete the Assignment](#complete-the-assignment)
-    - [1. Complete Part A](#1-complete-part-a)
-    - [2. Complete Part B](#2-complete-part-b)
-    - [3. Save Your Work to GitHub](#3-save-your-work-to-github)
+    - [1. Read the Assignment Guidelines and Rubric](#1-read-the-assignment-guidelines-and-rubric)
+    - [2. Complete Part A of the Assignment](#2-complete-part-a-of-the-assignment)
+    - [3. Complete Part B of the Assignment](#3-complete-part-b-of-the-assignment)
+    - [4. Save Your Work to GitHub](#4-save-your-work-to-github)
     - [4. Review the Automated Repository Checks](#4-review-the-automated-repository-checks)
   - [Return to an Existing Assignment](#return-to-an-existing-assignment)
   - [Reset Your Assignment Repository](#reset-your-assignment-repository)
@@ -295,11 +295,13 @@ Now open the repository you just cloned. In VS Code:
 
    ![VS Code Explorer Pane with it140-m2-assignment open](.github/assets/53_it140_vscode_m2_folder.png)
 
-You are now working in your personal copy of the Module Two Assignment.
+You are now working in your personal copy of the Module Two Assignment repository with VS Code.
 
-## Start With the Assignment Guidelines and Rubric
+## Complete the Assignment
 
-Before using this repository, open the **Module Two Assignment Guidelines and Rubric** in [D2L Brightspace](https://learn.snhu.edu/). To access it, select **Course Menu** on the NavBar, then **Learning Modules**, and then the **Assignment Information** learning module.
+### 1. Read the Assignment Guidelines and Rubric
+
+Before working on the assignment repository, open the **Module Two Assignment Guidelines and Rubric** in [D2L Brightspace](https://learn.snhu.edu/). To access it, select **Course Menu** on the NavBar, then **Learning Modules**, and then the **Assignment Information** learning module.
 
 Review the complete assignment guidelines and rubric, including:
 
@@ -316,9 +318,7 @@ This repository provides the starter files, working files, and step-by-step guid
 
 After reviewing the Guidelines and Rubric, return here to set up your personal assignment repository.
 
-## Complete the Assignment
-
-### 1. Complete Part A
+### 2. Complete Part A of the Assignment
 
 Open:
 
@@ -332,7 +332,7 @@ Start with the Software Development Worksheet (SDW) as directed in the Part A RE
 
 As you work, pay attention to VS Code features that help you review documents, understand code, write your program, identify problems, run your program, or test your work. Make brief notes about useful features so you can use your own observations in Part B.
 
-### 2. Complete Part B
+### 3. Complete Part B of the Assignment
 
 After completing and testing Part A, open:
 
@@ -340,21 +340,23 @@ After completing and testing Part A, open:
 
 Follow the step-by-step instructions to complete `ide_features.md` using observations from your Part A work.
 
-### 3. Save Your Work to GitHub
+### 4. Save Your Work to GitHub
 
 Save your files normally while you work in VS Code.
 
 Periodically commit and push your assignment work so your personal GitHub repository contains a current backup. You can do this using the Source Control tools in the VS Code user interface, or from the command line as described below.
 
-From the repository root in the VS Code integrated terminal, run:
+1. Open a VS Code integrated terminal (**Ctrl+`**)
 
-```bash
-cd ~/Repos/it140-m2-assignment
-git status
-git add Part-A/name_age_sdw.md Part-A/src/name_age.py Part-B/ide_features.md
-git commit -m "Save Module Two assignment progress"
-git push
-```
+2. Copy and paste the following commands into the terminal and press **Enter** to run them:
+
+   ```bash
+   cd ~/Repos/it140-m2-assignment
+   git status
+   git add Part-A/name_age_sdw.md Part-A/src/name_age.py Part-B/ide_features.md
+   git commit -m "Save Module Two assignment progress"
+   git push
+   ```
 
 These commands:
 
@@ -376,7 +378,7 @@ While you are still working, a red **X** can simply mean that one or more assign
 
 - The provided repository files are still present and unchanged.
 - The required non-code assignment artifacts are present and readable.
-- `Part-A/src/name_age.py` contains valid Python and passes the course Ruff checks.
+- `Part-A/src/name_age.py` contains valid Python and passes the course linter checks.
 - The Part A starter TODO prompts have been replaced.
 - The Part B reflection no longer contains its starter placeholder text.
 - The completed Part A program passes the five provided acceptance tests.

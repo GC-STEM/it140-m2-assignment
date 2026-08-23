@@ -139,7 +139,7 @@ In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the *
 
 ## Get Help and Support
 
-<!-->
+<!--
 **🚨 DANGER**. Run these commands only when you are setting up the Module Two assignment repository for the first time or when you intentionally want to start over from a fresh copy. These commands will **delete and replace** any existing `it140-m2-assignment` repository in both your GitHub account and your local `~/Repos` folder. Any work or changes saved only in those copies will be **permanently lost**. If you have already started the assignment and want to keep your work, do NOT run these commands.
 
 ```bash

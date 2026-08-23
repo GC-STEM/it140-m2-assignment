@@ -53,16 +53,18 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
-6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button.Press **Enter** to run the commands.
+6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands.
 
     ```bash
-    cd ~/Repos 
-    gh auth setup-git 
-    gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment 
-    gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone 
+    cd ~/Repos
+    gh auth setup-git
+    gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment
+    gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
     cd it140-m2-assignment
     git remote -v
     ```
+
+    *Note*. The above commands only work the first time you run them successfully. If you want to update your repository later or start over, see the [**Get Help and Support**](#5-get-help-and-support) section.
 
 7. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
 
@@ -136,3 +138,19 @@ In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the *
   - [`name_age_sdw.md`](./Part-A/name_age_sdw.md)
 
 ## 5. Get Help and Support
+
+<!-->
+**🚨 DANGER**. Run these commands only when you are setting up the Module Two assignment repository for the first time or when you intentionally want to start over from a fresh copy. These commands will **delete and replace** any existing `it140-m2-assignment` repository in both your GitHub account and your local `~/Repos` folder. Any work or changes saved only in those copies will be **permanently lost**. If you have already started the assignment and want to keep your work, do NOT run these commands.
+
+```bash
+cd ~/Repos
+gh auth setup-git
+gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment
+username="$(gh api user --jq .login)"
+rm -rf it140-m2-assignment
+gh repo delete "$username/it140-m2-assignment" --yes 2>/dev/null || true
+gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
+cd it140-m2-assignment
+git remote -v
+```
+-->

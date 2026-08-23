@@ -131,7 +131,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the **Course Menu** and select **Assignments**. Click on the **2-3 Assignment: Software Development Introduction** link. Follow the instructions to submit your assignment. Submit the following files in Brightspace as one submission:
 
 - Graded files:
-  - [`name_page.py`](./Part-A/src/name_page.py)
+  - [`name_age.py`](./Part-A/src/name_age.py)
   - [`ide_features.md`](./Part-B/ide_features.md)
 
 - Ungraded files:

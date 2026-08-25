@@ -8,6 +8,18 @@
   - **Part A:** Name and Age Program (`name_age.py`)
   - **Part B:** IDE Features Reflection (`ide_features.md`)
 
+> [!IMPORTANT]
+> **GitHub repository options**
+>
+> If you are completing this repository as part of your IT 140 assignment, use the GitHub options in the upper-right corner as follows:
+>
+> - 🟡 **Watch — Not recommended:** Notifications may confuse students and are not needed.
+> - 🔴 **Fork — Do not use:** Later course code requires you to use this repository as provided.
+> - 🟢 **Star — Optional:** Bookmark this repository so it is easier to find later.
+> - 🔴 **Use this template — Do not use:** Later course code requires you to use this repository as provided.
+>
+> **Faculty**: Consider selecting **Watch** → **Custom** → **Releases + Issues** to receive major repository updates and follow reported problems.
+
 ## Table of Contents
 
 Complete the following tasks in order to complete the Module Two assignment. Each task is described in detail below.

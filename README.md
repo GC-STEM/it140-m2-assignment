@@ -14,9 +14,9 @@
 > If you are completing this repository as part of your IT 140 assignment, do not use the GitHub options in the upper-right corner except as follows:
 >
 > - 🟡 **Watch — Not recommended:** Notifications may confuse students and are not needed.
-> - 🔴 **Fork — Do not use:** Later course code requires you to use this repository as provided.
+> - 🔴 **Fork — Do not use:** It will break the code later in this README file.
 > - 🟢 **Star — Optional:** Bookmark this repository so it is easier to find later.
-> - 🔴 **Use this template — Do not use:** Later course code requires you to use this repository as provided.
+> - 🔴 **Use this template — Do not use:** It will break the code later in this README file.
 >
 > **Faculty**: Consider selecting **Watch** → **Custom** → **Releases + Issues** to receive major repository updates and follow reported problems.
 

@@ -82,9 +82,9 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Git remote output](./.github/assets/17_gh_repo_setup.png)
 
-8. Determine if you want to continue to Part A or if you want to stop for now and continue later.
+8. Determine if you want to continue to Part A now or if you want to stop and continue later.
    - If you want to continue to Part A now, type `code .` and press **Enter**. Skip to Step 3 in **2. Complete Part A**.
-   - If done for now, type `exit` and press **Enter** to close the terminal window. Bookmark the CVD page in your local browser so you can return to it later without going through D2L Brightspace.
+   - If done for now, type `exit` and press **Enter** to close the terminal window. Bookmark the CVD page in your local browser, if you have not already, so you can return to it later without going through D2L Brightspace.
 
 ## 2. Complete Part A
 

@@ -34,6 +34,12 @@ Microsoft. (n.d.). *Python debugging in VS Code*. Visual Studio Code. Retrieved 
 
 This Microsoft resource explains the debugging tools available for Python programs in Visual Studio Code. The debugger can pause a program at a **breakpoint**, execute the program one step at a time, and allow programmers to inspect variable values while the program is running. These features can help programmers understand the order in which statements execute and investigate why a program is not behaving as expected. If you experimented with debugging in the course IDE, consider describing what you observed while stepping through your program or examining its variables and how that experience helped you better understand how your Python code executed.
 
+## Code Spell Checker
+
+Street Side Software. (n.d.). *Code Spell Checker*. GitHub. Retrieved August 25, 2026, from [Code Spell Checker](https://github.com/streetsidesoftware/vscode-spell-checker)
+
+Code Spell Checker is a VS Code extension that checks spelling while you work in source code and documents. Words that may be misspelled appear with a squiggly underline, and the extension can provide suggested corrections. For your reflection, consider whether Code Spell Checker helped you notice and correct spelling mistakes while writing code, comments, or Markdown documentation. Think about how catching these mistakes while you work can improve the readability and quality of your programming work.
+
 ## Ruff Editor Features
 
 Astral Software, Inc. (n.d.). *Features*. Ruff. Retrieved August 25, 2026, from [Ruff editor features](https://docs.astral.sh/ruff/editors/features/?utm_source=chatgpt.com)

@@ -2,12 +2,7 @@
 
 # IT 140 Module Two Assignment
 
-- **Course:** IT 140 - *Introduction to Scripting*
-- **Activity:** 2-3 Module Two Assignment
-- **Activity Type:** Required, graded, with two submissions
-  - **Part A:** Name and Age Program (`name_age.py`)
-  - **Part B:** IDE Features Reflection (`ide_features.md`)
-
+---
 > [!IMPORTANT]
 > **GitHub repository options**
 >
@@ -19,6 +14,14 @@
 > - 🔴 **Use this template — Do not use:** It will break the code later in this README file.
 >
 > **Faculty**: Consider selecting **Watch** → **Custom** → **Releases + Issues** to receive major repository updates and follow reported problems.
+
+---
+
+- **Course:** IT 140 - *Introduction to Scripting*
+- **Activity:** 2-3 Module Two Assignment
+- **Activity Type:** Required, graded, with two submissions
+  - **Part A:** Name and Age Program (`name_age.py`)
+  - **Part B:** IDE Features Reflection (`ide_features.md`)
 
 ## Table of Contents
 

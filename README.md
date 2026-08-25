@@ -47,9 +47,9 @@ We strongly recommend that you complete this first assignment using the Codio Vi
    - If you bookmarked the CVD, open that link.
    - If not, open the CVD from within [D2L Brightspace](https://learn.snhu.edu/). Follow the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd) instructions if you need a refresher.
 
-2. Click the browser icon on the taskbar to open a browser. Then, point the browser to the `https://github.com/GC-STEM/it140-m2-assignment`. Arrange the browser window on one side of your screen.
+2. Click the browser icon on the taskbar to open a browser. Then, point the browser to `https://github.com/GC-STEM/it140-m2-assignment`. Arrange the browser window on one side of your screen, as shown below.
 
-3. Click the terminal icon on the taskbar to open a terminal window. Arrange it on the other side of your screen from the browser window.
+3. Click the terminal icon on the taskbar to open a terminal window. Arrange it on the other side of your screen from the browser window, as shown below.
 
    ![Terminal and browser window in split screen](./.github/assets/13_split_screen_terminal_browser.png)
 

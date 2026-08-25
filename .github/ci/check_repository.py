@@ -132,14 +132,14 @@ REQUIRED_TEXT_MARKERS = {
 }
 
 REFLECTION_PLACEHOLDERS = (
-    "TODO: Replace with your introduction text here.",
+    "TODO: Replace with your introduction here.",
     "TODO: Replace with name of your Feature1",
-    "TODO: Replace with your feature 1 text here.",
+    "TODO: Replace with your Feature 1 paragraph here.",
     "TODO: Replace with name of your Feature2",
-    "TODO: Replace with your feature 2 text here.",
+    "TODO: Replace with your Feature 2 paragraph here.",
     "TODO: Replace with name of your Feature3",
-    "TODO: Replace with your feature 3 text here.",
-    "TODO: Replace with your conclusion text here.",
+    "TODO: Replace with your Feature 3 paragraph here.",
+    "TODO: Replace with your conclusion here.",
     (
         "TODO: Replace with your source citations here in APA style, if any. "
         "Delete section heading and this text if not used."

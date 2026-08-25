@@ -28,7 +28,7 @@ TODO: Replace with your Feature 3 paragraph here.
 
 > Summarize what you learned from using your IDE in this assignment. Reflect on how these features will support your future programming work and improve your confidence as a new programmer. Delete these instructions when done.
 
-TODO: Replace with your concluding paragraph here.
+TODO: Replace with your conclusion here.
 
 ## References
 

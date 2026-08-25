@@ -48,6 +48,7 @@ REQUIRED_FILES = (
     "Part-A/tests/test_name_age.py",
     "Part-B/README.md",
     "Part-B/ide_features.md",
+    "Part-B/annotated_bib.md",
 )
 
 PROVIDED_MARKDOWN = (

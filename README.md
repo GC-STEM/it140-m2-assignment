@@ -11,7 +11,7 @@
 > [!IMPORTANT]
 > **GitHub repository options**
 >
-> If you are completing this repository as part of your IT 140 assignment, use the GitHub options in the upper-right corner as follows:
+> If you are completing this repository as part of your IT 140 assignment, do not use the GitHub options in the upper-right corner except as follows:
 >
 > - 🟡 **Watch — Not recommended:** Notifications may confuse students and are not needed.
 > - 🔴 **Fork — Do not use:** Later course code requires you to use this repository as provided.

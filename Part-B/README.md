@@ -12,10 +12,13 @@ You will identify **three IDE features** that helped make your work easier or mo
 
 Use the notes and observations you made while completing Part A. Focus on features you **actually used or observed** while reviewing documents, writing code, finding problems, running your program, or testing it.
 
-If you are unsure what a feature is officially called, use Microsoft's documentation to confirm its name:
+If you are unsure what a feature is officially called or want to learn more about how it works, use these resources:
 
+* [IDE Features Annotated Bibliography](./annotated_bib.md) — a curated guide to authoritative sources about useful VS Code and Python features
 * [Visual Studio Code Documentation](https://code.visualstudio.com/docs) — general VS Code features and tools
 * [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing) — Python-specific editing features
+
+An **annotated bibliography** is a list of sources that includes a reference for each source and a short paragraph explaining what the source covers and how it may be useful in a particular writing assignment. The provided bibliography can help you find reliable information about IDE features and decide which sources may help you explain features you actually used or observed in the course IDE.
 
 ## Deliverable
 
@@ -31,6 +34,7 @@ Open:
 
 * This [`README.md`](./README.md) for instructions
 * The [`ide_features.md`](./ide_features.md) starter file for your reflection
+* The [`annotated_bib.md`](./annotated_bib.md) annotated bibliography when you need help identifying or learning more about an IDE feature
 
 > **Tip: Work side by side.** Keep this README open in **Preview** on one side of VS Code and `ide_features.md` open for editing on the other side. This lets you follow each step while writing your reflection without repeatedly switching between files.
 
@@ -59,10 +63,13 @@ Your reflection should explain your own experience rather than simply provide de
 
 If you do not know the official name of something you used, check:
 
+* [IDE Features Annotated Bibliography](./annotated_bib.md)
 * [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 * [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing)
 
-Use Microsoft's name for the feature in your reflection.
+The annotated bibliography can help you find an authoritative source that matches a feature you used. Read the original source listed in the bibliography when you need more detail about what the feature does.
+
+Use VS Code's name for the feature in your reflection.
 
 ### 2. Write the Introduction
 
@@ -76,11 +83,12 @@ Replace the starter text below that heading with a brief introduction.
 
 Your introduction should:
 
-* Identify the IDE you used for this assignment.
-* Briefly explain why you used that IDE.
-* Connect your IDE experience to your work on the `name_age.py` program.
+* Reflect on your experience using the **course IDE** to complete your first programming assignment.
+* Briefly describe what it was like to write, run, and test code in an IDE, especially if this was your first time using one.
+* Introduce the three IDE features you selected.
+* Briefly explain how IDE features can support beginning programmers.
 
-Keep the introduction concise. The three feature sections are the main focus of the reflection.
+Keep the introduction concise. Save specific details and examples for the three feature sections.
 
 ### 3. Complete Feature 1
 
@@ -92,7 +100,7 @@ Find:
 
 Replace `Name of Feature1` with **Microsoft's name for the IDE feature** you are discussing.
 
-Use the [Visual Studio Code Documentation](https://code.visualstudio.com/docs) or [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing) to confirm the feature name if needed.
+Use the [IDE Features Annotated Bibliography](./annotated_bib.md), [Visual Studio Code Documentation](https://code.visualstudio.com/docs), or [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing) to confirm the feature name or learn more about how it works.
 
 Then replace the starter text below the heading with one paragraph that:
 
@@ -116,7 +124,7 @@ Find:
 
 Replace `Name of Feature2` with Microsoft's name for a **different IDE feature**.
 
-Use the [Visual Studio Code Documentation](https://code.visualstudio.com/docs) or [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing) to confirm the feature name if needed.
+Use the [IDE Features Annotated Bibliography](./annotated_bib.md), [Visual Studio Code Documentation](https://code.visualstudio.com/docs), or [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing) to confirm the feature name or learn more about how it works.
 
 Then write one paragraph that:
 
@@ -137,7 +145,7 @@ Find:
 
 Replace `Name of Feature3` with Microsoft's name for a **third IDE feature**.
 
-Use the [Visual Studio Code Documentation](https://code.visualstudio.com/docs) or [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing) to confirm the feature name if needed.
+Use the [IDE Features Annotated Bibliography](./annotated_bib.md), [Visual Studio Code Documentation](https://code.visualstudio.com/docs), or [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing) to confirm the feature name or learn more about how it works.
 
 Then write one paragraph that:
 
@@ -170,7 +178,11 @@ Do not introduce a new feature in the conclusion. Use it to bring together the i
 
 The `## References` section is for sources that you actually used while completing your reflection.
 
-Microsoft's documentation is the preferred source for confirming the official name of a VS Code feature or learning more about how it works:
+Start with the [IDE Features Annotated Bibliography](./annotated_bib.md) if you need information about a feature. It provides APA-style references and short annotations explaining what each source covers and how it may help with your reflection.
+
+The annotated bibliography is a **guide to the sources**. If you use information from one of the sources listed there, cite or acknowledge the **original source**, not the annotated bibliography itself.
+
+Microsoft's documentation is also the preferred source for confirming the official name of a VS Code feature or learning more about how it works:
 
 * [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 * [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing)
@@ -218,10 +230,11 @@ You can continue using the **side-by-side editor and Preview** while making fina
 
 ## Help and Support
 
-For Microsoft's names and descriptions of VS Code features, see:
+For authoritative information about IDE features, start with:
 
-* [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
-* [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing)
+* [IDE Features Annotated Bibliography](./annotated_bib.md) — curated sources with short explanations of what each source covers
+* [Visual Studio Code Documentation](https://code.visualstudio.com/docs) — Microsoft's general VS Code documentation
+* [Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing) — Microsoft's Python-specific editing documentation
 
 For supplemental information about IDE features, Markdown, citations, or the Module Two Assignment, see the [Module Two Assignment Wiki](https://github.com/GC-STEM/it140-m2-assignment/wiki).
 
@@ -234,12 +247,19 @@ When your Part B IDE Features Reflection is complete, return to [Start Here](../
 <!-- Artifact Metadata
 
 * Course: IT 140 - Introduction to Scripting
+
 * Artifact Title: 2-3 Module Two Assignment | Part B
+
 * Artifact Type: Required assignment guidance; Part B produces the IDE Features Reflection deliverable
+
 * Artifact Purpose: Guide students through completing the Part B IDE Features Reflection.
-* Artifact Description: Students reflect on their Part A IDE experience, identify and explain three helpful IDE features using Microsoft's terminology, provide specific examples from their work, and prepare the reflection for submission.
+
+* Artifact Description: Students reflect on their Part A IDE experience, identify and explain three helpful IDE features using Microsoft's terminology, use the provided annotated bibliography and authoritative documentation as supporting resources, provide specific examples from their work, and prepare the reflection for submission.
+
 * Artifact Version: {{semantic version number}}
+
 * Artifact Date: {{artifact date in YYYY-MM-DD format}}
+
 * Development Status: {{development status}}
 
 -->

@@ -15,7 +15,7 @@
 >
 > - 🟡 **Watch — Not recommended:** Notifications may confuse students and are not needed.
 > - 🔴 **Fork — Do not use:** It will break the code later in this README file.
-> - 🟢 **Star — Optional:** Bookmark this repository so it is easier to find later.
+> - 🟢 **Star — Recommended:** Later code will bookmark this repository so it is easier to find later.
 > - 🔴 **Use this template — Do not use:** It will break the code later in this README file.
 >
 > **Faculty**: Consider selecting **Watch** → **Custom** → **Releases + Issues** to receive major repository updates and follow reported problems.

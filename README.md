@@ -11,7 +11,7 @@
 >
 > - 🚫 **Fork — Do not use**
 > - 🚫 **Use this template — Do not use**
-> - ⭐ **Star** — The setup commands later in this README will bookmark this repository so you can find it more easily.
+> - ⭐ **Star** — The setup commands later in this README will bookmark this repository for you.
 > - 👁️ **Watch**
 >   - **Students:** Not recommended. Watching is not needed and may generate unnecessary notifications.
 >   - **Faculty:** Consider selecting **Watch → Custom → Releases + Issues** to receive major repository updates and follow reported issues.

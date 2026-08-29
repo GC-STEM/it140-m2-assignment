@@ -1,34 +1,41 @@
-<!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
+<!-- To see this file in a clean, formatted view, select "Text Editor ▼" in the upper-right corner of the editor, then select "Markdown Preview". -->
 
-# IT 140 Module Two Assignment
+# IT 140 Module Two Assignment | Software Development Introduction
 
 ---
 
 > [!IMPORTANT]
 > **GitHub repository options**
 >
-> If you are completing this repository as part of your IT 140 assignment, do not use the GitHub options in the upper-right corner except as follows:
+> **Do not select Fork or Use this template.** These options will interfere with the repository setup commands later in this README.
 >
-> - 🟡 **Watch — Not recommended:** Notifications may confuse students and are not needed.
-> - 🔴 **Fork — Do not use:** It will break the code later in this README file.
-> - 🟢 **Star — Recommended:** Later code will bookmark this repository so it is easier to find later.
-> - 🔴 **Use this template — Do not use:** It will break the code later in this README file.
->
-> **Faculty**: Consider selecting **Watch** → **Custom** → **Releases + Issues** to receive major repository updates and follow reported problems.
+> - 🚫 **Fork — Do not use**
+> - 🚫 **Use this template — Do not use**
+> - ⭐ **Star** — The setup commands later in this README will bookmark this repository so you can find it more easily.
+> - 👁️ **Watch**
+>   - **Students:** Not recommended. Watching is not needed and may generate unnecessary notifications.
+>   - **Faculty:** Consider selecting **Watch → Custom → Releases + Issues** to receive major repository updates and follow reported issues.
 
 ---
 
-- **Course:** IT 140 - *Introduction to Scripting*
-- **Activity:** 2-3 Module Two Assignment
-- **Activity Type:** Required, graded, with two submissions
-  - **Part A:** Name and Age Program (`name_age.py`)
-  - **Part B:** IDE Features Reflection (`ide_features.md`)
+> [!NOTE]
+> **🆕 New for 2026 C-5:** IT 140 now uses GitHub repositories to provide assignment starter files, development resources, and supporting documentation.
+>
+> If you find a problem with this GitHub repository or its instructions, or have a suggestion for improvement, please open [GitHub Issues](https://github.com/GC-STEM/it140-m2-assignment/issues) to review existing issues or create a new issue.
+
+---
+
+- **Course**: IT 140 - *Introduction to Scripting*
+- **Task Title**: 2-3: Software Development Introduction
+- **Task Type**: Required, graded, one submission required
+- **Repository Version**: 1.0.0
+- **Repository Version Date**: 08/29/2026
 
 ## Table of Contents
 
 Complete the following tasks in order to complete the Module Two assignment. Each task is described in detail below.
 
-- [IT 140 Module Two Assignment](#it-140-module-two-assignment)
+- [IT 140 Module Two Assignment | Software Development Introduction](#it-140-module-two-assignment--software-development-introduction)
   - [Table of Contents](#table-of-contents)
   - [0. Meet the Prerequisites](#0-meet-the-prerequisites)
   - [1. Setup the Assignment](#1-setup-the-assignment)

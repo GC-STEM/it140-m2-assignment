@@ -1,7 +1,7 @@
 {
     "workbench.editorAssociations": {
-        "*.md": "default",
-        "*.markdown": "default",
+        "*.md": "vscode.markdown.editor",
+        "*.markdown": "vscode.markdown.editor",
         "README.md": "vscode.markdown.preview.editor",
         "*_srs.md": "vscode.markdown.preview.editor",
         "*_sdd.md": "vscode.markdown.preview.editor"
@@ -113,6 +113,7 @@
         "Dockerfiles",
         "dout",
         "dpkg",
+        "drawio",
         "dseditgroup",
         "dtparam",
         "Durmus",
@@ -234,6 +235,7 @@
         "multilearn",
         "multimodal",
         "Multistakeholder",
+        "mxfile",
         "NEEDRESTART",
         "Nesterov",
         "nodefaults",
@@ -261,6 +263,8 @@
         "pacman",
         "pandasql",
         "passwordless",
+        "paycheck",
+        "paychecks",
         "perceptron",
         "pids",
         "pipefail",
@@ -312,9 +316,11 @@
         "qtconsole",
         "Qwiic",
         "Raji",
+        "randint",
         "rapidsai",
         "raspi",
         "readlink",
+        "recloning",
         "releaseinfo",
         "remediations",
         "replstate",
@@ -369,6 +375,7 @@
         "statemachine",
         "statsmodels",
         "stopbits",
+        "storyboard",
         "stringv",
         "Styleguide",
         "subword",
@@ -394,8 +401,8 @@
         "transactionally",
         "treebanks",
         "tsfresh",
-        "uart",
         "UART",
+        "uart",
         "uchicago",
         "udhr",
         "unreviewed",
@@ -404,6 +411,7 @@
         "Vasserman",
         "verbnet",
         "virt",
+        "Visio",
         "vsassets",
         "Walkthru",
         "wavio",
@@ -427,6 +435,5 @@
         "Zappella",
         "ZERR",
         "Zhang"
-    ],
-    "python-envs.defaultEnvManager": "ms-python.python:venv"
+    ]
 }

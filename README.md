@@ -43,6 +43,14 @@ Complete the following tasks in order to complete the Module Two assignment. Eac
   - [3. Complete Part B](#3-complete-part-b)
   - [4. Submit Your Assignment](#4-submit-your-assignment)
   - [Get Help and Support](#get-help-and-support)
+    - [The course IDE Update reports a failure](#the-course-ide-update-reports-a-failure)
+    - [Your Module Two assignment already exists somewhere](#your-module-two-assignment-already-exists-somewhere)
+      - [Your personal GitHub repository and local clone both exist on this device](#your-personal-github-repository-and-local-clone-both-exist-on-this-device)
+      - [Your personal GitHub repository exists, but there is no local clone on this device](#your-personal-github-repository-exists-but-there-is-no-local-clone-on-this-device)
+      - [A local clone exists on this device, but you are not sure about your personal GitHub repository](#a-local-clone-exists-on-this-device-but-you-are-not-sure-about-your-personal-github-repository)
+    - [Working on the assignment from more than one device](#working-on-the-assignment-from-more-than-one-device)
+    - [You intentionally want to start over](#you-intentionally-want-to-start-over)
+    - [Other technical problems](#other-technical-problems)
 
 ## 0. Meet the Prerequisites
 
@@ -107,6 +115,10 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     code ~/Repos/it140-m2-assignment
     ```
 
+   *Reminder*. **Path shortcuts**: In terminal commands, **`~`** means your home folder, and **`.`** means your current folder. For example:
+     - `cd ~/Repos` means change directory to the `Repos` folder inside your home folder.
+     - `code .` opens the current folder in VS Code.
+
 3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window right above it.
 
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
@@ -162,18 +174,139 @@ In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the *
 
 ## Get Help and Support
 
-<!--
-**🚨 DANGER**. Run these commands only when you are setting up the Module Two assignment repository for the first time or when you intentionally want to start over from a fresh copy. These commands will **delete and replace** any existing `it140-m2-assignment` repository in both your GitHub account and your local `~/Repos` folder. Any work or changes saved only in those copies will be **permanently lost**. If you have already started the assignment and want to keep your work, do NOT run these commands.
+### The course IDE Update reports a failure
+
+If Step 5 reports `Failures` greater than `0`, stop before continuing to Step 6. Follow the **Action required** and **Next step** shown in the Update summary.
+
+If the problem is not resolved, see **[Setup Problems and Support](https://github.com/GC-STEM/it140-m1-setup-tasks/wiki/Setup-Problems-and-Support)**. That page explains what information to collect and where to ask for help with course IDE setup and lifecycle-script problems.
+
+Before asking for help, save the exact Update summary and error message. The lifecycle scripts also save a diagnostic log under `~/it140/logs/` or the corresponding `it140/logs` folder in your user profile.
+
+> [!WARNING]
+> Do not attempt manual `sudo`, package-manager, system, or course-file repairs unless the course instructions or technical support specifically direct you to do so.
+
+### Your Module Two assignment already exists somewhere
+
+Your Module Two assignment will have several related copies:
+
+- **Public course template on GitHub:** `GC-STEM/it140-m2-assignment`. This is the course-provided starting point. You cannot modify this copy.
+
+- **Your personal GitHub repository:** `it140-m2-assignment` in your own GitHub account. This stores the work you "push" (upload) to GitHub.
+
+- **A local clone on a device:** Usually `~/Repos/it140-m2-assignment` on the CVD or your local computer. This is the copy you open in VS Code and edit.
+
+Step 6 creates your personal GitHub repository and then creates a local clone on the device where you run the commands.
+
+Choose the situation below that matches what you see.
+
+#### Your personal GitHub repository and local clone both exist on this device
+
+For example, you created your personal GitHub repository while working on the CVD, and `~/Repos/it140-m2-assignment` also exists on that CVD.
+
+Do not run the Step 6 setup commands again.
+
+Open the local clone on your current device:
+
+```bash
+code ~/Repos/it140-m2-assignment
+```
+
+#### Your personal GitHub repository exists, but there is no local clone on this device
+
+For example, you created your personal GitHub repository and local clone on the CVD, but now you are using your local computer for the first time.
+
+Do **not** create another personal GitHub repository from the public course template.
+
+Instead, create a local clone of your existing personal GitHub repository on the current device:
 
 ```bash
 cd ~/Repos
 gh auth setup-git
-gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment
-username="$(gh api user --jq .login)"
-rm -rf it140-m2-assignment
-gh repo delete "$username/it140-m2-assignment" --yes 2>/dev/null || true
-gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
+gh repo clone "$(gh api user --jq .login)/it140-m2-assignment"
 cd it140-m2-assignment
 git remote -v
 ```
--->
+
+Then open the new local clone on the current device in VS Code:
+
+```bash
+code .
+```
+
+#### A local clone exists on this device, but you are not sure about your personal GitHub repository
+
+Do not delete the local clone on this device and do not run the Step 6 setup commands again. The local clone may contain assignment work that has not yet been pushed to your personal GitHub repository.
+
+From the device that contains the local clone, run:
+
+```bash
+cd ~/Repos/it140-m2-assignment
+git remote -v
+```
+
+This shows which GitHub repository the local clone is connected to.
+
+If you are unsure what the output means, or your expected personal GitHub repository is missing, ask for help before deleting or replacing the local clone or anything in your GitHub account.
+
+### Working on the assignment from more than one device
+
+> [!IMPORTANT]
+> **We highly recommend completing IT 140 work on just one device.** Using one device for the course helps avoid Git and GitHub complications that can occur when the same personal GitHub repository is cloned onto more than one device.
+>
+> If you are already comfortable working with Git and GitHub, you may work from more than one device. Follow the instructions below carefully to keep your copies synchronized.
+
+A single personal GitHub repository can have a local clone on more than one device. For example:
+
+- **First device:** Your CVD
+- **Second device:** Your local computer
+
+Before leaving the first device, save your changes in the local clone on that first device and push them to your personal GitHub repository.
+
+**On the first device, before switching:**
+
+```bash
+cd ~/Repos/it140-m2-assignment
+git status
+git add -A
+git commit -m "Save work before switching devices"
+git push
+```
+
+After moving to the second device, update the local clone on that second device from your personal GitHub repository before making any new changes.
+
+**On the second device, before starting work:**
+
+```bash
+cd ~/Repos/it140-m2-assignment
+git pull --ff-only
+git status
+code .
+```
+
+> [!IMPORTANT]
+> The second command block assumes that a local clone already exists on the second device. If there is no `~/Repos/it140-m2-assignment` folder on the second device, follow **Your personal GitHub repository exists, but there is no local clone on this device** above instead.
+
+If `git push` on the first device or `git pull --ff-only` on the second device reports an error, stop and ask for help before making additional changes on either device.
+
+### You intentionally want to start over
+
+Starting over may involve one or more separate copies:
+
+- Your **personal GitHub repository** in your GitHub account
+- Your **local clone on your CVD**
+- Your **local clone on your local computer**
+
+Deleting one copy does not necessarily delete the others.
+
+Before deleting or replacing anything, make sure you have saved any work you want to keep. If you have already started the assignment or are unsure which copy is safe to replace, ask for help before continuing.
+
+For more information about these different copies, see **[Course Repositories](https://github.com/GC-STEM/it140/wiki/Course-Repositories)**.
+
+### Other technical problems
+
+For a current course-wide technical problem, check **[Course Status](https://github.com/GC-STEM/it140/wiki/Course-Status)**.
+
+If you find a problem with the **public course template or its instructions**, review existing reports or open a new **[GitHub Issue](https://github.com/GC-STEM/it140-m2-assignment/issues)**.
+
+> [!WARNING]
+> Never post passwords, authentication or verification codes, recovery codes, access tokens, private identifying information, or complete solutions to graded assignments in a public GitHub issue or discussion.

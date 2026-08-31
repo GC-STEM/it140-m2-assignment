@@ -31,26 +31,17 @@
 - **Repository Version**: 1.0.2
 - **Repository Version DTG**: 2026-08-30-12-56
 
+<!-- omit from toc -->
 ## Table of Contents
 
 Complete the following tasks in order to complete the Module Two assignment. Each task is described in detail below.
 
-- [IT 140 Module Two Assignment | Software Development Introduction](#it-140-module-two-assignment--software-development-introduction)
-  - [Table of Contents](#table-of-contents)
-  - [0. Meet the Prerequisites](#0-meet-the-prerequisites)
-  - [1. Setup the Assignment](#1-setup-the-assignment)
-  - [2. Complete Part A](#2-complete-part-a)
-  - [3. Complete Part B](#3-complete-part-b)
-  - [4. Submit Your Assignment](#4-submit-your-assignment)
-  - [Get Help and Support](#get-help-and-support)
-    - [The course IDE Update reports a failure](#the-course-ide-update-reports-a-failure)
-    - [Your Module Two assignment already exists somewhere](#your-module-two-assignment-already-exists-somewhere)
-      - [Your personal GitHub repository and local clone both exist on this device](#your-personal-github-repository-and-local-clone-both-exist-on-this-device)
-      - [Your personal GitHub repository exists, but there is no local clone on this device](#your-personal-github-repository-exists-but-there-is-no-local-clone-on-this-device)
-      - [A local clone exists on this device, but you are not sure about your personal GitHub repository](#a-local-clone-exists-on-this-device-but-you-are-not-sure-about-your-personal-github-repository)
-    - [Working on the assignment from more than one device](#working-on-the-assignment-from-more-than-one-device)
-    - [You intentionally want to start over](#you-intentionally-want-to-start-over)
-    - [Other technical problems](#other-technical-problems)
+- [0. Meet the Prerequisites](#0-meet-the-prerequisites)
+- [1. Setup the Assignment](#1-setup-the-assignment)
+- [2. Complete Part A](#2-complete-part-a)
+- [3. Complete Part B](#3-complete-part-b)
+- [4. Submit Your Assignment](#4-submit-your-assignment)
+- [Get Help and Support](#get-help-and-support)
 
 ## 0. Meet the Prerequisites
 

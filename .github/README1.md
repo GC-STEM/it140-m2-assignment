@@ -10,6 +10,7 @@
 
 **Assignment progress:** **0 Start Here** → [1 Part A](./Part-A/README.md) → [2 Part B](./Part-B/README.md) → [3 Submit](#submit-your-assignment)
 
+<!-- omit from toc -->
 ## Table of Contents
 
 - [IT 140 Module Two Assignment](#it-140-module-two-assignment)

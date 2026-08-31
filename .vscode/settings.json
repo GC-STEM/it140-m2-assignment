@@ -435,5 +435,6 @@
         "Zappella",
         "ZERR",
         "Zhang"
-    ]
+    ],
+    "markdown.extension.toc.levels": "2..2"
 }

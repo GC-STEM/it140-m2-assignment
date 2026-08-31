@@ -6,7 +6,7 @@ Input:
     TODO: Replace with another major input, or delete this TODO line.
 
 Process:
-    TODO: Replace with a major processing step.
+    TODO: Replace with a major processing step. 
 
 Output:
     TODO: Replace with a major output, including its type and destination.

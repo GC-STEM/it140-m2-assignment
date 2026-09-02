@@ -51,7 +51,7 @@ Complete the following tasks in order to complete the Module Two assignment. Eac
 
 ## 1. Setup the Assignment
 
-We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at Step 2 below.
+We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at Step 2 below. You will need to translate the instructions for your local operating system.
 
 1. Launch the CVD now and carry out the remaining instructions from within the CVD.
    - If you bookmarked the CVD, open that link.

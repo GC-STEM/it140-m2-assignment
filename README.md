@@ -28,8 +28,8 @@
 - **Course**: IT 140 - *Introduction to Scripting*
 - **Task Title**: 2-3: Software Development Introduction
 - **Task Type**: Required, graded, one submission required
-- **Repository Version**: 1.0.2
-- **Repository Version DTG**: 2026-08-30-12-56
+- **Repository Version**: 1.0.3
+- **Repository Version DTG**: 2026-09-02-09-37
 
 <!-- omit from toc -->
 ## Table of Contents

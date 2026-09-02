@@ -75,7 +75,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
    ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
-6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands.
+6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. Windows users should use a Git Bash terminal.
 
     ```bash
     cd ~/Repos
@@ -84,7 +84,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
     cd it140-m2-assignment
     git remote -v
-    ```
+   ```
 
     *Note*. The above commands only work the first time you run them successfully. If you want to update your repository later or start over, see the [**Get Help and Support**](#get-help-and-support) section.
 

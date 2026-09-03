@@ -247,7 +247,7 @@ The following command block will:
    ```bash
    cd ~/Repos
    gh auth setup-git
-   gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment
+   gh api --method PUT user/starred/GC-STEM/it140-m2-assignment
    username="$(gh api user --jq .login)"
    repo="$username/it140-m2-assignment"
    if [ -d "it140-m2-assignment/.git" ]; then

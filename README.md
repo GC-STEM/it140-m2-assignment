@@ -38,10 +38,6 @@ Complete the following tasks in order to complete the Module Two assignment. Eac
 
 - [0. Meet the Prerequisites](#0-meet-the-prerequisites)
 - [1. Setup the Assignment](#1-setup-the-assignment)
-- [2. Complete Part A](#2-complete-part-a)
-- [3. Complete Part B](#3-complete-part-b)
-- [4. Submit Your Assignment](#4-submit-your-assignment)
-- [Get Help and Support](#get-help-and-support)
 
 ## 0. Meet the Prerequisites
 
@@ -51,36 +47,46 @@ Complete the following tasks in order to complete the Module Two assignment. Eac
 
 ## 1. Setup the Assignment
 
-We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at Step 2 below. You will need to translate the instructions for your local operating system.
+We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at Step 3 below. You will need to translate the instructions for your local operating system.
 
-1. Launch the CVD now and carry out the remaining instructions from within the CVD.
+1. **CVD Only**: Launch the CVD now and carry out the remaining instructions from within the CVD.
    - If you bookmarked the CVD, open that link.
    - If not, open the CVD from within [D2L Brightspace](https://learn.snhu.edu/). Follow the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd) instructions if you need a refresher.
 
-2. Click the browser icon on the taskbar to open a browser. Then, point the browser to `https://github.com/GC-STEM/it140-m2-assignment`. Arrange the browser window on one side of your screen, as shown below.
+2. **CVD Only**: Click the browser icon on the taskbar to open a browser. Point it to `https://github.com/GC-STEM/it140-m2-assignment`.
+   - *Tip*. All course repositories are bookmarked in the **IT 140 Resources** folder on the CVD browser.
 
-3. Click the terminal icon on the taskbar to open a terminal window. Arrange it on the other side of your screen from the browser window, as shown below.
+3. Arrange the browser window on the opposite side of your screen as your desktop icons, as shown below.
+
+4. Open a terminal window. Arrange it on the other side of your screen from the browser window, as shown below.
+   - **CVD**: Click the terminal icon on the taskbar to open a terminal window.
+   - **Windows**: Open a Git Bash terminal window.
+   - **macOS**: Open a Terminal window.
+   - **Linux**: Open a terminal window.
 
    ![Terminal and browser window in split screen](./.github/assets/13_split_screen_terminal_browser.png)
 
-4. In the CVD terminal window, type `update_it140.sh` and press **Enter**. This will update the course IDE to the latest version. Be patient. It may take a few minutes to complete. If using a local computer, use the appropriate script extension for your operating system:
-   - Windows: `update_it140.ps1`
-   - macOS  : `update_it140.zsh`
-   - Linux  : `update_it140.sh`
+5. In the terminal window, type the name of the update script with the appropriate extension for your environment and press **Enter**. This will update the course IDE to the latest version. Be patient. It may take a few minutes to complete:
 
-5. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
+   - **CVD/Linux**: `update_it140.sh`
+
+   - **Windows**: `update_it140.ps1`
+
+   - **macOS**: `update_it140.zsh`
+
+6. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
    - If `Failures` is greater than `0`, review the [**Get Help and Support**](#get-help-and-support) section.
    - If `Restart required: No`, type `exit` and press **Enter** to close the terminal window.
    - If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar and wait for the CVD to restart.
 
    ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
-6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. Windows users should use a Git Bash terminal.
+7. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. Windows users should use a Git Bash terminal.
 
     ```bash
     cd ~/Repos
     gh auth setup-git
-    gh api --method PUT /user/starred/GC-STEM/it140-m2-assignment
+    gh api --method PUT user/starred/GC-STEM/it140-m2-assignment
     gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
     cd it140-m2-assignment
     git remote -v
@@ -88,11 +94,11 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
     *Note*. The above commands only work the first time you run them successfully. If you want to update your repository later or start over, see the [**Get Help and Support**](#get-help-and-support) section.
 
-7. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
+8. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
 
    ![Git remote output](./.github/assets/17_gh_repo_setup.png)
 
-8. Determine if you want to continue to Part A now or if you want to stop and continue later.
+9. Determine if you want to continue to Part A now or if you want to stop and continue later.
    - If you want to continue to Part A now, type `code .` and press **Enter**. Skip to Step 3 in **2. Complete Part A**.
    - If done for now, type `exit` and press **Enter** to close the terminal window. Bookmark the CVD page in your local browser, if you have not already, so you can return to it later without going through D2L Brightspace.
 

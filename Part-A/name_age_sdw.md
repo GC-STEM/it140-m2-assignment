@@ -56,7 +56,8 @@
 >
 > Enter your response below.
 
-TODO: Replace this text with your one-sentence summary of the program's purpose
+It asks the user for their name and age, figures out about what year they were born, and shows the result.
+
 ### 3. Inputs, Processing, and Outputs
 
 > Think about the solution as three basic parts:
@@ -73,7 +74,8 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below. Use a separate numbered bullet for each input.
 
-1. TODO: Replace with your first input and its source (e.g., user input, system value, internal value).
+1. The user's name, which is entered by the user.
+2. The user's age, which is entered by the user.
 
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.3**
 >
@@ -81,7 +83,8 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below. Use a separate numbered bullet for each input.
 
-1. TODO: Replace with your first input and its data type (e.g., string, integer, float, Not specified).
+1. User's name - string
+2. User's age - integer
 
 #### IPO: Processing
 
@@ -93,7 +96,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter a brief description in your own words below. Use a separate numbered bullet for each process.
 
-1. TODO: Replace with your first processing step in your own words.
+Get the current year from the computer.
 
 #### IPO: Outputs
 
@@ -105,7 +108,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below. Use a separate numbered bullet for each output.
 
-1. TODO: Replace with your first output and where it is displayed (e.g., console, file, GUI).
+1. A message with the user's name and approximate birth year displayed on the screen. 
 
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
 >
@@ -113,7 +116,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below. Use a separate numbered bullet for each output format.
 
-1. TODO: Replace with your first output format.
+1. Hello [name]! You were born in [birth year].
 
 ### 4. Requirements in My Own Words
 
@@ -129,7 +132,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below in your own words.
 
-Replace this text with your explanation of requirement 1.2 in your own words.
+The program needs to ask the user to enter their age.
 
 #### SRS Requirement 1.3 — Use the Age in an Arithmetic Calculation
 
@@ -139,7 +142,7 @@ Replace this text with your explanation of requirement 1.2 in your own words.
 >
 > Enter your response below in your own words.
 
-TODO: Replace this text with your explanation of requirement 1.3 in your own words.
+The program needs to get the current year automatically from the computer.
 
 #### SRS Requirement 1.4 — Calculate the Approximate Birth Year
 
@@ -149,7 +152,7 @@ TODO: Replace this text with your explanation of requirement 1.3 in your own wor
 >
 > Enter your response below.
 
-Replace this text with your explanation of requirement 1.4 in your own words.
+The program needs to subtract the user's age from the current year to figure out their approximate birth year.
 
 #### SRS Requirement 1.5 — Display the Personalized Result
 
@@ -159,7 +162,7 @@ Replace this text with your explanation of requirement 1.4 in your own words.
 >
 > Enter your response below.
 
-TODO: Replace this text with your explanation of requirement 1.5 in your own words.
+The program needs to display a message with the user's name and approximate birth year.
 
 ### 5. Constraints and Special Cases
 
@@ -173,7 +176,7 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 >
 > Enter your response below. Use a separate numbered bullet for each constraint.
 
-1. TODO: Replace with your first important constraint.
+The program must get the current year automatically instead of having the year typed directly into the code.
 
 #### Special or Edge Cases
 
@@ -185,7 +188,7 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 >
 > Enter your response below. Use a separate numbered bullet for each edge case.
 
-1. TODO: Replace with your first edge case.
+The birth year is approximate because the program does not ask if the user's birthday has already happened this year.
 
 ### 6. Analyze Checkpoint
 
@@ -242,7 +245,7 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 >
 > Enter your response below.
 
-TODO: Replace this text with your explanation of how the design addresses requirement 1.3.
+The design uses Python to get the current year automatically from the computer instead of typing the year into the program.
 
 #### SRS Requirement 1.4
 
@@ -256,7 +259,7 @@ TODO: Replace this text with your explanation of how the design addresses requir
 >
 > Enter your response below.
 
-TODO: Replace this text with your explanation of how the design addresses requirement 1.4.
+The design subtracts the user's age from the current year to calculate thier approximate birth year.
 
 ### 9. Check the Plan With an Example
 
@@ -272,9 +275,9 @@ TODO: Replace this text with your explanation of how the design addresses requir
 >
 > Enter your response below.
 
-* Current year: TODO: Replace with the current year from Test 1.
-* User name: TODO: Replace with the user name from Test 1.
-* User age: TODO: Replace with the user age from Test 1.
+* Current year: 2026
+* User name: Alex
+* User age: 24
 
 #### Test Processing
 
@@ -288,7 +291,7 @@ TODO: Replace this text with your explanation of how the design addresses requir
 >
 > Enter your calculation below.
 
-User's approximate birth year = TODO: Replace with the calculation using the Test 1 values (e.g., current year - user age).
+User's approximate birth year = 2026 - 24 = 2002
 
 #### Expected Output
 
@@ -322,7 +325,7 @@ Expected output for Test 1:
 >
 > Enter your response below. Use a separate numbered bullet for each question or unclear item.
 
-1. TODO: Replace with your first question or unclear item, or enter **None** if everything is clear.
+1. none
 
 > If you cannot resolve a repository or course-IDE question, use the [Module Two Assignment GitHub Discussions](https://github.com/GC-STEM/it140-m2-assignment/discussions). Use [GitHub Issues](https://github.com/GC-STEM/it140-m2-assignment/issues) to report a technical problem with the provided repository files or tools. Contact your instructor through D2L Brightspace for questions about assignment requirements, grading, or feedback.
 

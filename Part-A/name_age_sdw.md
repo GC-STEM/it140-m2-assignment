@@ -56,7 +56,7 @@
 >
 > Enter your response below.
 
-TODO: Replace this text with your one-sentence summary of the program's purpose
+The program asks for a person’s name and age, figures out about what year they were born, and shows the result.
 ### 3. Inputs, Processing, and Outputs
 
 > Think about the solution as three basic parts:

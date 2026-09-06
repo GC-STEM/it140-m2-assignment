@@ -2,34 +2,20 @@
 
 ## Introduction
 
-> Write a short reflection on your experience using the course IDE to complete your first programming assignment. Briefly describe what it was like to write, run, and test code in an IDE for the first time. Introduce the three IDE features you selected and briefly explain why learning to use IDE features can help you as a beginning programmer. Save specific examples for the feature sections below. Delete these instructions when done.
+Using PyCharm for this assignment helped me understand how an IDE works. I was able to write my Python code, run it, and see if it worked correctly. Some features that helped me were the color coding, error checking, and the Run button. These features made it easier for me to understand my code and find problems.
 
-TODO: Replace with your introduction here.
+## Feature 1 – Color Coding
 
-## Feature 1 – TODO: Replace with name of your Feature1
+One feature I liked in PyCharm was the color coding. Different parts of my Python code showed up in different colors. This made it easier for me to read my code and tell the different parts apart. It also helped me notice when something did not look right.
 
-> In one paragraph, identify the first feature you selected, explain what it does, and describe how it helped you while developing or testing your program. Include specific details about how it improved your workflow, made coding easier, or helped you find and fix errors more efficiently. Delete these instructions when done.
+## Feature 2 – Error Checking
 
-TODO: Replace with your Feature 1 paragraph here.
+Error checking was another helpful feature in PyCharm. When I made a mistake in my code, PyCharm helped point it out so I knew where to look. This made fixing mistakes easier because I did not have to search through all of my code to figure out what was wrong.
 
-## Feature 2 – TODO: Replace with name of your Feature2
+## Feature 3 – Run Button
 
-> Write one paragraph explaining your second feature. Describe how it functions, what benefits it provided while coding, and why it might be valuable for beginning programmers. Connect the feature to your personal experience using it in this project. Delete these instructions when done.
-
-TODO: Replace with your Feature 2 paragraph here.
-
-## Feature 3 – TODO: Replace with name of your Feature3
-
-> In a single paragraph, identify and explain a third IDE feature. Discuss how it enhanced your programming experience or supported best practices such as readability, debugging, or organization. Give a brief, real example of how you used it. Delete these instructions when done.
-
-TODO: Replace with your Feature 3 paragraph here.
+The run button was helpful because it let me test my program quickly. After I wrote my code, I could click run and see if the program worked. When I tested my name and age program, I could see the questions and the final birth year in the output. This helped me make sure my code was working correctly.
 
 ## Conclusion
 
-> Summarize what you learned from using your IDE in this assignment. Reflect on how these features will support your future programming work and improve your confidence as a new programmer. Delete these instructions when done.
-
-TODO: Replace with your conclusion here.
-
-## References
-
-TODO: Replace with your source citations here in APA style, if any. Delete section heading and this text if not used.
+Using PyCharm helped me learn how an IDE can make programming easier. The color coding, error checking, and run button helped me understand my code and fix mistakes. I am still learning Python, but these features made it easier for me to work through the program. I think using these tools will help me as I learn more about programming.

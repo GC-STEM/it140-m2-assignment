@@ -22,7 +22,7 @@ REQUIRED_FILES = (
     "pyproject.toml",
     ".github/ISSUE_TEMPLATE/report-a-problem.yml",
     ".github/ISSUE_TEMPLATE/request-an-improvement.yml",
-    ".github/RЕADME.md",
+    ".github/README.md",
     ".github/ci/README.md",
     ".github/ci/check_readme_commands.py",
     ".github/ci/check_repository.py",
@@ -51,7 +51,7 @@ REQUIRED_FILES = (
 
 PROVIDED_MARKDOWN = (
     "README.md",
-    ".github/RЕADME.md",
+    ".github/README.md",
     ".github/ci/README.md",
     "Part-A/README.md",
     "Part-A/analysis/README.md",
@@ -80,7 +80,7 @@ REQUIRED_TEXT_MARKERS = {
         "## 4. Submit Your Assignment",
         "## Get Help and Support",
     ),
-    ".github/RЕADME.md": (
+    ".github/README.md": (
         "# About the `.github` Folder",
         "## What This Folder Contains",
         "## Subfolders",

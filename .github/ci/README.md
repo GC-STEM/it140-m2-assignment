@@ -1,6 +1,6 @@
 <!-- To see this file in a clean, formatted view, select "Text Editor ▼" in the upper-right corner of the editor, then select "Markdown Preview". -->
 
-# IT 140 Module Two Assignment | GitHub Continuous Integration (CI) Guide
+# IT 140 Module Two Assignment | GitHub Continuous Integration Guide
 
 This guide explains how **continuous integration (CI)** works in the IT 140 Module Two Assignment repository.
 

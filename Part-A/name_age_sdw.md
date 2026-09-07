@@ -1,4 +1,4 @@
-<!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
+<!-- To see this file in a clean, formatted view, select "Text Editor ▼" in the upper-right corner of the editor, then select "Markdown Preview". -->
 
 # Software Development Worksheet (SDW)
 
@@ -57,6 +57,7 @@
 > Enter your response below.
 
 TODO: Replace this text with your one-sentence summary of the program's purpose
+
 ### 3. Inputs, Processing, and Outputs
 
 > Think about the solution as three basic parts:

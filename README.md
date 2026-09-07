@@ -50,11 +50,11 @@ Complete the following tasks in order to complete the Module Two assignment. Eac
 We strongly recommend that you complete course assignments using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at **Step 3** below. You will need to translate the instructions for your local operating system.
 
 1. **CVD Only**: Launch the CVD now and carry out the remaining instructions from within the CVD.
-   - If you bookmarked the CVD, open that link.
-   - If not, open the CVD from within [D2L Brightspace](https://learn.snhu.edu/). Follow the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd) instructions if you need a refresher.
+   * If you bookmarked the CVD, open that link.
+   * If not, open the CVD from within [D2L Brightspace](https://learn.snhu.edu/). Follow the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd) instructions if you need a refresher.
 
 2. **CVD Only**: Click the browser icon on the taskbar to open a browser. Point it to `https://github.com/GC-STEM/it140-m2-assignment`.
-   - *Tip*. All course repositories are bookmarked in the **IT 140 Resources** folder in your CVD browser for easy access.
+   * *Tip*. All course repositories are bookmarked in the **IT 140 Resources** folder in your CVD browser for easy access.
 
 3. Arrange the browser window on the opposite side of your screen as your desktop icons, as shown below.
 
@@ -62,16 +62,16 @@ We strongly recommend that you complete course assignments using the Codio Virtu
 
 4. Update your system if it has been more than a week since your last update. Be patient. It may take a few minutes to complete. Updating may also require a restart.
 
-   - **CVD**: Click the terminal icon on the taskbar to open a terminal window. Type `update_it140.sh` and press **Enter**.
+   * **CVD**: Click the terminal icon on the taskbar to open a terminal window. Type `update_it140.sh` and press **Enter**.
 
-   - **macOS**: Under development.
+   * **macOS**: Under development.
 
-   - **Windows**: Under development.
+   * **Windows**: Under development.
 
 5. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
-   - If `Failures` is greater than `0`, review the [**Get Help and Support**](#get-help-and-support) section.
-   - If `Restart required: No`, type `exit` and press **Enter** to close the terminal window.
-   - If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar and wait for the CVD to restart.
+   * If `Failures` is greater than `0`, review the [**Get Help and Support**](#get-help-and-support) section.
+   * If `Restart required: No`, type `exit` and press **Enter** to close the terminal window.
+   * If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar and wait for the CVD to restart.
 
    ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
@@ -93,8 +93,8 @@ We strongly recommend that you complete course assignments using the Codio Virtu
    ![Git remote output](./.github/assets/17_gh_repo_setup.png)
 
 8. Determine if you want to continue to Part A now or if you want to stop and continue later.
-   - If you want to continue to Part A now, type `code .` and press **Enter**. Skip to Step 3 in **2. Complete Part A**.
-   - If done for now, type `exit` and press **Enter** to close the terminal window. Bookmark the CVD page in your local browser, if you have not already, so you can return to it later without going through D2L Brightspace.
+   * If you want to continue to Part A now, type `code .` and press **Enter**. Skip to Step 3 in **2. Complete Part A**.
+   * If done for now, type `exit` and press **Enter** to close the terminal window. Bookmark the CVD page in your local browser, if you have not already, so you can return to it later without going through D2L Brightspace.
 
 ## 2. Complete Part A
 
@@ -107,16 +107,16 @@ We strongly recommend that you complete course assignments using the Codio Virtu
     ```
 
    *Reminder*. **Path shortcuts**: In terminal commands, **`~`** means your home folder, and **`.`** means the current working directory (CWD). For example:
-     - `cd ~/Repos` means change directory to the `Repos` folder inside your home folder.
-     - `code .` opens the current folder in VS Code.
+     * `cd ~/Repos` means change directory to the `Repos` folder inside your home folder.
+     * `code .` opens the current folder in VS Code.
 
 3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window right above it.
 
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
 4. In the **Explorer** pane of VS Code"
-   - Click **> it140-m2-assignment** to expand the folder, if needed.
-   - Click **> Part-A** to expand the folder, if needed.
+   * Click **> it140-m2-assignment** to expand the folder, if needed.
+   * Click **> Part-A** to expand the folder, if needed.
 
    ![Expand Part-A folder in VS Code](./.github/assets/24_vscode_explorer_expand.png)
 
@@ -141,8 +141,8 @@ We strongly recommend that you complete course assignments using the Codio Virtu
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
 4. In the **Explorer** pane of VS Code"
-   - Click **> it140-m2-assignment** to expand the folder, if needed.
-   - Click **> Part-B** to expand the folder, if needed.
+   * Click **> it140-m2-assignment** to expand the folder, if needed.
+   * Click **> Part-B** to expand the folder, if needed.
 
    ![Expand Part-B folder in VS Code](./.github/assets/34_vscode_explorer_expand.png)
 

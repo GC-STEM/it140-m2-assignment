@@ -1,4 +1,6 @@
-# GitHub CI Guide
+<!-- To see this file in a clean, formatted view, select "Text Editor ▼" in the upper-right corner of the editor, then select "Markdown Preview". -->
+
+# IT 140 Module Two Assignment | GitHub Continuous Integration (CI) Guide
 
 This guide explains how **continuous integration (CI)** works in the IT 140 Module Two Assignment repository.
 
@@ -54,14 +56,13 @@ This guide uses the following terms consistently.
 | ---- | ------- |
 | **course repository** | The `GC-STEM/it140-m2-assignment` repository that provides the assignment starter files. |
 | **personal repository** | The private GitHub repository a student creates from the course repository template. |
-| **acceptance tests** | Tests that a program meets requirements listed in the SRS and SDD. |
+| **acceptance tests** | Tests that a program meets functional requirements listed in the [SRS](../../Part-A/analysis/name_age_srs.md) and [SDD](../../Part-A/design/name_age_sdd.md). |
 | **workflow** | Instructions that tell GitHub Actions what to do. |
 | **workflow run** | One time GitHub runs a workflow. |
 | **job** | A group of related steps in a workflow run. |
 | **step** | One task within a job. |
 | **Python program check** | The student-facing job that checks `name_age.py`. |
 | **Python syntax check** | Checks whether Python can read the structure of `name_age.py`. |
-| **acceptance tests** | Run `name_age.py` with the acceptance test cases and check its behavior. |
 | **Code style feedback** | Ruff feedback about basic Python code style and possible code problems. |
 | **Course repository check** | The maintainer job that checks the course repository and its starter files. |
 
@@ -304,7 +305,7 @@ Do **not** repeatedly re-run the same failed workflow run after changing code on
 
 A workflow run checks the version of the files that was already saved to GitHub. It does not know about newer changes that have not been pushed.
 
-### 10. Do Not Change the acceptance tests to Make Them Pass
+### 10. Do Not Change the Acceptance Tests to Make Them Pass
 
 The provided acceptance tests describe expected program behavior.
 

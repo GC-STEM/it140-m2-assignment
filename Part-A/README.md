@@ -1,4 +1,4 @@
-<!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
+<!-- To see this file in a clean, formatted view, select "Text Editor ▼" in the upper-right corner of the editor, then select "Markdown Preview". -->
 
 # Part A | Name and Age Program
 
@@ -31,11 +31,11 @@ Then complete Part A in this order. Click on the SDLC phase below to see the ins
 
 1. [Analyze](./analysis/README.md) — Complete the Analyze sections of the SDW first.
 
-2. [Design](./design/README.md) — Continue in the same SDW to understand how the provided design meets the requirements. 
+2. [Design](./design/README.md) — Continue in the same SDW to understand how the provided design meets the requirements.
 
 3. [Construct](./src/README.md) — Complete the `TODO:` lines in the provided `name_age.py` starter file.
 
-4. [Test](./tests/README.md) — Check your completed program and correct any problems before submission. 
+4. [Test](./tests/README.md) — Check your completed program and correct any problems before submission.
 
 ## Help and Support
 
@@ -46,16 +46,3 @@ For assignment requirements, grading, or feedback, contact your instructor throu
 ## Next Steps
 
 When you have completed and tested `name_age.py`, continue to [Part B](../Part-B/README.md) to complete the IDE Features Reflection.
-
-<!-- Artifact Metadata
-
-* Course: IT 140 - Introduction to Scripting
-* Artifact Title: 2-3 Module Two Assignment | Part A
-* Artifact Type: Required assignment guidance; Part A produces the name_age.py deliverable
-* Artifact Purpose: Guide students through completing Part A of the Module Two Assignment using the simplified SDLC.
-* Artifact Description: Students use the SDW and provided SDLC artifacts to analyze, design, construct, and test the name_age Python program before continuing to Part B.
-* Artifact Version: {{semantic version number}}
-* Artifact Date: {{artifact date in YYYY-MM-DD format}}
-* Development Status: {{development status}}
-
--->

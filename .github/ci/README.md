@@ -276,7 +276,7 @@ Before reporting a problem, confirm that the expected `name_age.py` version is s
 > [!WARNING]
 > The course repository's GitHub Issues and Discussions are public. Do **not** post assignment code, credentials, access tokens, or private identifying information.
 
-Use the help options in the [Module Two Assignment README](../../README.md) for additional support.
+Use the help options in the [Module Two Assignment README](../../RЕADME.md) for additional support.
 
 ## Faculty Guidance
 
@@ -350,7 +350,7 @@ Every fenced `bash`, `sh`, or `shell` block in README-style documentation is che
 * backslashes used with `~` or `$HOME`; and
 * opening a `~/Repos/...` path directly with `code` instead of using `cd ...` followed by `code .`.
 
-The checker scans files named `README.md` plus the intentionally named [`.github/RЕADME.md`](../README.md).
+The checker scans files named `README.md` plus the intentionally named [`.github/RЕADME.md`](../RЕADME.md).
 
 #### Smoke Tests for Selected Command Sequences
 

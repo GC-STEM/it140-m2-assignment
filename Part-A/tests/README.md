@@ -173,6 +173,9 @@ Run the test file from the Part-A root using the **VS Code integrated terminal**
 
 In VS Code main menu, select **Terminal > New Terminal**.
 
+> [!IMPORTANT]
+> **Windows users:** Run the following `bash` command block in a **Git Bash** terminal. Do not use PowerShell or Command Prompt.
+
 Run:
 
 ```bash

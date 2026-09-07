@@ -1,4 +1,4 @@
-<!-- To see this file in a clean, formatted view, select "Text Editor ▼" in the upper-right corner of the editor, then select "Markdown Preview". -->
+<!-- To see this file in a clean, formatted view, select ▼ in the upper-right corner of the editor pane, then select "Markdown Preview". -->
 
 # IT 140 Module Two Assignment | Software Development Introduction
 
@@ -47,7 +47,10 @@ Complete the following tasks in order to complete the Module Two assignment. Eac
 
 ## 1. Setup the Assignment
 
-We strongly recommend that you complete course assignments using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at **Step 3** below. You will need to translate the instructions for your local operating system.
+We strongly recommend that you complete course assignments using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you choose to use your local computer, start at **Step 3** below. The repository command blocks in this README use the same commands on the CVD, Linux, macOS, and Windows when Windows users run them in Git Bash.
+
+> [!IMPORTANT]
+> **Windows users:** Run all `bash` command blocks in this README in a **Git Bash** terminal. Do not use PowerShell or Command Prompt for these command blocks.
 
 1. **CVD Only**: Launch the CVD now and carry out the remaining instructions from within the CVD.
    * If you bookmarked the CVD, open that link.
@@ -75,10 +78,10 @@ We strongly recommend that you complete course assignments using the Codio Virtu
 
    ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
-6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. Windows users should use a Git Bash terminal.
+6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. **Windows users must use a Git Bash terminal.**
 
     ```bash
-    cd $HOME/Repos
+    cd ~/Repos
     gh auth setup-git
     gh api --method PUT user/starred/GC-STEM/it140-m2-assignment
     gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
@@ -100,10 +103,11 @@ We strongly recommend that you complete course assignments using the Codio Virtu
 
 1. Launch the CVD. If using the Codio Virtual Desktop (CVD), carry out the remaining instructions from within the CVD.
 
-2. Open a terminal window. Copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
+2. Open a terminal window (**Git Bash on Windows**). Copy and paste the following commands to open the assignment repository in VS Code. Press **Enter** to run them.
 
     ```bash
-    code ~/Repos/it140-m2-assignment
+    cd ~/Repos/it140-m2-assignment
+    code .
     ```
 
    *Reminder*. **Path shortcuts**: In terminal commands, **`~`** means your home folder, and **`.`** means the current working directory (CWD). For example:
@@ -130,10 +134,11 @@ We strongly recommend that you complete course assignments using the Codio Virtu
 
 1. If not already running, launch the CVD and carry out the remaining instructions from within the CVD.
 
-2. Open a terminal window. Copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
+2. Open a terminal window (**Git Bash on Windows**). Copy and paste the following commands to open the assignment repository in VS Code. Press **Enter** to run them.
 
     ```bash
-    code ~/Repos/it140-m2-assignment
+    cd ~/Repos/it140-m2-assignment
+    code .
     ```
 
 3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window.
@@ -190,6 +195,9 @@ Step 6 creates your personal GitHub repository and then creates a local clone on
 
 Choose the situation below that matches what you see.
 
+> [!IMPORTANT]
+> **Windows users:** Run the `bash` command blocks in this section in **Git Bash**, not PowerShell or Command Prompt.
+
 #### Your personal GitHub repository and local clone both exist on this device
 
 For example, you created your personal GitHub repository while working on the CVD, and `~/Repos/it140-m2-assignment` also exists on that CVD.
@@ -199,7 +207,8 @@ Do not run the Step 6 setup commands again.
 Open the local clone on your current device:
 
 ```bash
-code ~/Repos/it140-m2-assignment
+cd ~/Repos/it140-m2-assignment
+code .
 ```
 
 #### Your personal GitHub repository exists, but there is no local clone on this device
@@ -208,7 +217,7 @@ For example, you created your personal GitHub repository and local clone on the 
 
 Do **not** create another personal GitHub repository from the public course template.
 
-Instead, create a local clone of your existing personal GitHub repository on the current device:
+Instead, create a local clone of your existing personal GitHub repository on the current device and open it in VS Code:
 
 ```bash
 cd ~/Repos
@@ -216,11 +225,6 @@ gh auth setup-git
 gh repo clone "$(gh api user --jq .login)/it140-m2-assignment"
 cd it140-m2-assignment
 git remote -v
-```
-
-Then open the new local clone on the current device in VS Code:
-
-```bash
 code .
 ```
 

@@ -269,7 +269,7 @@ If you are unsure what the output means, or your expected personal GitHub reposi
 ### Working on the assignment from more than one device
 
 > [!IMPORTANT]
-> **We highly recommend completing IT 140 work on just one device.** Using one device for the course helps avoid Git and GitHub complications that can occur when the same personal GitHub repository is cloned onto more than one device.
+> We highly recommend completing IT 140 work on just one device. Using one device helps avoid synchronization problems and merge conflicts that can occur when the same personal GitHub repository is changed from more than one device.
 >
 > If you are already comfortable working with Git and GitHub, you may work from more than one device. Follow the instructions below carefully to keep your copies synchronized.
 
@@ -279,6 +279,10 @@ A single personal GitHub repository can have a local clone on more than one devi
 * **Second device:** Your local computer
 
 Before leaving the first device, save your changes in the local clone on that first device and push them to your personal GitHub repository.
+
+A merge conflict can occur when different changes are made to the same work on two devices before those devices are synchronized. You do not need to learn how to resolve merge conflicts for this assignment. The safest approach is:
+
+Before switching devices: push your work. Before starting on the other device: pull the latest work.
 
 **On the first device, before switching:**
 
@@ -306,7 +310,7 @@ code .
 > [!IMPORTANT]
 > The second command block assumes that a local clone already exists on the second device. If there is no `~/Repos/it140-m2-assignment` folder on the second device, follow **Your personal GitHub repository exists, but there is no local clone on this device** above instead.
 
-If `git push` on the first device or `git pull --ff-only` on the second device reports an error, stop and ask for help before making additional changes on either device.
+If `git push` or `git pull --ff-only` reports an error, **stop and do not make additional changes on either device**. Do not try other Git commands to resolve the problem. Ask for help before continuing.
 
 ### You intentionally want to start over
 

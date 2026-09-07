@@ -35,7 +35,8 @@
 * [1. Setup the Assignment](#1-setup-the-assignment)
 * [2. Complete Part A](#2-complete-part-a)
 * [3. Complete Part B](#3-complete-part-b)
-* [4. Submit Your Assignment](#4-submit-your-assignment)
+* [4. Save Your Work to GitHub](#4-save-your-work-to-github)
+* [5. Submit Your Assignment](#5-submit-your-assignment)
 * [Get Help and Support](#get-help-and-support)
 
 ## 0. Meet the Prerequisites
@@ -177,7 +178,46 @@ We strongly recommend that you complete course assignments using the Codio Virtu
 
 6. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window right above it. Look for the green box in the previous screenshot.
 
-## 4. Submit Your Assignment
+## 4. Save Your Work to GitHub
+
+Before submitting your assignment, save your completed work to your personal GitHub repository.
+
+Open a terminal window (**Git Bash on Windows**) and run:
+
+<!-- ci:command-test id=save-before-submit fixture=existing-repo expect=repo -->
+```bash
+cd ~/Repos/it140-m2-assignment
+git status
+git add Part-A/name_age_sdw.md Part-A/src/name_age.py Part-B/ide_features.md
+git commit -m "Complete Module Two assignment"
+git push
+```
+
+These commands:
+
+* `git status` shows the current state of your local repository.
+* `git add` prepares your Module Two assignment files to be saved.
+* `git commit` saves a snapshot of those files in your local Git repository.
+* `git push` uploads that commit to your personal GitHub repository.
+
+> [!NOTE]
+> If Git reports `nothing to commit, working tree clean`, your current files have already been committed. The `git push` command will still check whether your personal GitHub repository is up to date.
+
+If `name_age.py` changed, pushing your work also starts the **Python program check** in GitHub Actions. This provides additional feedback about Python syntax, the provided acceptance tests, and basic code style.
+
+To review the feedback:
+
+1. Open your personal `it140-m2-assignment` repository on GitHub.
+2. Select the **Actions** tab.
+3. Open the most recent **IT 140 Checks** workflow run.
+4. Open **Python program check** and review the summary.
+
+If the Python syntax check or acceptance tests fail, return to Part A, correct the problem, test your program again, and then commit and push the corrected version.
+
+> [!IMPORTANT]
+> **Saving your work to GitHub does not submit your assignment.** You must still submit the required files in **D2L Brightspace** in the next section.
+
+## 5. Submit Your Assignment
 
 In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the **Course Menu** and select **Assignments**. Click on the **2-3 Assignment: Software Development Introduction** link. Follow the instructions to submit your assignment. Submit the following files in Brightspace as one submission:
 

@@ -77,7 +77,8 @@ REQUIRED_TEXT_MARKERS = {
         "## 1. Setup the Assignment",
         "## 2. Complete Part A",
         "## 3. Complete Part B",
-        "## 4. Submit Your Assignment",
+        "## 4. Save Your Work to GitHub",
+        "## 5. Submit Your Assignment",
         "## Get Help and Support",
     ),
     ".github/RЕADME.md": (

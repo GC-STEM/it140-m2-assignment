@@ -436,5 +436,6 @@
         "ZERR",
         "Zhang"
     ],
-    "markdown.extension.toc.levels": "2..2"
+    "markdown.extension.toc.levels": "2..2",
+    "markdown.extension.toc.unorderedList.marker": "*"
 }

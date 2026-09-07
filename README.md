@@ -9,12 +9,12 @@
 >
 > **Do not select Fork or Use this template.** These options will interfere with the repository setup commands later in this README.
 >
-> - 🚫 **Fork — Do not use**
-> - 🚫 **Use this template — Do not use**
-> - ⭐ **Star** — The setup commands later in this README will bookmark this repository for you.
-> - 👁️ **Watch**
->   - **Students:** Not recommended. Watching is not needed and may generate unnecessary notifications.
->   - **Faculty:** Consider selecting **Watch → Custom → Releases + Issues** to receive major repository updates and follow reported issues.
+> * 🚫 **Fork — Do not use**
+> * 🚫 **Use this template — Do not use**
+> * ⭐ **Star** — The setup commands later in this README will bookmark this repository for you.
+> * 👁️ **Watch**
+>   * **Students:** Not recommended. Watching is not needed and may generate unnecessary notifications.
+>   * **Faculty:** Consider selecting **Watch → Custom → Releases + Issues** to receive major repository updates and follow reported issues.
 
 ---
 
@@ -25,66 +25,60 @@
 
 ---
 
-- **Course**: IT 140 - *Introduction to Scripting*
-- **Task Title**: 2-3: Software Development Introduction
-- **Task Type**: Required, graded, one submission required
-- **Repository Version**: 1.0.3
-- **Repository Version DTG**: 2026-09-02-09-37
+* **Course**: IT 140 - *Introduction to Scripting*
+* **Task Title**: 2-3: Software Development Introduction
+* **Task Type**: Required, graded, one submission required
+* **Repository Version**: 1.0.3
+* **Repository Version DTG**: 2026-09-02-09-37
 
 <!-- omit from toc -->
 ## Table of Contents
 
 Complete the following tasks in order to complete the Module Two assignment. Each task is described in detail below.
 
-- [0. Meet the Prerequisites](#0-meet-the-prerequisites)
-- [1. Setup the Assignment](#1-setup-the-assignment)
+* [0. Meet the Prerequisites](#0-meet-the-prerequisites)
+* [1. Setup the Assignment](#1-setup-the-assignment)
 
 ## 0. Meet the Prerequisites
 
-- [ ] **Required**. To start this assignment, you must have completed the [GitHub](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/github) and [Codio](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/codio) sections of the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks). If you have not done so, please complete those tasks now. Return here after completing those tasks.
+* [ ] **Required**. To start this assignment, you must have completed the [GitHub](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/github) and [Codio](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/codio) sections of the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks). If you have not done so, please complete those tasks now. Return here after completing those tasks.
 
-- [ ] **Recommended**. Complete all Module One and Two zyBooks activities (Participation and Lab) in [D2L Brightspace](https://learn.snhu.edu/). These activities introduce you to the skills you will use in this assignment.
+* [ ] **Recommended**. Complete all Module One and Two zyBooks activities (Participation and Lab) in [D2L Brightspace](https://learn.snhu.edu/). These activities introduce you to the skills you will use in this assignment.
 
 ## 1. Setup the Assignment
 
-We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at Step 3 below. You will need to translate the instructions for your local operating system.
+We strongly recommend that you complete course assignments using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at **Step 3** below. You will need to translate the instructions for your local operating system.
 
 1. **CVD Only**: Launch the CVD now and carry out the remaining instructions from within the CVD.
    - If you bookmarked the CVD, open that link.
    - If not, open the CVD from within [D2L Brightspace](https://learn.snhu.edu/). Follow the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd) instructions if you need a refresher.
 
 2. **CVD Only**: Click the browser icon on the taskbar to open a browser. Point it to `https://github.com/GC-STEM/it140-m2-assignment`.
-   - *Tip*. All course repositories are bookmarked in the **IT 140 Resources** folder on the CVD browser.
+   - *Tip*. All course repositories are bookmarked in the **IT 140 Resources** folder in your CVD browser for easy access.
 
 3. Arrange the browser window on the opposite side of your screen as your desktop icons, as shown below.
 
-4. Open a terminal window. Arrange it on the other side of your screen from the browser window, as shown below.
-   - **CVD**: Click the terminal icon on the taskbar to open a terminal window.
-   - **Windows**: Open a Git Bash terminal window.
-   - **macOS**: Open a Terminal window.
-   - **Linux**: Open a terminal window.
-
    ![Terminal and browser window in split screen](./.github/assets/13_split_screen_terminal_browser.png)
 
-5. In the terminal window, type the name of the update script with the appropriate extension for your environment and press **Enter**. This will update the course IDE to the latest version. Be patient. It may take a few minutes to complete:
+4. Update your system if it has been more than a week since your last update. Be patient. It may take a few minutes to complete. Updating may also require a restart.
 
-   - **CVD/Linux**: `update_it140.sh`
+   - **CVD**: Click the terminal icon on the taskbar to open a terminal window. Type `update_it140.sh` and press **Enter**.
 
-   - **Windows**: `update_it140.ps1`
+   - **macOS**: Under development.
 
-   - **macOS**: `update_it140.zsh`
+   - **Windows**: Under development.
 
-6. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
+5. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
    - If `Failures` is greater than `0`, review the [**Get Help and Support**](#get-help-and-support) section.
    - If `Restart required: No`, type `exit` and press **Enter** to close the terminal window.
    - If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar and wait for the CVD to restart.
 
    ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
-7. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. Windows users should use a Git Bash terminal.
+6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. Windows users should use a Git Bash terminal.
 
     ```bash
-    cd ~/Repos
+    cd $HOME/Repos
     gh auth setup-git
     gh api --method PUT user/starred/GC-STEM/it140-m2-assignment
     gh repo create it140-m2-assignment --template GC-STEM/it140-m2-assignment --private --clone
@@ -94,17 +88,17 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
     *Note*. The above commands only work the first time you run them successfully. If you want to update your repository later or start over, see the [**Get Help and Support**](#get-help-and-support) section.
 
-8. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
+7. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
 
    ![Git remote output](./.github/assets/17_gh_repo_setup.png)
 
-9. Determine if you want to continue to Part A now or if you want to stop and continue later.
+8. Determine if you want to continue to Part A now or if you want to stop and continue later.
    - If you want to continue to Part A now, type `code .` and press **Enter**. Skip to Step 3 in **2. Complete Part A**.
    - If done for now, type `exit` and press **Enter** to close the terminal window. Bookmark the CVD page in your local browser, if you have not already, so you can return to it later without going through D2L Brightspace.
 
 ## 2. Complete Part A
 
-1. Launch the CVD and carry out the remaining instructions from within the CVD.
+1. Launch the CVD. If using the Codio Virtual Desktop (CVD), carry out the remaining instructions from within the CVD.
 
 2. Open a terminal window. Copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
 
@@ -112,7 +106,7 @@ We strongly recommend that you complete this first assignment using the Codio Vi
     code ~/Repos/it140-m2-assignment
     ```
 
-   *Reminder*. **Path shortcuts**: In terminal commands, **`~`** means your home folder, and **`.`** means your current folder. For example:
+   *Reminder*. **Path shortcuts**: In terminal commands, **`~`** means your home folder, and **`.`** means the current working directory (CWD). For example:
      - `cd ~/Repos` means change directory to the `Repos` folder inside your home folder.
      - `code .` opens the current folder in VS Code.
 
@@ -162,12 +156,12 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
 In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the **Course Menu** and select **Assignments**. Click on the **2-3 Assignment: Software Development Introduction** link. Follow the instructions to submit your assignment. Submit the following files in Brightspace as one submission:
 
-- Graded files:
-  - [`name_age.py`](./Part-A/src/name_age.py)
-  - [`ide_features.md`](./Part-B/ide_features.md)
+* Graded files:
+  * [`name_age.py`](./Part-A/src/name_age.py)
+  * [`ide_features.md`](./Part-B/ide_features.md)
 
-- Ungraded files:
-  - [`name_age_sdw.md`](./Part-A/name_age_sdw.md)
+* Ungraded files:
+  * [`name_age_sdw.md`](./Part-A/name_age_sdw.md)
 
 ## Get Help and Support
 
@@ -186,11 +180,11 @@ Before asking for help, save the exact Update summary and error message. The lif
 
 Your Module Two assignment will have several related copies:
 
-- **Public course template on GitHub:** `GC-STEM/it140-m2-assignment`. This is the course-provided starting point. You cannot modify this copy.
+* **Public course template on GitHub:** `GC-STEM/it140-m2-assignment`. This is the course-provided starting point. You cannot modify this copy.
 
-- **Your personal GitHub repository:** `it140-m2-assignment` in your own GitHub account. This stores the work you "push" (upload) to GitHub.
+* **Your personal GitHub repository:** `it140-m2-assignment` in your own GitHub account. This stores the work you "push" (upload) to GitHub.
 
-- **A local clone on a device:** Usually `~/Repos/it140-m2-assignment` on the CVD or your local computer. This is the copy you open in VS Code and edit.
+* **A local clone on a device:** Usually `~/Repos/it140-m2-assignment` on the CVD or your local computer. This is the copy you open in VS Code and edit.
 
 Step 6 creates your personal GitHub repository and then creates a local clone on the device where you run the commands.
 
@@ -254,8 +248,8 @@ If you are unsure what the output means, or your expected personal GitHub reposi
 
 A single personal GitHub repository can have a local clone on more than one device. For example:
 
-- **First device:** Your CVD
-- **Second device:** Your local computer
+* **First device:** Your CVD
+* **Second device:** Your local computer
 
 Before leaving the first device, save your changes in the local clone on that first device and push them to your personal GitHub repository.
 
@@ -289,9 +283,9 @@ If `git push` on the first device or `git pull --ff-only` on the second device r
 
 Starting over may involve one or more separate copies:
 
-- Your **personal GitHub repository** in your GitHub account
-- Your **local clone on your CVD**
-- Your **local clone on your local computer**
+* Your **personal GitHub repository** in your GitHub account
+* Your **local clone on your CVD**
+* Your **local clone on your local computer**
 
 Deleting one copy does not necessarily delete the others.
 

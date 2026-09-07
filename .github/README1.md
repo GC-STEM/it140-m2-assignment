@@ -13,32 +13,32 @@
 <!-- omit from toc -->
 ## Table of Contents
 
-- [IT 140 Module Two Assignment](#it-140-module-two-assignment)
-  - [Table of Contents](#table-of-contents)
-  - [About This Repository](#about-this-repository)
-  - [Set Up Your Personal Assignment Repository](#set-up-your-personal-assignment-repository)
-    - [0. Complete the Module One Setup Tasks](#0-complete-the-module-one-setup-tasks)
-    - [1. Launch and Update Your Course IDE](#1-launch-and-update-your-course-ide)
-    - [2. Open the VS Code Integrated Terminal](#2-open-the-vs-code-integrated-terminal)
-    - [3. Confirm Your GitHub Account](#3-confirm-your-github-account)
-    - [4. Create and Clone Your Personal Repository](#4-create-and-clone-your-personal-repository)
-    - [5. Open Your Repository in VS Code](#5-open-your-repository-in-vs-code)
-  - [Complete the Assignment](#complete-the-assignment)
-    - [1. Read the Assignment Guidelines and Rubric](#1-read-the-assignment-guidelines-and-rubric)
-    - [2. Complete Part A of the Assignment](#2-complete-part-a-of-the-assignment)
-    - [3. Complete Part B of the Assignment](#3-complete-part-b-of-the-assignment)
-    - [4. Save Your Work to GitHub](#4-save-your-work-to-github)
-    - [4. Review the Automated Repository Checks](#4-review-the-automated-repository-checks)
-  - [Return to an Existing Assignment](#return-to-an-existing-assignment)
-  - [Reset Your Assignment Repository](#reset-your-assignment-repository)
-    - [Restore Your Local Copy From GitHub](#restore-your-local-copy-from-github)
-      - [CVD, Linux, macOS, or Git Bash on Windows](#cvd-linux-macos-or-git-bash-on-windows)
-      - [Windows PowerShell](#windows-powershell)
-    - [Start Over From the Original Course Template](#start-over-from-the-original-course-template)
-      - [CVD, Linux, macOS, or Git Bash for Windows](#cvd-linux-macos-or-git-bash-for-windows)
-      - [Windows PowerShell Commands](#windows-powershell-commands)
-  - [Submit Your Assignment](#submit-your-assignment)
-  - [Help and Support](#help-and-support)
+* [IT 140 Module Two Assignment](#it-140-module-two-assignment)
+  * [Table of Contents](#table-of-contents)
+  * [About This Repository](#about-this-repository)
+  * [Set Up Your Personal Assignment Repository](#set-up-your-personal-assignment-repository)
+    * [0. Complete the Module One Setup Tasks](#0-complete-the-module-one-setup-tasks)
+    * [1. Launch and Update Your Course IDE](#1-launch-and-update-your-course-ide)
+    * [2. Open the VS Code Integrated Terminal](#2-open-the-vs-code-integrated-terminal)
+    * [3. Confirm Your GitHub Account](#3-confirm-your-github-account)
+    * [4. Create and Clone Your Personal Repository](#4-create-and-clone-your-personal-repository)
+    * [5. Open Your Repository in VS Code](#5-open-your-repository-in-vs-code)
+  * [Complete the Assignment](#complete-the-assignment)
+    * [1. Read the Assignment Guidelines and Rubric](#1-read-the-assignment-guidelines-and-rubric)
+    * [2. Complete Part A of the Assignment](#2-complete-part-a-of-the-assignment)
+    * [3. Complete Part B of the Assignment](#3-complete-part-b-of-the-assignment)
+    * [4. Save Your Work to GitHub](#4-save-your-work-to-github)
+    * [4. Review the Automated Repository Checks](#4-review-the-automated-repository-checks)
+  * [Return to an Existing Assignment](#return-to-an-existing-assignment)
+  * [Reset Your Assignment Repository](#reset-your-assignment-repository)
+    * [Restore Your Local Copy From GitHub](#restore-your-local-copy-from-github)
+      * [CVD, Linux, macOS, or Git Bash on Windows](#cvd-linux-macos-or-git-bash-on-windows)
+      * [Windows PowerShell](#windows-powershell)
+    * [Start Over From the Original Course Template](#start-over-from-the-original-course-template)
+      * [CVD, Linux, macOS, or Git Bash for Windows](#cvd-linux-macos-or-git-bash-for-windows)
+      * [Windows PowerShell Commands](#windows-powershell-commands)
+  * [Submit Your Assignment](#submit-your-assignment)
+  * [Help and Support](#help-and-support)
 
 ## About This Repository
 
@@ -79,9 +79,9 @@ it140-m2-assignment/
 >
 > For this assignment, your work should be limited to:
 >
-> - [`Part-A/name_age_sdw.md`](./Part-A/name_age_sdw.md) — Software Development Worksheet working notes
-> - [`Part-A/src/name_age.py`](./Part-A/src/name_age.py) — Part A program
-> - [`Part-B/ide_features.md`](./Part-B/ide_features.md) — Part B IDE Features Reflection
+> * [`Part-A/name_age_sdw.md`](./Part-A/name_age_sdw.md) — Software Development Worksheet working notes
+> * [`Part-A/src/name_age.py`](./Part-A/src/name_age.py) — Part A program
+> * [`Part-B/ide_features.md`](./Part-B/ide_features.md) — Part B IDE Features Reflection
 >
 > Leave the READMEs, SRS, SDD, flowchart, pseudocode, tests, and other provided files unchanged.
 

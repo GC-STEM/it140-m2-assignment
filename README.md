@@ -31,6 +31,13 @@
 * **Repository Version**: 1.0.4
 * **Repository Version DTG**: 2026-09-07-12-00
 
+* [0. Meet the Prerequisites](#0-meet-the-prerequisites)
+* [1. Setup the Assignment](#1-setup-the-assignment)
+* [2. Complete Part A](#2-complete-part-a)
+* [3. Complete Part B](#3-complete-part-b)
+* [4. Submit Your Assignment](#4-submit-your-assignment)
+* [Get Help and Support](#get-help-and-support)
+
 ## 0. Meet the Prerequisites
 
 * [ ] **Required**. To start this assignment, you must have completed the [GitHub](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/github) and [Codio](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/codio) sections of the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks). If you have not done so, please complete those tasks now. Return here after completing those tasks.
@@ -108,11 +115,29 @@ We strongly recommend that you complete course assignments using the Codio Virtu
      * `cd ~/Repos` means change directory to the `Repos` folder inside your home folder.
      * `code .` opens the current folder in VS Code.
 
+   >*Note*
+   > If VS Code opens in Restricted Mode: Your `~/Repos` folder should already be trusted if you completed the Module One course IDE setup. Normally, you will not see this warning.
+   >
+   > If you see the **Restricted Mode** warning bar:
+   >
+   > ![Restricted Mode warning bar in VS Code](./.github/assets/22_vscode_restricted_mode_bar.png)
+   >
+   > 1. Click **Manage** on the **Restricted Mode** warning bar.
+   > 2. In **Workspace Trust**, find **Trusted Folders & Workspaces**.
+   > 3. Use the control in that section to add a trusted folder.
+   > 4. In the folder selection window, go to your home folder and select the entire **Repos** folder.
+   > 5. Confirm the folder selection and trust it when prompted.
+   > 6. Verify that your **Repos** folder appears under **Trusted Folders & Workspaces**.
+   >
+   > Trust the entire `~/Repos` folder rather than only `it140-m2-assignment`. VS Code applies trust to all subfolders of a trusted parent folder, including this assignment repository.
+   >
+   > After `~/Repos` is trusted, VS Code should leave Restricted Mode and the course extensions and workspace settings should be available normally.
+
 3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window right above it.
 
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
-4. In the **Explorer** pane of VS Code"
+4. In the **Explorer** pane of VS Code:
    * Click **> it140-m2-assignment** to expand the folder, if needed.
    * Click **> Part-A** to expand the folder, if needed.
 

@@ -282,7 +282,7 @@ Before leaving the first device, save your changes in the local clone on that fi
 
 A merge conflict can occur when different changes are made to the same work on two devices before those devices are synchronized. You do not need to learn how to resolve merge conflicts for this assignment. The safest approach is:
 
-Before switching devices: push your work. Before starting on the other device: pull the latest work.
+> **Before switching devices: push your work. Before starting on the other device: pull the latest work.**
 
 **On the first device, before switching:**
 

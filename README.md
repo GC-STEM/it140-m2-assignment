@@ -27,17 +27,9 @@
 
 * **Course**: IT 140 - *Introduction to Scripting*
 * **Task Title**: 2-3: Software Development Introduction
-* **Task Type**: Required, graded, one submission required
+* **Task Type**: Required, graded, one submission with two files required
 * **Repository Version**: 1.0.4
 * **Repository Version DTG**: 2026-09-07-12-00
-
-<!-- omit from toc -->
-## Table of Contents
-
-Complete the following tasks in order to complete the Module Two assignment. Each task is described in detail below.
-
-* [0. Meet the Prerequisites](#0-meet-the-prerequisites)
-* [1. Setup the Assignment](#1-setup-the-assignment)
 
 ## 0. Meet the Prerequisites
 

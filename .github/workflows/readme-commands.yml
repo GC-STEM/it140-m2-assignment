@@ -56,11 +56,20 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Confirm test shell
+      - name: Resolve test shell
         shell: bash
         run: |
-          command -v "${{ matrix.test_shell }}"
-          "${{ matrix.test_shell }}" --version | head -n 1
+          shell_path="$(command -v "${{ matrix.test_shell }}")"
+          "$shell_path" --version | head -n 1
+
+          # Native Windows Python does not understand Git Bash's /usr/bin
+          # path directly. Convert it to the native Windows executable path
+          # so nested shell checks cannot resolve to the WSL bash launcher.
+          if command -v cygpath >/dev/null 2>&1; then
+            shell_path="$(cygpath -w "$shell_path")"
+          fi
+
+          echo "CI_TEST_SHELL=$shell_path" >> "$GITHUB_ENV"
 
       - name: Check README command blocks
         shell: bash

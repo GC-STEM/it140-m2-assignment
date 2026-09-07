@@ -211,10 +211,15 @@ def policy_errors(block: CommandBlock) -> list[str]:
     return errors
 
 
+def shell_executable(shell: str) -> str:
+    """Return the exact shell executable selected by the CI runner."""
+    return os.environ.get("CI_TEST_SHELL", shell)
+
+
 def shell_check(shell: str, block: CommandBlock) -> str | None:
     """Return shell syntax error text, or None when syntax is valid."""
     result = subprocess.run(
-        [shell, "-n"],
+        [shell_executable(shell), "-n"],
         input=block.body,
         text=True,
         capture_output=True,
@@ -358,7 +363,7 @@ def run_smoke_test(shell: str, block: CommandBlock) -> str | None:
 
         script = shell_prelude() + "\n" + block.body + "\n" + shell_epilogue()
         result = subprocess.run(
-            [shell, "-e"],
+            [shell_executable(shell), "-e"],
             input=script,
             text=True,
             capture_output=True,

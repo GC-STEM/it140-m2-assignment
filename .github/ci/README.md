@@ -276,7 +276,7 @@ Before reporting a problem, confirm that the expected `name_age.py` version is s
 > [!WARNING]
 > The course repository's GitHub Issues and Discussions are public. Do **not** post assignment code, credentials, access tokens, or private identifying information.
 
-Use the help options in the [Module Two Assignment README](../../RЕADME.md) for additional support.
+Use the help options in the [Module Two Assignment README](../../README.md) for additional support.
 
 ## Faculty Guidance
 

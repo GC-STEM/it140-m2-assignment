@@ -6,7 +6,7 @@ This filename intentionally contains a Cyrillic capital IE: Е (U+0415)
 instead of the ASCII capital E: E (U+0045).
 
 It is visually similar to README.md, but GitHub does not treat it as the
-special .github/README.md file that would override the repository-root README.
+special .github/RЕADME.md file that would override the repository-root README.
 
 Do not "correct" the filename unless this behavior is no longer desired.
 -->

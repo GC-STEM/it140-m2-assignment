@@ -350,7 +350,7 @@ Every fenced `bash`, `sh`, or `shell` block in README-style documentation is che
 * backslashes used with `~` or `$HOME`; and
 * opening a `~/Repos/...` path directly with `code` instead of using `cd ...` followed by `code .`.
 
-The checker scans files named `README.md` plus the intentionally named [`.github/README.md`](../README.md).
+The checker scans files named `README.md` plus the intentionally named [`.github/RЕADME.md`](../README.md).
 
 #### Smoke Tests for Selected Command Sequences
 

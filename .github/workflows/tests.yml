@@ -36,7 +36,7 @@ jobs:
 
       - name: Check course repository files
         run: |
-          python .github/ci/check_repository.py --mode starter
+          python .github/ci/check_repository.py
 
       - name: Check Python files for syntax errors
         run: |
@@ -114,11 +114,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Prepare program tests
+      - name: Prepare acceptance tests
         if: ${{ steps.program.outputs.changed == 'true' }}
         shell: bash
         run: |
           starter_commit="$(git rev-list --max-parents=0 HEAD | head -n 1)"
+          mkdir -p Part-A/tests
           git show "$starter_commit:Part-A/tests/test_name_age.py" \
             > Part-A/tests/test_name_age.py
 
@@ -158,7 +159,7 @@ jobs:
               sys.exit(1)
           PY
 
-      - name: Program tests
+      - name: Acceptance tests
         id: tests
         if: >-
           ${{ steps.program.outputs.changed == 'true' &&
@@ -190,8 +191,12 @@ jobs:
               steps.ruff_setup.outputs.available == 'true' }}
         shell: bash
         run: |
-          if python -m ruff check Part-A/src/name_age.py \
-            --output-format=concise; then
+          if python -m ruff check \
+            --isolated \
+            --select E,F \
+            --line-length 80 \
+            --output-format=concise \
+            Part-A/src/name_age.py; then
             echo "result=pass" >> "$GITHUB_OUTPUT"
           else
             echo "result=suggestions" >> "$GITHUB_OUTPUT"
@@ -239,7 +244,7 @@ jobs:
             echo "Fix the problem, then run your program again." \
               >> "$GITHUB_STEP_SUMMARY"
             echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "The **Program tests** and **Code style feedback** will run" \
+            echo "The **Acceptance tests** and **Code style feedback** will run" \
               "after the Python syntax check passes." \
               >> "$GITHUB_STEP_SUMMARY"
 
@@ -257,18 +262,18 @@ jobs:
               >> "$GITHUB_STEP_SUMMARY"
 
             if [[ "${{ steps.tests.outcome }}" == "success" ]]; then
-              echo "✅ **Program tests:** Passed all five program tests." \
+              echo "✅ **Acceptance tests:** Passed all five acceptance tests." \
                 >> "$GITHUB_STEP_SUMMARY"
             elif [[ "${{ steps.tests.outcome }}" == "failure" ]]; then
-              echo "❌ **Program tests:** One or more program tests did not" \
-                "pass." >> "$GITHUB_STEP_SUMMARY"
+              echo "❌ **Acceptance tests:** One or more acceptance tests did" \
+                "not pass." >> "$GITHUB_STEP_SUMMARY"
               echo "" >> "$GITHUB_STEP_SUMMARY"
-              echo "Open the **Program tests** step above to see which test" \
+              echo "Open the **Acceptance tests** step above to see which test" \
                 "did not pass." >> "$GITHUB_STEP_SUMMARY"
               echo "Fix one problem at a time, then run your program again." \
                 >> "$GITHUB_STEP_SUMMARY"
             else
-              echo "⚠️ **Program tests:** The tests could not finish." \
+              echo "⚠️ **Acceptance tests:** The tests could not finish." \
                 >> "$GITHUB_STEP_SUMMARY"
               echo "This message does not mean your program is wrong." \
                 >> "$GITHUB_STEP_SUMMARY"

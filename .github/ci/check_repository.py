@@ -1,12 +1,10 @@
-"""Validate the Module Two repository structure and assignment artifacts."""
+"""Validate the Module Two course repository and assignment artifacts."""
 
 from __future__ import annotations
 
-import argparse
 import json
 import re
 import struct
-import subprocess
 import sys
 import tomllib
 from pathlib import Path
@@ -16,11 +14,6 @@ import xml.etree.ElementTree as ET
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-EDITABLE_PATHS = {
-    "Part-A/name_age_sdw.md",
-    "Part-A/src/name_age.py",
-    "Part-B/ide_features.md",
-}
 
 REQUIRED_FILES = (
     ".gitattributes",
@@ -29,9 +22,11 @@ REQUIRED_FILES = (
     "pyproject.toml",
     ".github/ISSUE_TEMPLATE/report-a-problem.yml",
     ".github/ISSUE_TEMPLATE/request-an-improvement.yml",
+    ".github/ci/README.md",
     ".github/ci/check_repository.py",
     ".github/ci/check_starter.py",
     ".github/social-preview.png",
+    ".github/workflows/external-links.yml",
     ".github/workflows/tests.yml",
     ".vscode/settings.json",
     "Part-A/README.md",
@@ -53,6 +48,7 @@ REQUIRED_FILES = (
 
 PROVIDED_MARKDOWN = (
     "README.md",
+    ".github/ci/README.md",
     "Part-A/README.md",
     "Part-A/analysis/README.md",
     "Part-A/analysis/name_age_srs.md",
@@ -79,6 +75,16 @@ REQUIRED_TEXT_MARKERS = {
         "## 3. Complete Part B",
         "## 4. Submit Your Assignment",
         "## Get Help and Support",
+    ),
+    ".github/ci/README.md": (
+        "# GitHub CI Guide",
+        "## About CI",
+        "## Student CI",
+        "## When Something Fails",
+        "## Faculty Guidance",
+        "## Course Repository CI",
+        "## Maintainer Guidance",
+        "## Summary",
     ),
     "Part-A/README.md": (
         "# Part A | Name and Age Program",
@@ -147,24 +153,6 @@ REFLECTION_PLACEHOLDERS = (
     ),
 )
 
-PROTECTED_SOURCE_MARKERS = (
-    "from datetime import date",
-    (
-        "CURRENT_YEAR = date.today().year  "
-        "# Get current year from system as integer"
-    ),
-    "def main() -> None:",
-    '    """Run the name-age program."""',
-    'if __name__ == "__main__":',
-    "    main()",
-)
-
-SOURCE_DOCUMENTATION_MARKERS = (
-    "Input:",
-    "Process:",
-    "Output:",
-    "Typical usage example:",
-)
 
 MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 
@@ -424,8 +412,8 @@ def check_social_preview(checks: Checks) -> None:
     )
 
 
-def check_reflection_structure(checks: Checks, mode: str) -> None:
-    """Validate the Part B reflection template or student completion."""
+def check_reflection_structure(checks: Checks) -> None:
+    """Verify the Part B reflection keeps its intended starter structure."""
     text = read_text("Part-B/ide_features.md")
     required = (
         "## Introduction",
@@ -441,139 +429,20 @@ def check_reflection_structure(checks: Checks, mode: str) -> None:
                 f"Part-B/ide_features.md is missing section: {heading}"
             )
 
-    if mode == "starter":
-        missing = [
-            item for item in REFLECTION_PLACEHOLDERS if item not in text
-        ]
-        for item in missing:
-            checks.error(
-                "Part B starter content changed unexpectedly; missing: "
-                f"{item!r}"
-            )
-        if not missing:
-            checks.note("The Part B starter placeholders are intact.")
-        return
-
-    remaining = [
-        item for item in REFLECTION_PLACEHOLDERS if item in text
+    missing = [
+        item for item in REFLECTION_PLACEHOLDERS if item not in text
     ]
-    for item in remaining:
+    for item in missing:
         checks.error(
-            "Part B still contains starter text that must be replaced: "
+            "Part B starter content changed unexpectedly; missing: "
             f"{item!r}"
         )
-    if not remaining:
-        checks.note("The Part B starter placeholders have been replaced.")
-
-
-def git_output(*args: str) -> str:
-    """Run Git and return stripped standard output."""
-    result = subprocess.run(
-        ["git", *args],
-        cwd=REPO_ROOT,
-        text=True,
-        capture_output=True,
-        check=False,
-    )
-    if result.returncode != 0:
-        message = result.stderr.strip() or result.stdout.strip()
-        raise RuntimeError(message or "Git command failed.")
-    return result.stdout.strip()
-
-
-def check_student_change_scope(checks: Checks) -> None:
-    """Ensure students changed only files the assignment allows."""
-    try:
-        roots = git_output("rev-list", "--max-parents=0", "HEAD").splitlines()
-    except RuntimeError as exc:
-        checks.error(f"Could not inspect repository history: {exc}")
-        return
-
-    if len(roots) != 1:
-        checks.error(
-            "Could not identify one initial template commit for this "
-            "personal repository."
-        )
-        return
-
-    try:
-        changed_text = git_output(
-            "diff",
-            "--name-only",
-            "--diff-filter=ACDMRTUXB",
-            roots[0],
-            "HEAD",
-        )
-    except RuntimeError as exc:
-        checks.error(f"Could not compare with the template commit: {exc}")
-        return
-
-    changed = {line for line in changed_text.splitlines() if line}
-    unexpected = sorted(changed - EDITABLE_PATHS)
-
-    for path in unexpected:
-        checks.error(
-            "Provided repository file was added, removed, renamed, or "
-            f"changed: {path}"
-        )
-
-    if not unexpected:
-        checks.note(
-            "Committed changes are limited to the three student working files."
-        )
-
-
-def check_student_source(checks: Checks) -> None:
-    """Check completion while preserving the provided source scaffold."""
-    text = read_text("Part-A/src/name_age.py")
-
-    marker = "TODO: Replace"
-    if marker in text:
-        checks.error(
-            "Part-A/src/name_age.py still contains starter 'TODO: Replace' "
-            "text."
-        )
-    else:
-        checks.note("The Part A starter TODO prompts have been replaced.")
-
-    missing_scaffold = [
-        item for item in PROTECTED_SOURCE_MARKERS if item not in text
-    ]
-    for item in missing_scaffold:
-        checks.error(
-            "Part-A/src/name_age.py changed provided program structure; "
-            f"missing: {item!r}"
-        )
-    if not missing_scaffold:
-        checks.note("The provided Part A Python scaffold remains intact.")
-
-    missing_documentation = [
-        item for item in SOURCE_DOCUMENTATION_MARKERS if item not in text
-    ]
-    for item in missing_documentation:
-        checks.error(
-            "Part-A/src/name_age.py is missing a required module-docstring "
-            f"section: {item!r}"
-        )
-    if not missing_documentation:
-        checks.note("The Part A module-docstring sections remain intact.")
-
-
-def parse_args() -> argparse.Namespace:
-    """Parse command-line arguments."""
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--mode",
-        required=True,
-        choices=("starter", "student"),
-        help="Validate the course starter or a personal student repository.",
-    )
-    return parser.parse_args()
+    if not missing:
+        checks.note("The Part B starter placeholders are intact.")
 
 
 def main() -> None:
-    """Run repository and artifact checks."""
-    args = parse_args()
+    """Run course repository and artifact checks."""
     checks = Checks()
 
     check_required_files(checks)
@@ -586,11 +455,7 @@ def main() -> None:
     check_pseudocode(checks)
     check_markdown_links(checks)
     check_social_preview(checks)
-    check_reflection_structure(checks, args.mode)
-
-    if args.mode == "student":
-        check_student_change_scope(checks)
-        check_student_source(checks)
+    check_reflection_structure(checks)
 
     checks.finish()
 

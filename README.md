@@ -1,4 +1,4 @@
-<!-- To see this file in a clean, formatted view, select "Text Editor ▼" in the upper-right corner of the editor, then select "Markdown Preview". -->
+<!-- To see this file in a clean, formatted view, select ▼ in the upper-right corner of the editor pane, then select "Markdown Preview".-->
 
 # IT 140 Module Two Assignment | Software Development Introduction
 
@@ -9,12 +9,12 @@
 >
 > **Do not select Fork or Use this template.** These options will interfere with the repository setup commands later in this README.
 >
-> - 🚫 **Fork — Do not use**
-> - 🚫 **Use this template — Do not use**
-> - ⭐ **Star** — The setup commands later in this README will bookmark this repository for you.
-> - 👁️ **Watch**
->   - **Students:** Not recommended. Watching is not needed and may generate unnecessary notifications.
->   - **Faculty:** Consider selecting **Watch → Custom → Releases + Issues** to receive major repository updates and follow reported issues.
+> * 🚫 **Fork — Do not use**
+> * 🚫 **Use this template — Do not use**
+> * ⭐ **Star** — The setup commands later in this README will bookmark this repository for you.
+> * 👁️ **Watch**
+>   * **Students:** Not recommended. Watching is not needed and may generate unnecessary notifications.
+>   * **Faculty:** Consider selecting **Watch → Custom → Releases + Issues** to receive major repository updates and follow reported issues.
 
 ---
 
@@ -25,64 +25,62 @@
 
 ---
 
-- **Course**: IT 140 - *Introduction to Scripting*
-- **Task Title**: 2-3: Software Development Introduction
-- **Task Type**: Required, graded, one submission required
-- **Repository Version**: 1.0.3
-- **Repository Version DTG**: 2026-09-02-09-37
+* **Course**: IT 140 - *Introduction to Scripting*
+* **Task Title**: 2-3: Software Development Introduction
+* **Task Type**: Required, graded, one submission with two files required
+* **Repository Version**: 1.0.4
+* **Repository Version DTG**: 2026-09-07-12-00
 
-<!-- omit from toc -->
-## Table of Contents
-
-Complete the following tasks in order to complete the Module Two assignment. Each task is described in detail below.
-
-- [0. Meet the Prerequisites](#0-meet-the-prerequisites)
-- [1. Setup the Assignment](#1-setup-the-assignment)
+* [0. Meet the Prerequisites](#0-meet-the-prerequisites)
+* [1. Setup the Assignment](#1-setup-the-assignment)
+* [2. Complete Part A](#2-complete-part-a)
+* [3. Complete Part B](#3-complete-part-b)
+* [4. Save Your Work to GitHub](#4-save-your-work-to-github)
+* [5. Submit Your Assignment](#5-submit-your-assignment)
+* [Get Help and Support](#get-help-and-support)
 
 ## 0. Meet the Prerequisites
 
-- [ ] **Required**. To start this assignment, you must have completed the [GitHub](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/github) and [Codio](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/codio) sections of the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks). If you have not done so, please complete those tasks now. Return here after completing those tasks.
+* [ ] **Required**. To start this assignment, you must have completed the [GitHub](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/github) and [Codio](https://github.com/GC-STEM/it140-m1-setup-tasks/tree/main/codio) sections of the [Module One Setup Tasks](https://github.com/GC-STEM/it140-m1-setup-tasks). If you have not done so, please complete those tasks now. Return here after completing those tasks.
 
-- [ ] **Recommended**. Complete all Module One and Two zyBooks activities (Participation and Lab) in [D2L Brightspace](https://learn.snhu.edu/). These activities introduce you to the skills you will use in this assignment.
+* [ ] **Recommended**. Complete all Module One and Two zyBooks activities (Participation and Lab) in [D2L Brightspace](https://learn.snhu.edu/). These activities introduce you to the skills you will use in this assignment.
 
 ## 1. Setup the Assignment
 
-We strongly recommend that you complete this first assignment using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you do choose to use your local computer, start at Step 3 below. You will need to translate the instructions for your local operating system.
+We strongly recommend that you complete course assignments using the Codio Virtual Desktop (CVD). The CVD provides a consistent user experience regardless of your local computer's operating system. If you choose to use your local computer, start at **Step 3** below. The repository command blocks in this README use the same commands on the CVD, Linux, macOS, and Windows when Windows users run them in Git Bash.
+
+> [!IMPORTANT]
+> **Windows users:** Run all `bash` command blocks in this README in a **Git Bash** terminal. Do not use PowerShell or Command Prompt for these command blocks.
 
 1. **CVD Only**: Launch the CVD now and carry out the remaining instructions from within the CVD.
-   - If you bookmarked the CVD, open that link.
-   - If not, open the CVD from within [D2L Brightspace](https://learn.snhu.edu/). Follow the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd) instructions if you need a refresher.
+   * If you bookmarked the CVD, open that link.
+   * If not, open the CVD from within [D2L Brightspace](https://learn.snhu.edu/). Follow the [Launch the CVD](https://github.com/GC-STEM/it140-m1-setup-tasks/blob/main/codio/README.md#1-launch-the-cvd) instructions if you need a refresher.
 
 2. **CVD Only**: Click the browser icon on the taskbar to open a browser. Point it to `https://github.com/GC-STEM/it140-m2-assignment`.
-   - *Tip*. All course repositories are bookmarked in the **IT 140 Resources** folder on the CVD browser.
+   * *Tip*. All course repositories are bookmarked in the **IT 140 Resources** folder in your CVD browser for easy access.
 
 3. Arrange the browser window on the opposite side of your screen as your desktop icons, as shown below.
 
-4. Open a terminal window. Arrange it on the other side of your screen from the browser window, as shown below.
-   - **CVD**: Click the terminal icon on the taskbar to open a terminal window.
-   - **Windows**: Open a Git Bash terminal window.
-   - **macOS**: Open a Terminal window.
-   - **Linux**: Open a terminal window.
-
    ![Terminal and browser window in split screen](./.github/assets/13_split_screen_terminal_browser.png)
 
-5. In the terminal window, type the name of the update script with the appropriate extension for your environment and press **Enter**. This will update the course IDE to the latest version. Be patient. It may take a few minutes to complete:
+4. Update your system if it has been more than a week since your last update. Be patient. It may take a few minutes to complete. Updating may also require a restart.
 
-   - **CVD/Linux**: `update_it140.sh`
+   * **CVD**: Click the terminal icon on the taskbar to open a terminal window. Type `update_it140.sh` and press **Enter**.
 
-   - **Windows**: `update_it140.ps1`
+   * **macOS**: Under development.
 
-   - **macOS**: `update_it140.zsh`
+   * **Windows**: Under development.
 
-6. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
-   - If `Failures` is greater than `0`, review the [**Get Help and Support**](#get-help-and-support) section.
-   - If `Restart required: No`, type `exit` and press **Enter** to close the terminal window.
-   - If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar and wait for the CVD to restart.
+5. Review the output of the update script. You are mainly interested in `Failures: 0` and the `Restart required:` message.
+   * If `Failures` is greater than `0`, review the [**Get Help and Support**](#get-help-and-support) section.
+   * If `Restart required: No`, type `exit` and press **Enter** to close the terminal window.
+   * If `Restart required: Yes`, click the **RESTART VM** button on the Codio taskbar and wait for the CVD to restart.
 
    ![Update summary in split screen](./.github/assets/15_split_screen_update_summary.png)
 
-7. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. Windows users should use a Git Bash terminal.
+6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. **Windows users must use a Git Bash terminal.**
 
+    <!-- ci:command-test id=setup-personal-repo fixture=empty-repos expect=repo -->
     ```bash
     cd ~/Repos
     gh auth setup-git
@@ -94,35 +92,55 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
     *Note*. The above commands only work the first time you run them successfully. If you want to update your repository later or start over, see the [**Get Help and Support**](#get-help-and-support) section.
 
-8. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
+7. Review the output of the last command. You should see output similar to the what is shown below, except with your GitHub username in place of `petey-penmen`.
 
    ![Git remote output](./.github/assets/17_gh_repo_setup.png)
 
-9. Determine if you want to continue to Part A now or if you want to stop and continue later.
-   - If you want to continue to Part A now, type `code .` and press **Enter**. Skip to Step 3 in **2. Complete Part A**.
-   - If done for now, type `exit` and press **Enter** to close the terminal window. Bookmark the CVD page in your local browser, if you have not already, so you can return to it later without going through D2L Brightspace.
+8. Determine if you want to continue to Part A now or if you want to stop and continue later.
+   * If you want to continue to Part A now, type `code .` and press **Enter**. Skip to Step 3 in **2. Complete Part A**.
+   * If done for now, type `exit` and press **Enter** to close the terminal window. Bookmark the CVD page in your local browser, if you have not already, so you can return to it later without going through D2L Brightspace.
 
 ## 2. Complete Part A
 
-1. Launch the CVD and carry out the remaining instructions from within the CVD.
+1. Launch the CVD. If using the Codio Virtual Desktop (CVD), carry out the remaining instructions from within the CVD.
 
-2. Open a terminal window. Copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
+2. Open a terminal window (**Git Bash on Windows**). Copy and paste the following commands to open the assignment repository in VS Code. Press **Enter** to run them.
 
+    <!-- ci:command-test id=open-part-a fixture=existing-repo expect=repo -->
     ```bash
-    code ~/Repos/it140-m2-assignment
+    cd ~/Repos/it140-m2-assignment
+    code .
     ```
 
-   *Reminder*. **Path shortcuts**: In terminal commands, **`~`** means your home folder, and **`.`** means your current folder. For example:
-     - `cd ~/Repos` means change directory to the `Repos` folder inside your home folder.
-     - `code .` opens the current folder in VS Code.
+   *Reminder*. **Path shortcuts**: In terminal commands, **`~`** means your home folder, and **`.`** means the current working directory (CWD). For example:
+     * `cd ~/Repos` means change directory to the `Repos` folder inside your home folder.
+     * `code .` opens the current folder in VS Code.
+
+   >*Note*
+   > If VS Code opens in Restricted Mode: Your `~/Repos` folder should already be trusted if you completed the Module One course IDE setup. Normally, you will not see this warning.
+   >
+   > If you see the **Restricted Mode** warning bar:
+   >
+   > ![Restricted Mode warning bar in VS Code](./.github/assets/22_vscode_restricted_mode_bar.png)
+   >
+   > 1. Click **Manage** on the **Restricted Mode** warning bar.
+   > 2. In **Workspace Trust**, find **Trusted Folders & Workspaces**.
+   > 3. Use the control in that section to add a trusted folder.
+   > 4. In the folder selection window, go to your home folder and select the entire **Repos** folder.
+   > 5. Confirm the folder selection and trust it when prompted.
+   > 6. Verify that your **Repos** folder appears under **Trusted Folders & Workspaces**.
+   >
+   > Trust the entire `~/Repos` folder rather than only `it140-m2-assignment`. VS Code applies trust to all subfolders of a trusted parent folder, including this assignment repository.
+   >
+   > After `~/Repos` is trusted, VS Code should leave Restricted Mode and the course extensions and workspace settings should be available normally.
 
 3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window right above it.
 
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
-4. In the **Explorer** pane of VS Code"
-   - Click **> it140-m2-assignment** to expand the folder, if needed.
-   - Click **> Part-A** to expand the folder, if needed.
+4. In the **Explorer** pane of VS Code:
+   * Click **> it140-m2-assignment** to expand the folder, if needed.
+   * Click **> Part-A** to expand the folder, if needed.
 
    ![Expand Part-A folder in VS Code](./.github/assets/24_vscode_explorer_expand.png)
 
@@ -136,10 +154,12 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
 1. If not already running, launch the CVD and carry out the remaining instructions from within the CVD.
 
-2. Open a terminal window. Copy and paste the following command to open the assignment repository in VS Code. Press **Enter** to run.
+2. Open a terminal window (**Git Bash on Windows**). Copy and paste the following commands to open the assignment repository in VS Code. Press **Enter** to run them.
 
+    <!-- ci:command-test id=open-part-b fixture=existing-repo expect=repo -->
     ```bash
-    code ~/Repos/it140-m2-assignment
+    cd ~/Repos/it140-m2-assignment
+    code .
     ```
 
 3. If the **Chat** pane opens in VS Code, click the **X** in the upper right corner for that pane to close it. Do NOT click the **X** to close the entire VS Code window.
@@ -147,8 +167,8 @@ We strongly recommend that you complete this first assignment using the Codio Vi
    ![Close Chat pane in VS Code](./.github/assets/23_vscode_close_chat_pane.png)
 
 4. In the **Explorer** pane of VS Code"
-   - Click **> it140-m2-assignment** to expand the folder, if needed.
-   - Click **> Part-B** to expand the folder, if needed.
+   * Click **> it140-m2-assignment** to expand the folder, if needed.
+   * Click **> Part-B** to expand the folder, if needed.
 
    ![Expand Part-B folder in VS Code](./.github/assets/34_vscode_explorer_expand.png)
 
@@ -158,16 +178,55 @@ We strongly recommend that you complete this first assignment using the Codio Vi
 
 6. You will now follow instructions in the `Part-B/README.md` file. When ready, maximize the VS Code window by clicking the **Maximize** button in the upper right corner of the VS Code window right above it. Look for the green box in the previous screenshot.
 
-## 4. Submit Your Assignment
+## 4. Save Your Work to GitHub
+
+Before submitting your assignment, save your completed work to your personal GitHub repository.
+
+Open a terminal window (**Git Bash on Windows**) and run:
+
+<!-- ci:command-test id=save-before-submit fixture=existing-repo expect=repo -->
+```bash
+cd ~/Repos/it140-m2-assignment
+git status
+git add Part-A/name_age_sdw.md Part-A/src/name_age.py Part-B/ide_features.md
+git commit -m "Complete Module Two assignment"
+git push
+```
+
+These commands:
+
+* `git status` shows the current state of your local repository.
+* `git add` prepares your Module Two assignment files to be saved.
+* `git commit` saves a snapshot of those files in your local Git repository.
+* `git push` uploads that commit to your personal GitHub repository.
+
+> [!NOTE]
+> If Git reports `nothing to commit, working tree clean`, your current files have already been committed. The `git push` command will still check whether your personal GitHub repository is up to date.
+
+If `name_age.py` changed, pushing your work also starts the **Python program check** in GitHub Actions. This provides additional feedback about Python syntax, the provided acceptance tests, and basic code style.
+
+To review the feedback:
+
+1. Open your personal `it140-m2-assignment` repository on GitHub.
+2. Select the **Actions** tab.
+3. Open the most recent **IT 140 Checks** workflow run.
+4. Open **Python program check** and review the summary.
+
+If the Python syntax check or acceptance tests fail, return to Part A, correct the problem, test your program again, and then commit and push the corrected version.
+
+> [!IMPORTANT]
+> **Saving your work to GitHub does not submit your assignment.** You must still submit the required files in **D2L Brightspace** in the next section.
+
+## 5. Submit Your Assignment
 
 In your IT 140 course in [D2L Brightspace](https://learn.snhu.edu/), go to the **Course Menu** and select **Assignments**. Click on the **2-3 Assignment: Software Development Introduction** link. Follow the instructions to submit your assignment. Submit the following files in Brightspace as one submission:
 
-- Graded files:
-  - [`name_age.py`](./Part-A/src/name_age.py)
-  - [`ide_features.md`](./Part-B/ide_features.md)
+* Graded files:
+  * [`name_age.py`](./Part-A/src/name_age.py)
+  * [`ide_features.md`](./Part-B/ide_features.md)
 
-- Ungraded files:
-  - [`name_age_sdw.md`](./Part-A/name_age_sdw.md)
+* Ungraded files:
+  * [`name_age_sdw.md`](./Part-A/name_age_sdw.md)
 
 ## Get Help and Support
 
@@ -186,15 +245,18 @@ Before asking for help, save the exact Update summary and error message. The lif
 
 Your Module Two assignment will have several related copies:
 
-- **Public course template on GitHub:** `GC-STEM/it140-m2-assignment`. This is the course-provided starting point. You cannot modify this copy.
+* **Public course template on GitHub:** `GC-STEM/it140-m2-assignment`. This is the course-provided starting point. You cannot modify this copy.
 
-- **Your personal GitHub repository:** `it140-m2-assignment` in your own GitHub account. This stores the work you "push" (upload) to GitHub.
+* **Your personal GitHub repository:** `it140-m2-assignment` in your own GitHub account. This stores the work you "push" (upload) to GitHub.
 
-- **A local clone on a device:** Usually `~/Repos/it140-m2-assignment` on the CVD or your local computer. This is the copy you open in VS Code and edit.
+* **A local clone on a device:** Usually `~/Repos/it140-m2-assignment` on the CVD or your local computer. This is the copy you open in VS Code and edit.
 
 Step 6 creates your personal GitHub repository and then creates a local clone on the device where you run the commands.
 
 Choose the situation below that matches what you see.
+
+> [!IMPORTANT]
+> **Windows users:** Run the `bash` command blocks in this section in **Git Bash**, not PowerShell or Command Prompt.
 
 #### Your personal GitHub repository and local clone both exist on this device
 
@@ -204,8 +266,10 @@ Do not run the Step 6 setup commands again.
 
 Open the local clone on your current device:
 
+<!-- ci:command-test id=open-existing-clone fixture=existing-repo expect=repo -->
 ```bash
-code ~/Repos/it140-m2-assignment
+cd ~/Repos/it140-m2-assignment
+code .
 ```
 
 #### Your personal GitHub repository exists, but there is no local clone on this device
@@ -214,19 +278,15 @@ For example, you created your personal GitHub repository and local clone on the 
 
 Do **not** create another personal GitHub repository from the public course template.
 
-Instead, create a local clone of your existing personal GitHub repository on the current device:
+Instead, create a local clone of your existing personal GitHub repository on the current device and open it in VS Code:
 
+<!-- ci:command-test id=clone-existing-repo fixture=empty-repos expect=repo -->
 ```bash
 cd ~/Repos
 gh auth setup-git
 gh repo clone "$(gh api user --jq .login)/it140-m2-assignment"
 cd it140-m2-assignment
 git remote -v
-```
-
-Then open the new local clone on the current device in VS Code:
-
-```bash
 code .
 ```
 
@@ -236,6 +296,7 @@ Do not delete the local clone on this device and do not run the Step 6 setup com
 
 From the device that contains the local clone, run:
 
+<!-- ci:command-test id=inspect-local-remote fixture=existing-repo expect=repo -->
 ```bash
 cd ~/Repos/it140-m2-assignment
 git remote -v
@@ -248,19 +309,24 @@ If you are unsure what the output means, or your expected personal GitHub reposi
 ### Working on the assignment from more than one device
 
 > [!IMPORTANT]
-> **We highly recommend completing IT 140 work on just one device.** Using one device for the course helps avoid Git and GitHub complications that can occur when the same personal GitHub repository is cloned onto more than one device.
+> We highly recommend completing IT 140 work on just one device. Using one device helps avoid synchronization problems and merge conflicts that can occur when the same personal GitHub repository is changed from more than one device.
 >
 > If you are already comfortable working with Git and GitHub, you may work from more than one device. Follow the instructions below carefully to keep your copies synchronized.
 
 A single personal GitHub repository can have a local clone on more than one device. For example:
 
-- **First device:** Your CVD
-- **Second device:** Your local computer
+* **First device:** Your CVD
+* **Second device:** Your local computer
 
 Before leaving the first device, save your changes in the local clone on that first device and push them to your personal GitHub repository.
 
+A merge conflict can occur when different changes are made to the same work on two devices before those devices are synchronized. You do not need to learn how to resolve merge conflicts for this assignment. The safest approach is:
+
+> **Before switching devices: push your work. Before starting on the other device: pull the latest work.**
+
 **On the first device, before switching:**
 
+<!-- ci:command-test id=save-before-switch fixture=existing-repo expect=repo -->
 ```bash
 cd ~/Repos/it140-m2-assignment
 git status
@@ -273,6 +339,7 @@ After moving to the second device, update the local clone on that second device 
 
 **On the second device, before starting work:**
 
+<!-- ci:command-test id=sync-second-device fixture=existing-repo expect=repo -->
 ```bash
 cd ~/Repos/it140-m2-assignment
 git pull --ff-only
@@ -283,15 +350,15 @@ code .
 > [!IMPORTANT]
 > The second command block assumes that a local clone already exists on the second device. If there is no `~/Repos/it140-m2-assignment` folder on the second device, follow **Your personal GitHub repository exists, but there is no local clone on this device** above instead.
 
-If `git push` on the first device or `git pull --ff-only` on the second device reports an error, stop and ask for help before making additional changes on either device.
+If `git push` or `git pull --ff-only` reports an error, **stop and do not make additional changes on either device**. Do not try other Git commands to resolve the problem. Ask for help before continuing.
 
 ### You intentionally want to start over
 
 Starting over may involve one or more separate copies:
 
-- Your **personal GitHub repository** in your GitHub account
-- Your **local clone on your CVD**
-- Your **local clone on your local computer**
+* Your **personal GitHub repository** in your GitHub account
+* Your **local clone on your CVD**
+* Your **local clone on your local computer**
 
 Deleting one copy does not necessarily delete the others.
 

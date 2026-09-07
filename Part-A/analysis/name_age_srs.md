@@ -1,4 +1,4 @@
-<!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
+<!-- To see this file in a clean, formatted view, select ▼ in the upper-right corner of the editor pane, then select "Markdown Preview". -->
 
 # Software Requirements Specification
 
@@ -62,7 +62,7 @@ No input-validation, security, or performance requirements are specified for thi
 
 ## Sample Input and Output
 
-The birth year depends on the current calendar year when the program runs. The example below assumes that the current year is **2026**. Do **NOT** hardcode the current year in your program. 
+The birth year depends on the current calendar year when the program runs. The example below assumes that the current year is **2026**. Do **NOT** hardcode the current year in your program.
 
 User-entered values appear after each program prompt.
 

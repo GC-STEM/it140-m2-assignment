@@ -1,4 +1,4 @@
-<!-- To see this file in a clean, formatted view, right-click on the filename and choose "Open Preview." -->
+<!-- To see this file in a clean, formatted view, select "Text Editor ▼" in the upper-right corner of the editor, then select "Markdown Preview". -->
 
 # Test Phase
 
@@ -173,8 +173,12 @@ Run the test file from the Part-A root using the **VS Code integrated terminal**
 
 In VS Code main menu, select **Terminal > New Terminal**.
 
+> [!IMPORTANT]
+> **Windows users:** Run the following `bash` command block in a **Git Bash** terminal. Do not use PowerShell or Command Prompt.
+
 Run:
 
+<!-- ci:command-test id=run-local-acceptance-tests fixture=existing-repo expect=part-a -->
 ```bash
 cd ~/Repos/it140-m2-assignment/Part-A
 python3 tests/test_name_age.py

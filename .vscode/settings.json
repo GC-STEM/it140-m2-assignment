@@ -378,6 +378,7 @@
         "storyboard",
         "stringv",
         "Styleguide",
+        "Subfolders",
         "subword",
         "swadesh",
         "swcdn",
@@ -401,8 +402,8 @@
         "transactionally",
         "treebanks",
         "tsfresh",
-        "UART",
         "uart",
+        "UART",
         "uchicago",
         "udhr",
         "unreviewed",
@@ -436,5 +437,6 @@
         "ZERR",
         "Zhang"
     ],
-    "markdown.extension.toc.levels": "2..2"
+    "markdown.extension.toc.levels": "2..2",
+    "markdown.extension.toc.unorderedList.marker": "*"
 }

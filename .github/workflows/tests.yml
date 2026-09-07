@@ -1,4 +1,4 @@
-name: Assignment Checks
+name: IT 140 Checks
 
 on:
   push:
@@ -13,8 +13,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  checks:
-    name: Check assignment repository
+  course-repository-check:
+    name: Course repository check
+    if: ${{ github.repository == 'GC-STEM/it140-m2-assignment' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -29,26 +30,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Determine repository mode
-        id: mode
-        shell: bash
-        run: |
-          if [[ "$GITHUB_REPOSITORY" == "GC-STEM/it140-m2-assignment" ]]; then
-            echo "mode=starter" >> "$GITHUB_OUTPUT"
-          else
-            echo "mode=student" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Install Ruff
         run: |
           python -m pip install --disable-pip-version-check "ruff==0.16.3"
 
-      - name: Check repository structure, documents, and artifacts
+      - name: Check course repository files
         run: |
-          python .github/ci/check_repository.py \
-            --mode "${{ steps.mode.outputs.mode }}"
+          python .github/ci/check_repository.py
 
-      - name: Compile Python files
+      - name: Check Python files for syntax errors
         run: |
           python -m py_compile \
             Part-A/src/name_age.py \
@@ -56,7 +46,7 @@ jobs:
             .github/ci/check_repository.py \
             .github/ci/check_starter.py
 
-      - name: Run Ruff
+      - name: Check Python code style
         run: |
           python -m ruff check \
             Part-A/src/name_age.py \
@@ -65,37 +55,256 @@ jobs:
             .github/ci/check_starter.py \
             --output-format=github
 
-      - name: Validate current course starter
-        if: ${{ steps.mode.outputs.mode == 'starter' }}
-        run: python .github/ci/check_starter.py
-
-      - name: Run completed-program acceptance tests
-        if: ${{ steps.mode.outputs.mode == 'student' }}
+      - name: Check course starter
         run: |
-          python -m unittest discover \
-            -s Part-A/tests \
-            -p "test*.py" \
-            -v
+          python .github/ci/check_starter.py
 
-      - name: Write check summary
+      - name: Write course repository summary
         if: ${{ always() }}
         shell: bash
         run: |
-          echo "## IT 140 Module Two repository checks" \
-            >> "$GITHUB_STEP_SUMMARY"
+          echo "## Course repository check" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "Repository mode: **${{ steps.mode.outputs.mode }}**" \
+          echo "These checks protect the course starter files and support files." \
             >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          if [[ "${{ steps.mode.outputs.mode }}" == "starter" ]]; then
-            echo "The course repository validates the current starter files" \
-              "and provided assignment artifacts." >> "$GITHUB_STEP_SUMMARY"
+
+  student-program-check:
+    name: Python program check
+    if: >-
+      ${{ github.repository != 'GC-STEM/it140-m2-assignment' &&
+          github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Get assignment files
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Check whether the Python program changed
+        id: program
+        shell: bash
+        run: |
+          before="${{ github.event.before }}"
+
+          if [[ "$before" =~ ^0{40}$ ]]; then
+            starter_commit="$(git rev-list --max-parents=0 HEAD | head -n 1)"
+
+            if git diff --quiet "$starter_commit" "$GITHUB_SHA" -- \
+              Part-A/src/name_age.py; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            fi
+          elif git cat-file -e "${before}^{commit}" 2>/dev/null; then
+            if git diff --quiet "$before" "$GITHUB_SHA" -- \
+              Part-A/src/name_age.py; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            fi
           else
-            echo "A personal repository validates the provided files," \
-              "completed deliverables, and Part A acceptance tests." \
-              >> "$GITHUB_STEP_SUMMARY"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Set up Python
+        if: ${{ steps.program.outputs.changed == 'true' }}
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Prepare acceptance tests
+        if: ${{ steps.program.outputs.changed == 'true' }}
+        shell: bash
+        run: |
+          starter_commit="$(git rev-list --max-parents=0 HEAD | head -n 1)"
+          mkdir -p Part-A/tests
+          git show "$starter_commit:Part-A/tests/test_name_age.py" \
+            > Part-A/tests/test_name_age.py
+
+      - name: Python syntax check
+        id: syntax
+        if: ${{ steps.program.outputs.changed == 'true' }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import os
+          import sys
+          from pathlib import Path
+
+          path = Path("Part-A/src/name_age.py")
+          source = path.read_text(encoding="utf-8")
+
+          try:
+              compile(source, str(path), "exec")
+          except SyntaxError as error:
+              line = error.lineno or 0
+              column = error.offset or 0
+
+              with open(
+                  os.environ["GITHUB_OUTPUT"],
+                  "a",
+                  encoding="utf-8",
+              ) as output:
+                  print(f"line={line}", file=output)
+                  print(f"column={column}", file=output)
+                  print(f"message={error.msg}", file=output)
+
+              print(
+                  f"Python syntax error on line {line}, "
+                  f"column {column}: {error.msg}",
+                  file=sys.stderr,
+              )
+              sys.exit(1)
+          PY
+
+      - name: Acceptance tests
+        id: tests
+        if: >-
+          ${{ steps.program.outputs.changed == 'true' &&
+              steps.syntax.outcome == 'success' }}
+        run: |
+          python Part-A/tests/test_name_age.py
+
+      - name: Set up code style feedback
+        id: ruff_setup
+        if: >-
+          ${{ always() &&
+              steps.program.outputs.changed == 'true' &&
+              steps.syntax.outcome == 'success' }}
+        shell: bash
+        run: |
+          if python -m pip install --disable-pip-version-check \
+            --quiet "ruff==0.16.3"; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Code style feedback
+        id: ruff
+        if: >-
+          ${{ always() &&
+              steps.program.outputs.changed == 'true' &&
+              steps.syntax.outcome == 'success' &&
+              steps.ruff_setup.outputs.available == 'true' }}
+        shell: bash
+        run: |
+          if python -m ruff check \
+            --isolated \
+            --select E,F \
+            --line-length 80 \
+            --output-format=concise \
+            Part-A/src/name_age.py; then
+            echo "result=pass" >> "$GITHUB_OUTPUT"
+          else
+            echo "result=suggestions" >> "$GITHUB_OUTPUT"
+          fi
+
+          exit 0
+
+      - name: Write Python program check summary
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          echo "## Python program check" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "These checks support development. D2L Brightspace remains" \
-            "the assignment submission and grading system." \
+
+          if [[ "${{ steps.program.outputs.changed }}" != "true" ]]; then
+            echo "No Python program check was needed." \
+              >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "This update did not change \`name_age.py\`." \
+              >> "$GITHUB_STEP_SUMMARY"
+
+          elif [[ "${{ steps.syntax.outcome }}" == "failure" ]]; then
+            echo "❌ **Python syntax check:** Python found a syntax error in" \
+              "\`name_age.py\`." >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+
+            if [[ -n "${{ steps.syntax.outputs.line }}" ]]; then
+              echo "**Line:** ${{ steps.syntax.outputs.line }}" \
+                >> "$GITHUB_STEP_SUMMARY"
+            fi
+
+            if [[ "${{ steps.syntax.outputs.column }}" =~ ^[1-9][0-9]*$ ]]; then
+              echo "**Column:** ${{ steps.syntax.outputs.column }}" \
+                >> "$GITHUB_STEP_SUMMARY"
+            fi
+
+            if [[ -n "${{ steps.syntax.outputs.message }}" ]]; then
+              echo "**Problem:** ${{ steps.syntax.outputs.message }}" \
+                >> "$GITHUB_STEP_SUMMARY"
+            fi
+
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "Open \`name_age.py\` and go to the line shown above." \
+              >> "$GITHUB_STEP_SUMMARY"
+            echo "Fix the problem, then run your program again." \
+              >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "The **Acceptance tests** and **Code style feedback** will run" \
+              "after the Python syntax check passes." \
+              >> "$GITHUB_STEP_SUMMARY"
+
+          elif [[ "${{ steps.syntax.outcome }}" != "success" ]]; then
+            echo "⚠️ **Python program check:** The check could not finish." \
+              >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "GitHub could not complete the Python program check." \
+              >> "$GITHUB_STEP_SUMMARY"
+            echo "This message does not mean your program is wrong." \
+              >> "$GITHUB_STEP_SUMMARY"
+
+          else
+            echo "✅ **Python syntax check:** Passed." \
+              >> "$GITHUB_STEP_SUMMARY"
+
+            if [[ "${{ steps.tests.outcome }}" == "success" ]]; then
+              echo "✅ **Acceptance tests:** Passed all five acceptance tests." \
+                >> "$GITHUB_STEP_SUMMARY"
+            elif [[ "${{ steps.tests.outcome }}" == "failure" ]]; then
+              echo "❌ **Acceptance tests:** One or more acceptance tests did" \
+                "not pass." >> "$GITHUB_STEP_SUMMARY"
+              echo "" >> "$GITHUB_STEP_SUMMARY"
+              echo "Open the **Acceptance tests** step above to see which test" \
+                "did not pass." >> "$GITHUB_STEP_SUMMARY"
+              echo "Fix one problem at a time, then run your program again." \
+                >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "⚠️ **Acceptance tests:** The tests could not finish." \
+                >> "$GITHUB_STEP_SUMMARY"
+              echo "This message does not mean your program is wrong." \
+                >> "$GITHUB_STEP_SUMMARY"
+            fi
+
+            if [[ "${{ steps.ruff_setup.outputs.available }}" != "true" ]]; then
+              echo "ℹ️ **Code style feedback:** Ruff was not available." \
+                >> "$GITHUB_STEP_SUMMARY"
+              echo "This does not change the Python program check result." \
+                >> "$GITHUB_STEP_SUMMARY"
+            elif [[ "${{ steps.ruff.outputs.result }}" == "pass" ]]; then
+              echo "✅ **Code style feedback:** Ruff found no suggestions." \
+                >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "ℹ️ **Code style feedback:** Ruff found suggestions." \
+                >> "$GITHUB_STEP_SUMMARY"
+              echo "These suggestions do not change the Python program check" \
+                "result." >> "$GITHUB_STEP_SUMMARY"
+              echo "Open the **Code style feedback** step above to review them." \
+                >> "$GITHUB_STEP_SUMMARY"
+            fi
+          fi
+
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "### What this result means" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "The Python program check checks only \`name_age.py\`." \
+            >> "$GITHUB_STEP_SUMMARY"
+          echo "It does not check the SDW or IDE Features Reflection." \
+            >> "$GITHUB_STEP_SUMMARY"
+          echo "A green check does not mean the assignment is complete or" \
+            "graded." >> "$GITHUB_STEP_SUMMARY"
+          echo "Submit the required files in D2L Brightspace." \
             >> "$GITHUB_STEP_SUMMARY"

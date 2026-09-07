@@ -80,6 +80,7 @@ We strongly recommend that you complete course assignments using the Codio Virtu
 
 6. Open a new terminal window and copy the following command block and paste it into the new terminal window. If prompted about a "Potentially Unsafe Paste", click the **Paste** button. Press **Enter** to run the commands. **Windows users must use a Git Bash terminal.**
 
+    <!-- ci:command-test id=setup-personal-repo fixture=empty-repos expect=repo -->
     ```bash
     cd ~/Repos
     gh auth setup-git
@@ -105,6 +106,7 @@ We strongly recommend that you complete course assignments using the Codio Virtu
 
 2. Open a terminal window (**Git Bash on Windows**). Copy and paste the following commands to open the assignment repository in VS Code. Press **Enter** to run them.
 
+    <!-- ci:command-test id=open-part-a fixture=existing-repo expect=repo -->
     ```bash
     cd ~/Repos/it140-m2-assignment
     code .
@@ -136,6 +138,7 @@ We strongly recommend that you complete course assignments using the Codio Virtu
 
 2. Open a terminal window (**Git Bash on Windows**). Copy and paste the following commands to open the assignment repository in VS Code. Press **Enter** to run them.
 
+    <!-- ci:command-test id=open-part-b fixture=existing-repo expect=repo -->
     ```bash
     cd ~/Repos/it140-m2-assignment
     code .
@@ -206,6 +209,7 @@ Do not run the Step 6 setup commands again.
 
 Open the local clone on your current device:
 
+<!-- ci:command-test id=open-existing-clone fixture=existing-repo expect=repo -->
 ```bash
 cd ~/Repos/it140-m2-assignment
 code .
@@ -219,6 +223,7 @@ Do **not** create another personal GitHub repository from the public course temp
 
 Instead, create a local clone of your existing personal GitHub repository on the current device and open it in VS Code:
 
+<!-- ci:command-test id=clone-existing-repo fixture=empty-repos expect=repo -->
 ```bash
 cd ~/Repos
 gh auth setup-git
@@ -234,6 +239,7 @@ Do not delete the local clone on this device and do not run the Step 6 setup com
 
 From the device that contains the local clone, run:
 
+<!-- ci:command-test id=inspect-local-remote fixture=existing-repo expect=repo -->
 ```bash
 cd ~/Repos/it140-m2-assignment
 git remote -v
@@ -259,6 +265,7 @@ Before leaving the first device, save your changes in the local clone on that fi
 
 **On the first device, before switching:**
 
+<!-- ci:command-test id=save-before-switch fixture=existing-repo expect=repo -->
 ```bash
 cd ~/Repos/it140-m2-assignment
 git status
@@ -271,6 +278,7 @@ After moving to the second device, update the local clone on that second device 
 
 **On the second device, before starting work:**
 
+<!-- ci:command-test id=sync-second-device fixture=existing-repo expect=repo -->
 ```bash
 cd ~/Repos/it140-m2-assignment
 git pull --ff-only

@@ -1,0 +1,82 @@
+name: README Command Checks
+
+on:
+  push:
+    paths:
+      - "README.md"
+      - "**/README.md"
+      - ".github/RЕADME.md"
+      - ".github/ci/check_readme_commands.py"
+      - ".github/workflows/readme-commands.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - "**/README.md"
+      - ".github/RЕADME.md"
+      - ".github/ci/check_readme_commands.py"
+      - ".github/workflows/readme-commands.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  readme-command-check:
+    name: ${{ matrix.name }}
+    if: ${{ github.repository == 'GC-STEM/it140-m2-assignment' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Linux / Bash
+            os: ubuntu-latest
+            platform: linux
+            test_shell: bash
+          - name: macOS / zsh
+            os: macos-latest
+            platform: macos
+            test_shell: zsh
+          - name: Windows / Git Bash
+            os: windows-latest
+            platform: windows-git-bash
+            test_shell: bash
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Confirm test shell
+        shell: bash
+        run: |
+          command -v "${{ matrix.test_shell }}"
+          "${{ matrix.test_shell }}" --version | head -n 1
+
+      - name: Check README command blocks
+        shell: bash
+        run: |
+          python .github/ci/check_readme_commands.py \
+            --shell "${{ matrix.test_shell }}" \
+            --platform "${{ matrix.platform }}"
+
+      - name: Write README command summary
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          echo "## README command checks" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Platform: **${{ matrix.name }}**" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "The check validates README shell syntax and runs marked" \
+            "command blocks in a disposable test environment." \
+            >> "$GITHUB_STEP_SUMMARY"

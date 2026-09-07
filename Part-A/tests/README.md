@@ -178,6 +178,7 @@ In VS Code main menu, select **Terminal > New Terminal**.
 
 Run:
 
+<!-- ci:command-test id=run-local-acceptance-tests fixture=existing-repo expect=part-a -->
 ```bash
 cd ~/Repos/it140-m2-assignment/Part-A
 python3 tests/test_name_age.py

@@ -45,12 +45,12 @@ This folder contains screenshots and other documentation images referenced by th
 
 This folder contains the supporting files for continuous integration (CI):
 
-* [`README.md`](./ci/README.md) — explains GitHub CI for students, faculty, and maintainers, including the cross-platform README command checks.
+* [`README.md`](./ci/RЕADME.md) — explains GitHub CI for students, faculty, and maintainers, including the cross-platform README command checks.
 * [`check_repository.py`](./ci/check_repository.py) — validates the course repository structure and provided assignment artifacts.
 * [`check_starter.py`](./ci/check_starter.py) — verifies that the intentionally incomplete assignment starter remains in its expected state.
 * [`check_readme_commands.py`](./ci/check_readme_commands.py) — validates README shell command blocks and smoke-tests selected command sequences across supported shells.
 
-See the [GitHub Continuous Integration Guide](./ci/README.md) for details about what these checks do and how to interpret them.
+See the [GitHub Continuous Integration Guide](./ci/RЕADME.md) for details about what these checks do and how to interpret them.
 
 ### `workflows/`
 
@@ -69,6 +69,6 @@ Changes to `.github/` can affect every student repository created from this cour
 1. Review the affected workflow or support file carefully.
 2. Confirm the applicable GitHub Actions checks pass.
 3. Keep workflow permissions limited to what the workflow needs.
-4. Update the [GitHub Continuous Integration Guide](./ci/README.md) when CI behavior changes.
+4. Update the [GitHub Continuous Integration Guide](./ci/RЕADME.md) when CI behavior changes.
 
 For repository-wide student instructions, use the [Module Two Assignment README](../README.md) rather than adding student procedures to this administrative folder.

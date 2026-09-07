@@ -23,7 +23,7 @@ REQUIRED_FILES = (
     ".github/ISSUE_TEMPLATE/report-a-problem.yml",
     ".github/ISSUE_TEMPLATE/request-an-improvement.yml",
     ".github/README.md",
-    ".github/ci/README.md",
+    ".github/ci/RЕADME.md",
     ".github/ci/check_readme_commands.py",
     ".github/ci/check_repository.py",
     ".github/ci/check_starter.py",
@@ -52,7 +52,7 @@ REQUIRED_FILES = (
 PROVIDED_MARKDOWN = (
     "README.md",
     ".github/README.md",
-    ".github/ci/README.md",
+    ".github/ci/RЕADME.md",
     "Part-A/README.md",
     "Part-A/analysis/README.md",
     "Part-A/analysis/name_age_srs.md",
@@ -88,7 +88,7 @@ REQUIRED_TEXT_MARKERS = {
         "### `workflows/`",
         "## For Maintainers",
     ),
-    ".github/ci/README.md": (
+    ".github/ci/RЕADME.md": (
         "# IT 140 Module Two Assignment | GitHub Continuous Integration Guide",
         "## About CI",
         "## Student CI",

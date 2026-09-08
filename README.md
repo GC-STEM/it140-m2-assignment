@@ -27,7 +27,7 @@
 
 * **Course**: IT 140 - *Introduction to Scripting*
 * **Task Title**: 2-3: Software Development Introduction
-* **Task Type**: Required, graded, one submission with two files required
+* **Task Type**: Required, graded, one submission; two graded files plus one ungraded supporting file required
 * **Repository Version**: 1.0.4
 * **Repository Version DTG**: 2026-09-07-12-00
 

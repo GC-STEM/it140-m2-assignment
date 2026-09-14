@@ -49,14 +49,12 @@
 > In one sentence, summarize the program's purpose **in your own words**.
 >
 > Do not copy the SRS or ask AI to generate your answer. You will use your understanding of the program's purpose when you write the documentation string (docstring) in your Python program.
->
+>The purpose of hte program I am writing is to enter in data, then a function to determine someones year of birth. 
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 0. General Description`
 >
 > **Prompt:** What is this program supposed to do for its user?
 >
-> Enter your response below.
-
-TODO: Replace this text with your one-sentence summary of the program's purpose
+> It will help determine someones year of birth based on details we enter. 
 
 ### 3. Inputs, Processing, and Outputs
 
@@ -72,9 +70,10 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > **Prompt:** What information does the program receive or obtain? Identify each input or internally obtained value the program needs and where it comes from.
 >
-> Enter your response below. Use a separate numbered bullet for each input.
-
-1. TODO: Replace with your first input and its source (e.g., user input, system value, internal value).
+1. def main():
+2. user_name = input("What is your name?")
+3. user_age = int(input("How old are you?"))
+4. current_year =2026
 
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.3**
 >
@@ -82,7 +81,9 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below. Use a separate numbered bullet for each input.
 
-1. TODO: Replace with your first input and its data type (e.g., string, integer, float, Not specified).
+1. integer
+2. string
+3. float
 
 #### IPO: Processing
 
@@ -92,9 +93,9 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > **Prompt:** What must happen to the inputs before the program produces its output?
 >
-> Enter a brief description in your own words below. Use a separate numbered bullet for each process.
+> The inputs of name and age must be entered, and whatever value you want to give to current year as well must be entered. 
 
-1. TODO: Replace with your first processing step in your own words.
+1. birth_year = current_year - user_age
 
 #### IPO: Outputs
 
@@ -103,10 +104,10 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.5**
 >
 > **Prompt:** What information must the program produce, and where is it displayed?
->
-> Enter your response below. Use a separate numbered bullet for each output.
+ 
+> the program must produce the sentence we're trying for indicating their name and year they were born.
 
-1. TODO: Replace with your first output and where it is displayed (e.g., console, file, GUI).
+1. print(f"Hello {user_name}!, you were born in {birth_year}.")
 
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
 >

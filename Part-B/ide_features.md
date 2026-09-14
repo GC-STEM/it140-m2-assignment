@@ -2,34 +2,26 @@
 
 ## Introduction
 
-> Write a short reflection on your experience using the course IDE to complete your first programming assignment. Briefly describe what it was like to write, run, and test code in an IDE for the first time. Introduce the three IDE features you selected and briefly explain why learning to use IDE features can help you as a beginning programmer. Save specific examples for the feature sections below. Delete these instructions when done.
+> This was one of my first times using IDE. i loved being able to run it, and get instant feedback. It took me a while to figure out how to actually understand how to see what I messed up, but once fixed it was so cool to see it work! It was a bit frustrating that something as simple as a capital letter versus lower case could mess things up. Seeing visual colors indicate how it will process. It was a bit frustrating when running it in codio, you have to complete it in one sitting unless you save it, otherwise it's deleted, and you get to start over. 
 
-TODO: Replace with your introduction here.
+## Feature 1 – Syntax Highlighting
 
-## Feature 1 – TODO: Replace with name of your Feature1
+The color coding helped greatly! Keywords, variables, strings and comments each had their own colors. That made spotting mistakes easier. I am a visual learner, so it helps me separate logic. This made coding a little less overwhelming. I am excited to do more...but going to be honest and say scared too!
 
-> In one paragraph, identify the first feature you selected, explain what it does, and describe how it helped you while developing or testing your program. Include specific details about how it improved your workflow, made coding easier, or helped you find and fix errors more efficiently. Delete these instructions when done.
+## Feature 2 – Auto-completion and Intellisense
 
-TODO: Replace with your Feature 1 paragraph here.
+This was very neat to see! It felt very weird to start typing, and it automatically blow in the command. I did find it wasn't always the one I wanted to use. As you type the IDE suggested functions, methods, variables and syntax. This ideally would reduce typing, and aid in using the correct structure. Being a beginner, it functioned like a guide for me. I did find myself, because I wasn't familiar with it, typing it myself, so it really didn't save time. 
 
-## Feature 2 – TODO: Replace with name of your Feature2
 
-> Write one paragraph explaining your second feature. Describe how it functions, what benefits it provided while coding, and why it might be valuable for beginning programmers. Connect the feature to your personal experience using it in this project. Delete these instructions when done.
+## Feature 3 – Real time error checking/feedback
 
-TODO: Replace with your Feature 2 paragraph here.
+Being new to scripting, this was the coolest function for me. Instead of waiting to run the program, IDE would flag my errors. This doesn't mean, given I'm new to this, that I paid attention until it didn't run. Incorrect indentation, missed parenthesis, and undefined variables are highlighted as you type. This helped to shorten the debugging cycle, and helps me to learn accurate syntax faster. I did learn this week that indentation matters, especially with Python. 
 
-## Feature 3 – TODO: Replace with name of your Feature3
 
-> In a single paragraph, identify and explain a third IDE feature. Discuss how it enhanced your programming experience or supported best practices such as readability, debugging, or organization. Give a brief, real example of how you used it. Delete these instructions when done.
 
-TODO: Replace with your Feature 3 paragraph here.
 
 ## Conclusion
 
-> Summarize what you learned from using your IDE in this assignment. Reflect on how these features will support your future programming work and improve your confidence as a new programmer. Delete these instructions when done.
+This week I learned a lot. First for me is maybe scripting isn't my jam! I am hoping by the end of this term to have a more solid understanding of scripting, perhaps even enjoy it! Codio isn't the easiest creature to tackle either. I am hopeful things level our from here and I'm able to get things to function better, and not frustrated to the point of walking away. I have to admit, as I have already I LOVED IDE. Being able to see my commands function before submitting was such a great feeling! 
 
-TODO: Replace with your conclusion here.
 
-## References
-
-TODO: Replace with your source citations here in APA style, if any. Delete section heading and this text if not used.

@@ -2,34 +2,30 @@
 
 ## Introduction
 
-> Write a short reflection on your experience using the course IDE to complete your first programming assignment. Briefly describe what it was like to write, run, and test code in an IDE for the first time. Introduce the three IDE features you selected and briefly explain why learning to use IDE features can help you as a beginning programmer. Save specific examples for the feature sections below. Delete these instructions when done.
 
-TODO: Replace with your introduction here.
+ Using the IDE has helped me understand programming better because it shows me when I make a mistake. The error messages help me figure out what's needed to be fixed, and a different colors make the code easier to understand. Being able to run the program again also helps me see if I corrected the problem.
 
-## Feature 1 – TODO: Replace with name of your Feature1
+## Feature 1 – Error Messages
 
-> In one paragraph, identify the first feature you selected, explain what it does, and describe how it helped you while developing or testing your program. Include specific details about how it improved your workflow, made coding easier, or helped you find and fix errors more efficiently. Delete these instructions when done.
 
-TODO: Replace with your Feature 1 paragraph here.
+ Error messages help me know when something is wrong with my code. If the program does not run, the message gives me an idea where the problem is so I can go back and fix it. This helps me learn from my mistakes instead of guessing what went wrong.
 
-## Feature 2 – TODO: Replace with name of your Feature2
+## Feature 2 – Syntax highlighting
 
-> Write one paragraph explaining your second feature. Describe how it functions, what benefits it provided while coding, and why it might be valuable for beginning programmers. Connect the feature to your personal experience using it in this project. Delete these instructions when done.
 
-TODO: Replace with your Feature 2 paragraph here.
 
-## Feature 3 – TODO: Replace with name of your Feature3
+Syntax highlighting helps me understand my code because different parts show up in different colors. The colors make it easy for me to recognize what I am looking at and notice when something does not look right. This helps me catch mistakes and better understand how  the code is put together.
 
-> In a single paragraph, identify and explain a third IDE feature. Discuss how it enhanced your programming experience or supported best practices such as readability, debugging, or organization. Give a brief, real example of how you used it. Delete these instructions when done.
+## Feature 3 _ Run and Output
 
-TODO: Replace with your Feature 3 paragraph here.
+
+
+The run and output feature helps me test my code after I make changes. I can run the program and see right away if it works or if I still need to fix something. This makes it easier for me to learn by making changes and checking my results.
 
 ## Conclusion
 
-> Summarize what you learned from using your IDE in this assignment. Reflect on how these features will support your future programming work and improve your confidence as a new programmer. Delete these instructions when done.
 
-TODO: Replace with your conclusion here.
+Using the IDE helps me see that making mistakes is part of learning how to program. The error messages, colors, and run feature make it easier for me to understand what I'm doing and fix it problems as I go. I think these tools will help me become confident as I continue learning Python
 
-## References
 
-TODO: Replace with your source citations here in APA style, if any. Delete section heading and this text if not used.
+

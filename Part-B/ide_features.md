@@ -2,34 +2,41 @@
 
 ## Introduction
 
-> Write a short reflection on your experience using the course IDE to complete your first programming assignment. Briefly describe what it was like to write, run, and test code in an IDE for the first time. Introduce the three IDE features you selected and briefly explain why learning to use IDE features can help you as a beginning programmer. Save specific examples for the feature sections below. Delete these instructions when done.
+For this assignment I used Visual Studio Code (VS Code) to write and run my Python program. An integrated development environment combines the editor,
+terminal, and debugging tools into a single workspace, which means I could write code, run it, and fix mistakes without ever leaving the window. While
+building the simple `name_age.py` script, three features stood out as things that genuinely made the work easier.
 
-TODO: Replace with your introduction here.
 
 ## Feature 1 – TODO: Replace with name of your Feature1
 
-> In one paragraph, identify the first feature you selected, explain what it does, and describe how it helped you while developing or testing your program. Include specific details about how it improved your workflow, made coding easier, or helped you find and fix errors more efficiently. Delete these instructions when done.
+The first feature I noticed was **syntax highlighting**. VS Code colors different parts of the code based on what they are: keywords like `import` and
+`def` appear in one color, strings in another, and variable names in another. This matters because it lets a programmer read the structure of a program at a
+glance instead of parsing every word. When I forgot to close a string, the color of the rest of the line changed, which instantly showed me where the problem was.
 
-TODO: Replace with your Feature 1 paragraph here.
 
 ## Feature 2 – TODO: Replace with name of your Feature2
 
-> Write one paragraph explaining your second feature. Describe how it functions, what benefits it provided while coding, and why it might be valuable for beginning programmers. Connect the feature to your personal experience using it in this project. Delete these instructions when done.
+The second feature was **error detection and debugging support**. The editor flagged problems as I typed, before I ever ran the program, by underlining the
+offending code and explaining the issue in a tooltip. The integrated terminal and Run button also let me test the script immediately and see the exact line number of any error that occurred at runtime. This shortens the classic edit-run-fix loop, since I did not have to switch between a separate editor and a command prompt to find out whether my code worked.
 
-TODO: Replace with your Feature 2 paragraph here.
 
 ## Feature 3 – TODO: Replace with name of your Feature3
 
-> In a single paragraph, identify and explain a third IDE feature. Discuss how it enhanced your programming experience or supported best practices such as readability, debugging, or organization. Give a brief, real example of how you used it. Delete these instructions when done.
+The third feature was **autocomplete, or IntelliSense**. As I typed function and module names, VS Code suggested completions and showed brief descriptions of
+what each one did. This reduced typos in names like `datetime.now()` and helped me discover available options without leaving the editor to look them up. Taken
+together, these features lower the effort of the small, repetitive parts of coding so a programmer can focus on solving the actual problem.
 
-TODO: Replace with your Feature 3 paragraph here.
 
 ## Conclusion
 
-> Summarize what you learned from using your IDE in this assignment. Reflect on how these features will support your future programming work and improve your confidence as a new programmer. Delete these instructions when done.
-
-TODO: Replace with your conclusion here.
+In conclusion, using Visual Studio Code for this assignment taught me that an IDE does more than hold text — it actively helps catch and prevent mistakes.
+Syntax highlighting let me see the structure of my code at a glance, error detection flagged problems before I ran the program, and autocomplete reduced
+the typos that slow down a beginner. Together, these features shortened the edit-run-fix cycle and made debugging feel manageable rather than intimidating.
+As I move into more complex programs in future modules, I expect to rely on these tools to write cleaner code and to debug with more confidence, and the
+experience has made me more comfortable exploring Python on my own.
 
 ## References
 
-TODO: Replace with your source citations here in APA style, if any. Delete section heading and this text if not used.
+Microsoft. (2024). *Visual Studio Code documentation*. [code.visualstudio.com](https://code.visualstudio.com/docs)
+
+Python Software Foundation. (2024). *The Python language reference*. [docs.python.org](https://docs.python.org/3/)

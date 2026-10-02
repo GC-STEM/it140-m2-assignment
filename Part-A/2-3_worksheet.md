@@ -35,7 +35,7 @@
 
 > Before completing the Analyze sections of this worksheet, review:
 >
-> * [ ] [Software Requirements Specification (SRS)](./analysis/name_age_srs.md)
+> * [ ] [Software Requirements Specification (SRS)](./analysis/2-3_requirements.md)
 >   * `## 0. General Description`
 >   * `## 1. Functional Requirements`
 >   * `## 2. Nonfunctional Requirements`
@@ -50,7 +50,7 @@
 >
 > Do not copy the SRS or ask AI to generate your answer. You will use your understanding of the program's purpose when you write the documentation string (docstring) in your Python program.
 >
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 0. General Description`
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 0. General Description`
 >
 > **Prompt:** What is this program supposed to do for its user?
 >
@@ -68,7 +68,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 
 > Inputs are not limited to information a user types. They also include values the program obtains from system information or values it sets internally.
 >
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.1–1.4**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.1–1.4**
 >
 > **Prompt:** What information does the program receive or obtain? Identify each input or internally obtained value the program needs and where it comes from.
 >
@@ -76,7 +76,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 
 1. TODO: Replace with your first input and its source (e.g., user input, system value, internal value).
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.3**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements`, especially requirement **1.3**
 >
 > **Prompt:** For each input you listed above, what data type (e.g., string, integer, float)does each input need? If the SRS does not specify one, write **Not specified**.
 >
@@ -88,7 +88,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 
 > Processing describes what the program must do with its inputs to produce the desired output.
 >
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.3–1.4**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 0. General Description` and `## 1. Functional Requirements`, especially requirements **1.3–1.4**
 >
 > **Prompt:** What must happen to the inputs before the program produces its output?
 >
@@ -100,7 +100,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 
 > Outputs are the information or results the program produces.
 >
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.5**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements`, especially requirement **1.5**
 >
 > **Prompt:** What information must the program produce, and where is it displayed?
 >
@@ -108,7 +108,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 
 1. TODO: Replace with your first output and where it is displayed (e.g., console, file, GUI).
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
 >
 > **Prompt:** Does the output need to follow a particular format? If so, describe the required format.
 >
@@ -124,7 +124,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 
 #### SRS Requirement 1.2 — Get the User's Age
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.2**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements` → requirement **1.2**
 >
 > **Prompt:** What does requirement 1.2 mean in your own words?
 >
@@ -134,7 +134,7 @@ Replace this text with your explanation of requirement 1.2 in your own words.
 
 #### SRS Requirement 1.3 — Use the Age in an Arithmetic Calculation
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.3**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements` → requirement **1.3**
 >
 > **Prompt:** What does requirement 1.3 mean in your own words?
 >
@@ -144,7 +144,7 @@ TODO: Replace this text with your explanation of requirement 1.3 in your own wor
 
 #### SRS Requirement 1.4 — Calculate the Approximate Birth Year
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements` → requirement **1.4**
 >
 > **Prompt:** What does requirement 1.4 mean in your own words?
 >
@@ -154,7 +154,7 @@ Replace this text with your explanation of requirement 1.4 in your own words.
 
 #### SRS Requirement 1.5 — Display the Personalized Result
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.5**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements` → requirement **1.5**
 >
 > **Prompt:** What does requirement 1.5 mean in your own words?
 >
@@ -168,7 +168,7 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 
 #### Important Constraints
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 2. Nonfunctional Requirements`, `## 3. Technology Constraints`, and `## 4. Quality of Service Constraints`
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## 2. Nonfunctional Requirements`, `## 3. Technology Constraints`, and `## 4. Quality of Service Constraints`
 >
 > **Prompt:** Identify two or three important constraints you need to remember when constructing or testing the program.
 >
@@ -180,7 +180,7 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 
 > An **edge case** uses an unusual or boundary value that can help reveal problems in a solution.
 >
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## Acceptance Test Cases`, especially the tests identified as edge cases
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## Acceptance Test Cases`, especially the tests identified as edge cases
 >
 > **Prompt:** What edge cases will be used to test the program?
 >
@@ -210,14 +210,14 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 
 > Before completing the Design sections of this worksheet, review:
 >
-> * [ ] [Software Design Document (SDD)](./design/name_age_sdd.md)
+> * [ ] [Software Design Document (SDD)](./design/2-3_design.md)
 >   * `## 2. Solution Overview`
 >   * `## 4. Data Design`
 >   * `## 5. Interface and Input/Output Design`
 >   * `## 6. Program Logic and Control Flow`
 >   * `### 6.1 Main Processing Steps`
-> * [ ] [Flowchart](./design/name_age.drawio) → **Flowchart** page; follow the path from **Start** to **End**
-> * [ ] [Pseudocode](./design/name_age.pseudo) → read the algorithm from **START name_age** through **END name_age**
+> * [ ] [Flowchart](./design/2-3_flowchart.drawio) → **Flowchart** page; follow the path from **Start** to **End**
+> * [ ] [Pseudocode](./design/2-3_pseudocode.pseudo) → read the algorithm from **START name_age** through **END name_age**
 >
 > Remember:
 >
@@ -235,9 +235,9 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 
 > **Where to look:**
 >
-> * [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.3**
-> * [Pseudocode](./design/name_age.pseudo)
-> * [Flowchart](./design/name_age.drawio)
+> * [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements` → requirement **1.3**
+> * [Pseudocode](./design/2-3_pseudocode.pseudo)
+> * [Flowchart](./design/2-3_flowchart.drawio)
 >
 > **Prompt:** What part of the design addresses this requirement? Briefly explain the connection.
 >
@@ -249,9 +249,9 @@ TODO: Replace this text with your explanation of how the design addresses requir
 
 > **Where to look:**
 >
-> * [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
-> * [Pseudocode](./design/name_age.pseudo)
-> * [Flowchart](./design/name_age.drawio)
+> * [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements` → requirement **1.4**
+> * [Pseudocode](./design/2-3_pseudocode.pseudo)
+> * [Flowchart](./design/2-3_flowchart.drawio)
 >
 > **Prompt:** What part of the design addresses this requirement? Briefly explain the connection.
 >
@@ -267,7 +267,7 @@ TODO: Replace this text with your explanation of how the design addresses requir
 
 #### Test Input
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
 >
 > **Prompt:** Record the current year, name, and age from Test 1.
 >
@@ -281,9 +281,9 @@ TODO: Replace this text with your explanation of how the design addresses requir
 
 > **Where to look:**
 >
-> * [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements` → requirement **1.4**
-> * [SDD](./design/name_age_sdd.md) → `## 6. Program Logic and Control Flow`
-> * [Pseudocode](./design/name_age.pseudo) → the step that calculates the birth year
+> * [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements` → requirement **1.4**
+> * [SDD](./design/2-3_design.md) → `## 6. Program Logic and Control Flow`
+> * [Pseudocode](./design/2-3_pseudocode.pseudo) → the step that calculates the birth year
 >
 > **Prompt:** Show the birth-year calculation using the Test 1 values.
 >
@@ -293,7 +293,7 @@ User's approximate birth year = TODO: Replace with the calculation using the Tes
 
 #### Expected Output
 
-> **Where to look:** [SRS](./analysis/name_age_srs.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
+> **Where to look:** [SRS](./analysis/2-3_requirements.md) → `## Acceptance Test Cases` → **Test 1. Typical adult age**
 >
 > **Prompt:** Record the expected output for Test 1.
 >
@@ -314,10 +314,10 @@ Expected output for Test 1:
 >
 > **Where to look:** Compare:
 >
-> * [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`
-> * [SDD](./design/name_age_sdd.md) → `## 2. Solution Overview` through `## 6. Program Logic and Control Flow`
-> * [Flowchart](./design/name_age.drawio) → **Flowchart** page
-> * [Pseudocode](./design/name_age.pseudo) → **START name_age** through **END name_age**
+> * [SRS](./analysis/2-3_requirements.md) → `## 1. Functional Requirements`
+> * [SDD](./design/2-3_design.md) → `## 2. Solution Overview` through `## 6. Program Logic and Control Flow`
+> * [Flowchart](./design/2-3_flowchart.drawio) → **Flowchart** page
+> * [Pseudocode](./design/2-3_pseudocode.pseudo) → **START name_age** through **END name_age**
 >
 > **Prompt:** Did you find any question, unclear requirement, or difference between the requirements and design? If everything is clear and consistent, enter **None**.
 >

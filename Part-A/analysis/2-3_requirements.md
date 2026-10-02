@@ -1,12 +1,21 @@
-<!-- To see this file in a clean, formatted view, select ▼ in the upper-right corner of the editor pane, then select "Markdown Preview". -->
-
 # Software Requirements Specification
 
 * Course: IT 140 - *Introduction to Scripting*
 * Activity: 2-3: Module Two Assignment
 * Program Name: `name_age`
 
-## 0. General Description
+<!-- omit from toc -->
+## Table of Contents
+
+1. [General Description](#general-description)
+2. [Functional Requirements](#functional-requirements)
+3. [Nonfunctional Requirements](#nonfunctional-requirements)
+4. [Technology Constraints](#technology-constraints)
+5. [Quality of Service Constraints](#quality-of-service-constraints)
+6. [Sample Input and Output](#sample-input-and-output)
+7. [Acceptance Test Cases](#acceptance-test-cases)
+
+## General Description
 
 The `name_age` program is a simple Python program that asks the user for their name and age. The program calculates the user's approximate birth year and displays a personalized message containing the user's name and calculated birth year.
 
@@ -14,49 +23,49 @@ For this simplified introductory program, the birth year is calculated by subtra
 
 This SRS describes the requirements and constraints for the `name_age.py` programming deliverable. Requirements include both functional (what the program must do) and nonfunctional (how the program must be structured or behave). Constraints focus on technology and quality expectations.
 
-## 1. Functional Requirements
+## Functional Requirements
 
 The program shall:
 
-* [Input] **1.1** Prompt the user to enter their name using the prompt "`What is your name?` ".
+* [Input] **2.1** Prompt the user to enter their name using the prompt "`What is your name?`".
 
-* [Input] **1.2** Prompt the user to enter their age using the prompt "`How old are you?` ".
+* [Input] **2.2** Prompt the user to enter their age using the prompt "`How old are you?`".
 
-* [Processing] **1.3** Treat the entered age as an integer (i.e., a whole number) that can be used in an arithmetic calculation.
+* [Processing] **2.3** Treat the entered age as an integer (i.e., a whole number) that can be used in an arithmetic calculation.
 
-* [Processing] **1.4** Calculate the user's approximate birth year by subtracting the entered age from the current calendar year.
+* [Processing] **2.4** Calculate the user's approximate birth year by subtracting the entered age from the current calendar year.
 
-* [Output] **1.5** Display a personalized result using the user's name and calculated birth year in this format:
+* [Output] **2.5** Display a personalized result using the user's name and calculated birth year in this format:
 
   `Hello {name}! You were born in {year}.`
 
-## 2. Nonfunctional Requirements
+## Nonfunctional Requirements
 
 The program shall:
 
-* [Code Quality] **2.1** Follow the programming best practices introduced in zyBooks 1.5: Style guidelines, including appropriate variable names, whitespace, and comments.
+* [Code Quality] **3.1** Follow the programming best practices introduced in zyBooks 1.5: Style guidelines, including appropriate variable names, whitespace, and comments.
 
-* [Code Quality] **2.2** Use appropriate Python statements without unnecessary code, steps, or procedures.
+* [Code Quality] **3.2** Use appropriate Python statements without unnecessary code, steps, or procedures.
 
-* [Readability] **2.3** Be organized and formatted so that the program logic is easy to read and understand.
+* [Readability] **3.3** Be organized and formatted so that the program logic is easy to read and understand.
 
-## 3. Technology Constraints
-
-The program shall:
-
-* [Language] **3.1** Be implemented as a Python source-code file named `name_age.py`.
-
-* [Input/Output] **3.2** Receive user input and display program output through the program's console.
-
-* [Environment] **3.3** Run using the Python environment provided by the IT 140 course IDE.
-
-## 4. Quality of Service Constraints
+## Technology Constraints
 
 The program shall:
 
-* [Correctness] **4.1** Complete without a Python error when given the valid input described in this SRS.
+* [Language] **4.1** Be implemented as a Python source-code file named `name_age.py`.
 
-* [Correctness] **4.2** Produce the correct result for the provided acceptance test cases.
+* [Input/Output] **4.2** Receive user input and display program output through the program's console.
+
+* [Environment] **4.3** Run using the Python environment provided by the IT 140 course IDE.
+
+## Quality of Service Constraints
+
+The program shall:
+
+* [Correctness] **5.1** Complete without a Python error when given the valid input described in this SRS.
+
+* [Correctness] **5.2** Produce the correct result for the provided acceptance test cases.
 
 No input-validation, security, or performance requirements are specified for this introductory program.
 

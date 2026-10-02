@@ -8,7 +8,7 @@
 
 The `name_age` program will use a simple, sequential design. The program will obtain the current calendar year, ask the user for their name and age, calculate the user's approximate birth year, and display a personalized result.
 
-The design implements the requirements in the [Software Requirements Specification (SRS)](../analysis/name_age_srs.md) using programming concepts appropriate for Module Two. The provided starter code supplies program structure and system-date functionality that students have not yet studied.
+The design implements the requirements in the [Software Requirements Specification (SRS)](../analysis/2-3_requirements.md) using programming concepts appropriate for Module Two. The provided starter code supplies program structure and system-date functionality that students have not yet studied.
 
 ## 1. Design Goals and Constraints
 
@@ -42,8 +42,8 @@ The program does not require decisions or repetition.
 
 ### Design Artifacts
 
-* **Flowchart:** [`name_age.drawio`](./name_age.drawio)
-* **Pseudocode:** [`name_age.pseudo`](./name_age.pseudo)
+* **Flowchart:** [`2-3_flowchart.drawio`](./2-3_flowchart.drawio)
+* **Pseudocode:** [`2-3_pseudocode.pseudo`](./2-3_pseudocode.pseudo)
 
 The flowchart, pseudocode, and this SDD represent the same planned solution.
 
@@ -86,7 +86,7 @@ See the SRS `## Sample Input and Output` section for complete examples of the us
 
 The program follows one path from start to finish. Each operation occurs once and in sequence.
 
-The [flowchart](./name_age.drawio) provides a visual representation of this sequence, and the [pseudocode](./name_age.pseudo) describes the same sequence as written steps.
+The [flowchart](./2-3_flowchart.drawio) provides a visual representation of this sequence, and the [pseudocode](./2-3_pseudocode.pseudo) describes the same sequence as written steps.
 
 ### 6.1 Main Processing Steps
 
@@ -155,6 +155,6 @@ Before beginning construction, confirm that:
 
 ## 11. References
 
-GC STEM. (n.d.). *Software requirements specification: name_age* [Course artifact]. [`../analysis/name_age_srs.md`](../analysis/name_age_srs.md)
+GC STEM. (n.d.). *Software requirements specification: name_age* [Course artifact]. [`../analysis/2-3_requirements.md`](../analysis/2-3_requirements.md)
 
 Southern New Hampshire University. (n.d.). *IT 140 Module Two Assignment guidelines and rubric* [Course assignment].

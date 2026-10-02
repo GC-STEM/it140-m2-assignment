@@ -130,7 +130,7 @@ We strongly recommend that you complete course assignments using the Codio Virtu
    > 4. In the folder selection window, go to your home folder and select the entire **Repos** folder.
    > 5. Confirm the folder selection and trust it when prompted.
    > 6. Verify that your **Repos** folder appears under **Trusted Folders & Workspaces**.
-   >  
+   >
    > Trust the entire `~/Repos` folder rather than only `it140-m2-assignment`. VS Code applies trust to all subfolders of a trusted parent folder, including this assignment repository.
    >
    > After `~/Repos` is trusted, VS Code should leave Restricted Mode and the course extensions and workspace settings should be available normally.
@@ -191,7 +191,7 @@ Open a terminal window (**Git Bash on Windows**) and run:
 ```bash
 cd ~/Repos/it140-m2-assignment
 git status
-git add Part-A/name_age_sdw.md Part-A/src/name_age.py Part-B/ide_features.md
+git add Part-A/2-3_worksheet.md Part-A/src/name_age.py Part-B/ide_features.md
 git commit -m "Complete Module Two assignment"
 git push
 ```

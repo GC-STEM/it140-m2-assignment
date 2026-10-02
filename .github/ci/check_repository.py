@@ -33,13 +33,13 @@ REQUIRED_FILES = (
     ".github/workflows/tests.yml",
     ".vscode/settings.json",
     "Part-A/README.md",
-    "Part-A/name_age_sdw.md",
+    "Part-A/2-3_worksheet.md",
     "Part-A/analysis/README.md",
-    "Part-A/analysis/name_age_srs.md",
+    "Part-A/analysis/2-3_requirements.md",
     "Part-A/design/README.md",
-    "Part-A/design/name_age.drawio",
-    "Part-A/design/name_age.pseudo",
-    "Part-A/design/name_age_sdd.md",
+    "Part-A/design/2-3_flowchart.drawio",
+    "Part-A/design/2-3_pseudocode.pseudo",
+    "Part-A/design/2-3_design.md",
     "Part-A/src/README.md",
     "Part-A/src/name_age.py",
     "Part-A/tests/README.md",
@@ -55,16 +55,16 @@ PROVIDED_MARKDOWN = (
     ".github/ci/README.md",
     "Part-A/README.md",
     "Part-A/analysis/README.md",
-    "Part-A/analysis/name_age_srs.md",
+    "Part-A/analysis/2-3_requirements.md",
     "Part-A/design/README.md",
-    "Part-A/design/name_age_sdd.md",
+    "Part-A/design/2-3_design.md",
     "Part-A/src/README.md",
     "Part-A/tests/README.md",
     "Part-B/README.md",
 )
 
 STARTER_MARKDOWN = (
-    "Part-A/name_age_sdw.md",
+    "Part-A/2-3_worksheet.md",
     "Part-B/ide_features.md",
 )
 
@@ -114,7 +114,7 @@ REQUIRED_TEXT_MARKERS = {
         "## Check Your Work",
         "## Help and Support",
     ),
-    "Part-A/analysis/name_age_srs.md": (
+    "Part-A/analysis/2-3_requirements.md": (
         "# Software Requirements Specification",
         "## 1. Functional Requirements",
         "## 2. Nonfunctional Requirements",
@@ -122,13 +122,13 @@ REQUIRED_TEXT_MARKERS = {
         "## 4. Quality of Service Constraints",
         "## Acceptance Test Cases",
     ),
-    "Part-A/design/name_age_sdd.md": (
+    "Part-A/design/2-3_design.md": (
         "# Software Design Document",
         "## 2. Solution Overview",
         "## 6. Program Logic and Control Flow",
         "## 9. Requirements Traceability",
     ),
-    "Part-A/name_age_sdw.md": (
+    "Part-A/2-3_worksheet.md": (
         "# Software Development Worksheet (SDW)",
         "## How to Use This Worksheet",
         "## Analyze Phase",
@@ -268,7 +268,7 @@ def check_required_text_markers(checks: Checks) -> None:
 
 def check_drawio(checks: Checks) -> None:
     """Verify the provided Draw.io artifact is parseable XML."""
-    path = REPO_ROOT / "Part-A/design/name_age.drawio"
+    path = REPO_ROOT / "Part-A/design/2-3_flowchart.drawio"
     try:
         root = ET.parse(path).getroot()
     except (OSError, ET.ParseError) as exc:
@@ -278,7 +278,7 @@ def check_drawio(checks: Checks) -> None:
 
     tag = root.tag.rsplit("}", maxsplit=1)[-1]
     if tag != "mxfile":
-        checks.error("Part-A/design/name_age.drawio must have an mxfile root.")
+        checks.error("Part-A/design/2-3_flowchart.drawio must have an mxfile root.")
         return
 
     diagrams = [
@@ -287,14 +287,14 @@ def check_drawio(checks: Checks) -> None:
         if node.tag.rsplit("}", maxsplit=1)[-1] == "diagram"
     ]
     if not diagrams:
-        checks.error("Part-A/design/name_age.drawio contains no diagram.")
+        checks.error("Part-A/design/2-3_flowchart.drawio contains no diagram.")
     else:
         checks.note("The Draw.io design file is parseable XML.")
 
 
 def check_pseudocode(checks: Checks) -> None:
     """Verify the supplied pseudocode has its expected boundaries."""
-    text = read_text("Part-A/design/name_age.pseudo")
+    text = read_text("Part-A/design/2-3_pseudocode.pseudo")
     start = text.find("START name_age")
     end = text.find("END name_age")
 

@@ -26,7 +26,7 @@ The requirements, design, starter code, and tests are provided. Your job is to u
 Part A produces two deliverables:
 
    1. Graded: [`name_age.py`](./src/name_age.py)
-   2. Ungraded: [Software Development Worksheet (SDW)](./name_age_sdw.md)
+   2. Ungraded: [Software Development Worksheet (SDW)](./2-3_worksheet.md)
 
 You will work on the SDW in the Analysis and Design phases and complete the Python (`.py`) file during the Construct phase of the Software Development Life Cycle (SDLC).
 
@@ -34,7 +34,7 @@ The Software Requirements Specification (SRS), Software Design Document (SDD), f
 
 ## Start Part A
 
-Start with the [Software Development Worksheet (SDW)](./name_age_sdw.md). The SDW will guide you through the **Analyze** and **Design** phases and tell you exactly which provided documents and sections to review.
+Start with the [Software Development Worksheet (SDW)](./2-3_worksheet.md). The SDW will guide you through the **Analyze** and **Design** phases and tell you exactly which provided documents and sections to review.
 
 Then complete Part A in this order. Click on the SDLC phase below to see the instructions for that phase.:
 

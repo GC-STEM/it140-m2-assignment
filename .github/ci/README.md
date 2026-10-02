@@ -106,7 +106,7 @@ The **Python program check** is used in a student's personal repository. It chec
 
 It does **not** check:
 
-* `Part-A/name_age_sdw.md`
+* `Part-A/2-3_worksheet.md`
 * `Part-B/ide_features.md`
 
 The Python program check has three parts:

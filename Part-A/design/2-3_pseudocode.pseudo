@@ -1,19 +1,24 @@
 START name_age
 
-    # Step 0: Get the current year from the system
-    SET CURRENT_YEAR = system date (year only)
+    # Declare constants and variables
+    LET user_name as a string
+    LET user_age as an integer
+    LET birth_year as an integer
 
-    # Step 1: Get user's name and age
+    # Get the current year from the system
+    LET CURRENT_YEAR = system date (year only)
+
+    # Get user's input
     PUT "What is your name? "
     GET user_name as a string
 
     PUT "How old are you? "
     GET user_age as an integer
 
-    # Step 2: Calculate birth year
-    SET birth_year = CURRENT_YEAR - user_age
+    # Calculate user's birth year
+    LET birth_year = CURRENT_YEAR - user_age
 
-    # Step 3: Output results
+    # Output results
     PUT "Hello {user_name}! You were born in {birth_year}."
 
 END name_age
